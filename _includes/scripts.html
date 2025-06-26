@@ -158,6 +158,51 @@ d.addEventListener('mouseover', function(e) {
     link.rel = 'prefetch';
     link.href = e.target.href;
     d.head.appendChild(link);
+
+    <!-- SCRIPT DE DEBUG - Añadir temporalmente al final de _includes/scripts.html -->
+<script>
+console.log('🔍 DEBUG: Verificando elementos del menú móvil...');
+
+document.addEventListener('DOMContentLoaded', function() {
+  const menuBtn = document.querySelector('.mobile-menu-btn');
+  const navMenu = document.querySelector('.nav-menu');
+  const header = document.querySelector('.header');
+  
+  console.log('📱 Mobile menu button:', menuBtn);
+  console.log('📝 Nav menu:', navMenu);
+  console.log('🎯 Header:', header);
+  
+  if (!menuBtn) {
+    console.error('❌ ERROR: No se encontró .mobile-menu-btn');
+  }
+  
+  if (!navMenu) {
+    console.error('❌ ERROR: No se encontró .nav-menu');
+  }
+  
+  if (menuBtn && navMenu) {
+    console.log('✅ Elementos encontrados - Añadiendo listener...');
+    
+    menuBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      console.log('📱 CLICK en menu button detectado!');
+      
+      const isActive = navMenu.classList.contains('mobile-active');
+      console.log('📋 Menu actualmente activo:', isActive);
+      
+      if (isActive) {
+        navMenu.classList.remove('mobile-active');
+        menuBtn.classList.remove('active');
+        console.log('📴 Menu cerrado');
+      } else {
+        navMenu.classList.add('mobile-active');
+        menuBtn.classList.add('active');
+        console.log('📲 Menu abierto');
+      }
+    });
+  }
+});
+</script>
     e.target.dataset.prefetched = 'true';
   }
 }, { passive: true });
