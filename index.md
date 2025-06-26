@@ -20,7 +20,7 @@ keywords: "abogados A Coruña, especialistas delitos informáticos, recuperació
   
   <div class="scroll-indicator">
     <div class="scroll-text">Desliza hacia abajo</div>
-    <div class="scroll-arrow" role="presentation" aria-hidden="true"></div>
+    <div class="scroll-arrow" aria-hidden="true"></div>
   </div>
 </section>
 
@@ -134,7 +134,7 @@ keywords: "abogados A Coruña, especialistas delitos informáticos, recuperació
 
     <div class="values-grid">
       <div class="value-item fade-in stagger-delay-1">
-        <div class="value-icon" role="presentation" aria-hidden="true">🎯</div>
+        <div class="value-icon" aria-hidden="true">🎯</div>
         <h3 class="value-title">Experiencia</h3>
         <p class="value-description">
           Nuestros abogados cuentan con años de experiencia y un amplio conocimiento en sus 
@@ -143,7 +143,7 @@ keywords: "abogados A Coruña, especialistas delitos informáticos, recuperació
       </div>
 
       <div class="value-item fade-in stagger-delay-2">
-        <div class="value-icon" role="presentation" aria-hidden="true">👥</div>
+        <div class="value-icon" aria-hidden="true">👥</div>
         <h3 class="value-title">Atención Personalizada</h3>
         <p class="value-description">
           Cada cliente es único y merece un trato personalizado. Nos tomamos el tiempo necesario 
@@ -152,7 +152,7 @@ keywords: "abogados A Coruña, especialistas delitos informáticos, recuperació
       </div>
 
       <div class="value-item fade-in stagger-delay-3">
-        <div class="value-icon" role="presentation" aria-hidden="true">💪</div>
+        <div class="value-icon" aria-hidden="true">💪</div>
         <h3 class="value-title">Compromiso</h3>
         <p class="value-description">
           Estamos comprometidos con la defensa de tus derechos e intereses, trabajando 
@@ -161,7 +161,7 @@ keywords: "abogados A Coruña, especialistas delitos informáticos, recuperació
       </div>
 
       <div class="value-item fade-in stagger-delay-4">
-        <div class="value-icon" role="presentation" aria-hidden="true">🔐</div>
+        <div class="value-icon" aria-hidden="true">🔐</div>
         <h3 class="value-title">Confidencialidad</h3>
         <p class="value-description">
           La confidencialidad y protección de tus datos es nuestra prioridad. Trabajamos con 
