@@ -1,6 +1,6 @@
-<!-- Scripts optimizados y corregidos -->
+<!-- Scripts optimizados y minificados -->
 <script>
-// JavaScript crítico mínimo - CORREGIDO
+// JavaScript crítico mínimo - Solo funcionalidad esencial
 (function() {
   'use strict';
   
@@ -8,23 +8,16 @@
   let ticking = false;
   const d = document;
   
-  // Mobile menu - Funcionalidad crítica CORREGIDA
+  // Mobile menu - Funcionalidad crítica
   function initMobileMenu() {
     const menuBtn = d.querySelector('.mobile-menu-btn');
     const navMenu = d.querySelector('.nav-menu');
     
-    console.log('🔍 Mobile menu elements:', { menuBtn, navMenu });
-    
-    if (!menuBtn || !navMenu) {
-      console.error('❌ Mobile menu elements not found');
-      return;
-    }
+    if (!menuBtn || !navMenu) return;
     
     menuBtn.addEventListener('click', function(e) {
       e.preventDefault();
       e.stopPropagation();
-      
-      console.log('📱 Mobile menu clicked');
       
       const isActive = navMenu.classList.contains('mobile-active');
       
@@ -33,13 +26,11 @@
         menuBtn.classList.remove('active');
         d.body.classList.remove('menu-open');
         menuBtn.setAttribute('aria-expanded', 'false');
-        console.log('📴 Menu cerrado');
       } else {
         navMenu.classList.add('mobile-active');
         menuBtn.classList.add('active');
         d.body.classList.add('menu-open');
         menuBtn.setAttribute('aria-expanded', 'true');
-        console.log('📲 Menu abierto');
       }
     });
     
@@ -50,7 +41,6 @@
         menuBtn.classList.remove('active');
         d.body.classList.remove('menu-open');
         menuBtn.setAttribute('aria-expanded', 'false');
-        console.log('🔗 Menu cerrado por clic en enlace');
       }
     });
     
@@ -61,24 +51,8 @@
         menuBtn.classList.remove('active');
         d.body.classList.remove('menu-open');
         menuBtn.setAttribute('aria-expanded', 'false');
-        console.log('⌨️ Menu cerrado con Escape');
       }
     });
-    
-    // Cerrar al hacer click fuera
-    d.addEventListener('click', function(e) {
-      if (!navMenu.contains(e.target) && !menuBtn.contains(e.target)) {
-        if (navMenu.classList.contains('mobile-active')) {
-          navMenu.classList.remove('mobile-active');
-          menuBtn.classList.remove('active');
-          d.body.classList.remove('menu-open');
-          menuBtn.setAttribute('aria-expanded', 'false');
-          console.log('🖱️ Menu cerrado por clic fuera');
-        }
-      }
-    });
-    
-    console.log('✅ Mobile menu inicializado correctamente');
   }
   
   // Header transparency optimizado
@@ -88,10 +62,8 @@
     
     if (window.scrollY > 50) {
       header.style.background = 'rgba(255, 255, 255, 0.98)';
-      header.style.backdropFilter = 'blur(30px)';
     } else {
       header.style.background = 'rgba(255, 255, 255, 0.95)';
-      header.style.backdropFilter = 'blur(20px)';
     }
     ticking = false;
   }
@@ -111,8 +83,6 @@
   
   // DOMContentLoaded
   d.addEventListener('DOMContentLoaded', function() {
-    console.log('🚀 DOM Content Loaded - Inicializando scripts...');
-    
     initMobileMenu();
     initSmoothScroll();
     
@@ -123,8 +93,6 @@
         ticking = true;
       }
     }, { passive: true });
-    
-    console.log('✅ Scripts críticos inicializados');
   });
   
 })();
@@ -133,7 +101,6 @@
 <!-- JavaScript no crítico cargado después del load -->
 <script>
 window.addEventListener('load', function() {
-  console.log('📦 Cargando funcionalidades no críticas...');
   
   // Intersection Observer para animaciones (solo si es compatible)
   if ('IntersectionObserver' in window) {
@@ -152,18 +119,13 @@ window.addEventListener('load', function() {
     d.querySelectorAll('.fade-in, .animate-on-scroll').forEach(function(el) {
       observer.observe(el);
     });
-    
-    console.log('👁️ Intersection Observer inicializado');
   }
   
   // Service Worker para caché (solo HTTPS)
   if ('serviceWorker' in navigator && location.protocol === 'https:') {
     navigator.serviceWorker.register('{{ "/sw.js" | relative_url }}')
-      .then(function(registration) {
-        console.log('🔧 Service Worker registrado:', registration);
-      })
-      .catch(function(error) {
-        console.log('❌ Service Worker falló:', error);
+      .catch(function() {
+        // Fallar silenciosamente
       });
   }
   
@@ -185,11 +147,8 @@ window.addEventListener('load', function() {
     d.querySelectorAll('img[data-src]').forEach(function(img) {
       imgObserver.observe(img);
     });
-    
-    console.log('🖼️ Lazy loading fallback inicializado');
   }
   
-  console.log('✅ Todas las funcionalidades cargadas');
 });
 
 // Prefetch enlaces importantes en hover (optimización UX)
