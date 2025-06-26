@@ -269,22 +269,21 @@
       }
     }
     
-    /* Scroll indicator - CENTRADO PERFECTO */
+    /* Scroll indicator */
     .scroll-indicator {
       position: absolute;
       bottom: 2rem;
-      left: 0;
-      right: 0;
+      left: 50%;
+      transform: translateX(-50%);
       text-align: center;
       opacity: 0;
       animation: fadeInUp 0.8s ease-out 1.2s forwards;
       z-index: 10;
-      width: 100%;
+      width: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin: 0 auto;
     }
     
     .scroll-text {
@@ -296,7 +295,7 @@
       font-weight: 300;
       text-align: center;
       display: block;
-      width: 100%;
+      width: auto;
       white-space: nowrap;
     }
     
@@ -307,9 +306,6 @@
       animation: scrollPulse 2s ease-in-out infinite;
       margin: 0 auto;
       display: block;
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
     }
     
     @keyframes scrollPulse {
