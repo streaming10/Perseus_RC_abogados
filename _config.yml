@@ -1,4 +1,4 @@
-# Configuración del sitio Perseus & RC Abogados - COMPATIBLE GITHUB PAGES
+# Configuración del sitio Perseus & RC Abogados - OPTIMIZADO PARA RENDIMIENTO
 title: "Perseus & RC Abogados"
 description: "Despacho de abogados especializado en A Coruña. Expertos en delitos informáticos, recuperación de deudas, derecho civil, penal y laboral."
 
@@ -26,12 +26,34 @@ linkedin: "https://linkedin.com/company/perseus-rc-abogados"
 google_analytics: "G-XXXXXXXXXX"
 google_site_verification: "your-verification-code"
 
-# Configuración Jekyll
+# Configuración Jekyll optimizada para rendimiento
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
 timezone: Europe/Madrid
 lang: es
+
+# OPTIMIZACIONES DE RENDIMIENTO
+incremental: true
+profile: false
+
+# Compresión SASS optimizada
+sass:
+  style: compressed
+  sass_dir: _sass
+  load_paths:
+    - _sass
+
+# COMPRESIÓN HTML para reducir tamaño
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [development]
+  blanklines: false
+  profile: false
+  startings: []
 
 # SOLO plugins compatibles con GitHub Pages
 plugins:
@@ -39,9 +61,10 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-# Optimización básica compatible
-sass:
-  style: compressed
+# Configuración de feed optimizada
+feed:
+  posts_limit: 10
+  excerpt_only: true
 
 # Collections para contenido estructurado
 collections:
@@ -52,7 +75,7 @@ collections:
     output: true
     permalink: /:year/:month/:day/:title/
 
-# Configuración por defecto
+# Configuración por defecto optimizada
 defaults:
   - scope:
       path: ""
@@ -60,18 +83,25 @@ defaults:
     values:
       layout: "post"
       author: "Perseus & RC Abogados"
+      image: "/assets/images/perseus-rc-default.jpg"
   - scope:
       path: ""
       type: "services"
     values:
       layout: "service"
+      image: "/assets/images/perseus-rc-default.jpg"
   - scope:
       path: ""
       type: "pages"
     values:
       layout: "default"
+      image: "/assets/images/perseus-rc-default.jpg"
+  - scope:
+      path: ""
+    values:
+      lang: "es"
 
-# Excluir archivos del build
+# Excluir archivos del build para optimizar velocidad
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -83,3 +113,80 @@ exclude:
   - .jekyll-cache/
   - .git/
   - .gitignore
+  - .vscode/
+  - .DS_Store
+  - Thumbs.db
+  - package.json
+  - package-lock.json
+  - yarn.lock
+
+# Incluir archivos especiales para PWA
+include:
+  - _pages
+  - .htaccess
+  - sw.js
+  - offline.html
+  - robots.txt
+  - sitemap.xml
+
+# Configuración de construcción optimizada
+keep_files:
+  - .git
+  - .svn
+
+limit_posts: 0
+future: false
+show_drafts: false
+unpublished: false
+
+# Configuración para desarrollo local
+host: 127.0.0.1
+port: 4000
+livereload: true
+open_url: false
+
+# Variables personalizadas para optimización
+performance:
+  preload_critical_css: true
+  inline_critical_css: true
+  defer_non_critical_js: true
+  optimize_images: true
+  enable_service_worker: true
+  enable_lazy_loading: true
+  compress_html: true
+
+# Meta tags por defecto para PWA
+meta:
+  charset: "UTF-8"
+  viewport: "width=device-width, initial-scale=1.0"
+  theme_color: "#1a2332"
+  msapplication_navbutton_color: "#1a2332"
+  apple_mobile_web_app_status_bar_style: "black-translucent"
+
+# Configuración de PWA
+pwa:
+  name: "Perseus & RC Abogados"
+  short_name: "Perseus RC"
+  description: "Especialistas en derecho en A Coruña"
+  theme_color: "#1a2332"
+  background_color: "#ffffff"
+  display: "standalone"
+  orientation: "portrait"
+  scope: "/"
+  start_url: "/"
+
+# Variables para structured data
+organization:
+  name: "Perseus & RC Abogados"
+  type: "LegalService"
+  address:
+    locality: "A Coruña"
+    region: "Galicia"
+    country: "ES"
+  areas_served: ["A Coruña", "Galicia", "España"]
+  services:
+    - "Delitos Informáticos"
+    - "Recuperación de Deudas"
+    - "Derecho Civil"
+    - "Derecho Penal"
+    - "Derecho Laboral"
