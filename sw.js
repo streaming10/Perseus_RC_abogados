@@ -2,9 +2,13 @@
 layout: null
 ---
 
-// Service Worker optimizado para Perseus & RC Abogados
+// Service Worker compatible con Safari - CORREGIDO
 const CACHE_NAME = 'perseus-rc-v2.1';
 const OFFLINE_PAGE = '{{ "/offline.html" | relative_url }}';
+
+// Verificar si las APIs están disponibles
+const hasCacheAPI = 'caches' in self;
+const hasIndexedDB = 'indexedDB' in self;
 
 // Recursos críticos para caché inmediato
 const CRITICAL_RESOURCES = [
@@ -38,9 +42,15 @@ const SKIP_CACHE = [
   /gtm\.js/
 ];
 
-// Instalación del Service Worker
+// Instalación del Service Worker - COMPATIBLE CON SAFARI
 self.addEventListener('install', event => {
   console.log('SW: Installing...');
+  
+  if (!hasCacheAPI) {
+    console.log('SW: Cache API not available, skipping cache setup');
+    self.skipWaiting();
+    return;
+  }
   
   event.waitUntil(
     caches.open(CACHE_NAME)
@@ -54,13 +64,20 @@ self.addEventListener('install', event => {
       })
       .catch(error => {
         console.error('SW: Installation failed', error);
+        self.skipWaiting();
       })
   );
 });
 
-// Activación del Service Worker
+// Activación del Service Worker - COMPATIBLE CON SAFARI
 self.addEventListener('activate', event => {
   console.log('SW: Activating...');
+  
+  if (!hasCacheAPI) {
+    console.log('SW: Cache API not available, skipping cache cleanup');
+    self.clients.claim();
+    return;
+  }
   
   event.waitUntil(
     Promise.all([
@@ -79,11 +96,14 @@ self.addEventListener('activate', event => {
       self.clients.claim()
     ]).then(() => {
       console.log('SW: Activation complete');
+    }).catch(error => {
+      console.error('SW: Activation failed', error);
+      self.clients.claim();
     })
   );
 });
 
-// Estrategia de fetch optimizada
+// Estrategia de fetch optimizada - COMPATIBLE CON SAFARI
 self.addEventListener('fetch', event => {
   const { request } = event;
   const { url, method } = request;
@@ -93,6 +113,12 @@ self.addEventListener('fetch', event => {
   
   // Saltar URLs que no deben cachearse
   if (SKIP_CACHE.some(pattern => pattern.test(url))) {
+    return;
+  }
+  
+  // Si no hay Cache API, solo hacer fetch normal
+  if (!hasCacheAPI) {
+    event.respondWith(fetch(request));
     return;
   }
   
@@ -118,16 +144,28 @@ self.addEventListener('fetch', event => {
   // Para todo lo demás, ir a la red directamente
 });
 
-// Manejar navegación con estrategia Network First
+// Manejar navegación con estrategia Network First - COMPATIBLE CON SAFARI
 async function handleNavigate(request) {
+  if (!hasCacheAPI) {
+    try {
+      return await fetch(request);
+    } catch (error) {
+      return new Response('Offline', { status: 503 });
+    }
+  }
+  
   try {
     // Intentar red primero con timeout
     const networkResponse = await fetchWithTimeout(request, 3000);
     
     if (networkResponse && networkResponse.ok) {
       // Cachear la respuesta exitosa
-      const cache = await caches.open(CACHE_NAME);
-      cache.put(request, networkResponse.clone());
+      try {
+        const cache = await caches.open(CACHE_NAME);
+        cache.put(request, networkResponse.clone());
+      } catch (cacheError) {
+        console.log('SW: Cache storage failed', cacheError);
+      }
       return networkResponse;
     }
     
@@ -136,21 +174,34 @@ async function handleNavigate(request) {
   } catch (error) {
     console.log('SW: Network failed for navigation, trying cache');
     
-    // Si falla la red, intentar caché
-    const cachedResponse = await caches.match(request);
-    
-    if (cachedResponse) {
-      return cachedResponse;
+    try {
+      // Si falla la red, intentar caché
+      const cachedResponse = await caches.match(request);
+      
+      if (cachedResponse) {
+        return cachedResponse;
+      }
+      
+      // Si no hay caché, mostrar página offline
+      const offlinePage = await caches.match(OFFLINE_PAGE);
+      return offlinePage || new Response('Offline', { status: 503 });
+    } catch (cacheError) {
+      console.log('SW: Cache access failed', cacheError);
+      return new Response('Offline', { status: 503 });
     }
-    
-    // Si no hay caché, mostrar página offline
-    const offlinePage = await caches.match(OFFLINE_PAGE);
-    return offlinePage || new Response('Offline', { status: 503 });
   }
 }
 
-// Manejar recursos estáticos con estrategia Cache First
+// Manejar recursos estáticos con estrategia Cache First - COMPATIBLE CON SAFARI
 async function handleStatic(request) {
+  if (!hasCacheAPI) {
+    try {
+      return await fetch(request);
+    } catch (error) {
+      return new Response('', { status: 404 });
+    }
+  }
+  
   try {
     // Intentar caché primero
     const cachedResponse = await caches.match(request);
@@ -166,8 +217,12 @@ async function handleStatic(request) {
     
     if (networkResponse && networkResponse.ok) {
       // Cachear la respuesta exitosa
-      const cache = await caches.open(CACHE_NAME);
-      cache.put(request, networkResponse.clone());
+      try {
+        const cache = await caches.open(CACHE_NAME);
+        cache.put(request, networkResponse.clone());
+      } catch (cacheError) {
+        console.log('SW: Cache storage failed', cacheError);
+      }
       return networkResponse;
     }
     
@@ -176,10 +231,14 @@ async function handleStatic(request) {
   } catch (error) {
     console.log('SW: Static resource failed', error);
     
-    // Si todo falla, intentar servir desde caché una vez más
-    const fallbackResponse = await caches.match(request);
-    if (fallbackResponse) {
-      return fallbackResponse;
+    try {
+      // Si todo falla, intentar servir desde caché una vez más
+      const fallbackResponse = await caches.match(request);
+      if (fallbackResponse) {
+        return fallbackResponse;
+      }
+    } catch (cacheError) {
+      console.log('SW: Fallback cache access failed', cacheError);
     }
     
     // Respuesta de fallback para imágenes
@@ -201,13 +260,17 @@ function fetchWithTimeout(request, timeout) {
   ]);
 }
 
-// Actualizar recurso en background
+// Actualizar recurso en background - COMPATIBLE CON SAFARI
 function updateInBackground(request) {
+  if (!hasCacheAPI) return;
+  
   fetchWithTimeout(request, 5000)
     .then(response => {
       if (response && response.ok) {
         return caches.open(CACHE_NAME).then(cache => {
           cache.put(request, response);
+        }).catch(error => {
+          console.log('SW: Background cache update failed', error);
         });
       }
     })
@@ -221,7 +284,7 @@ function shouldCache(url) {
   return CACHE_PATTERNS.some(pattern => pattern.test(url));
 }
 
-// Manejar mensajes del cliente
+// Manejar mensajes del cliente - COMPATIBLE CON SAFARI
 self.addEventListener('message', event => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
     self.skipWaiting();
@@ -232,8 +295,10 @@ self.addEventListener('message', event => {
   }
 });
 
-// Limpiar caché periódicamente
+// Limpiar caché periódicamente - COMPATIBLE CON SAFARI
 async function cleanOldCache() {
+  if (!hasCacheAPI) return;
+  
   try {
     const cache = await caches.open(CACHE_NAME);
     const requests = await cache.keys();
@@ -248,6 +313,3 @@ async function cleanOldCache() {
     console.error('SW: Cache cleaning failed', error);
   }
 }
-
-// Limpiar caché automáticamente cada hora
-setInterval(cleanOldCache, 60 * 60 * 1000);
