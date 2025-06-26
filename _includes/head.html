@@ -17,7 +17,7 @@
   <meta name="author" content="{{ site.author }}">
   <meta name="robots" content="index, follow">
   
-  <!-- CSS CRÍTICO INLINE - SOLO Above-the-fold -->
+  <!-- CSS CRÍTICO INLINE - CORREGIDO -->
   <style>
     /* Reset crítico */
     * {
@@ -53,7 +53,7 @@
       overflow-x: hidden;
     }
     
-    /* Header crítico - MÁXIMA PRIORIDAD */
+    /* Header crítico - CORREGIDO */
     .header {
       position: fixed;
       top: 0;
@@ -174,7 +174,16 @@
       white-space: nowrap;
     }
     
-    /* Mobile menu button */
+    .flag {
+      font-size: 0.9rem;
+    }
+    
+    .lang-text {
+      font-weight: 500;
+      font-size: 0.75rem;
+    }
+    
+    /* Mobile menu button - CORREGIDO */
     .mobile-menu-btn {
       display: none;
       flex-direction: column;
@@ -267,18 +276,17 @@
       }
     }
     
-    /* Scroll indicator */
+    /* Scroll indicator - CORREGIDO */
     .scroll-indicator {
       position: absolute;
-      bottom: 3rem;
-      left: 0;
-      right: 0;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
       text-align: center;
       opacity: 0;
       animation: fadeInUp 0.8s ease-out 1.2s forwards;
       z-index: 10;
-      margin: 0 auto;
-      width: 100%;
+      width: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -295,6 +303,7 @@
       text-align: center;
       display: block;
       width: auto;
+      white-space: nowrap;
     }
     
     .scroll-arrow {
@@ -318,7 +327,13 @@
       padding: 0 2rem;
     }
     
-    /* Mobile Critical Styles */
+    /* Mobile Critical Styles - TOTALMENTE CORREGIDO */
+    @media (max-width: 1024px) {
+      .header-contact {
+        display: none;
+      }
+    }
+    
     @media (max-width: 768px) {
       .mobile-menu-btn {
         display: flex !important;
@@ -328,7 +343,7 @@
       .nav-menu {
         display: none !important;
         position: fixed;
-        top: 80px;
+        top: 70px;
         left: 0;
         right: 0;
         background: var(--primary-white);
@@ -342,6 +357,8 @@
         opacity: 0;
         visibility: hidden;
         transition: all 0.3s ease;
+        height: calc(100vh - 70px);
+        overflow-y: auto;
       }
       
       .nav-menu.mobile-active {
@@ -351,28 +368,109 @@
         visibility: visible;
       }
       
-      .header-contact {
-        display: none;
+      .nav-menu.mobile-active .nav-link {
+        font-size: 1.1rem;
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--border-light);
+        text-align: center;
+        display: block;
+        width: 100%;
+        color: var(--navy-blue);
+      }
+      
+      .nav-menu.mobile-active .nav-link:last-child {
+        border-bottom: none;
       }
       
       .nav-container {
         padding: 0 1rem;
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        align-items: center;
+        gap: 1rem;
       }
       
       .logo {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        grid-column: 1;
+        justify-self: start;
       }
       
+      .header-right {
+        grid-column: 2;
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+      }
+      
+      .mobile-menu-btn {
+        grid-column: 3;
+        justify-self: end;
+      }
+      
+      .lang-link {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.7rem;
+        gap: 0.3rem;
+        border-radius: 15px;
+      }
+      
+      .flag {
+        font-size: 0.8rem;
+      }
+      
+      .lang-text {
+        font-size: 0.7rem;
+      }
+      
+      /* Hero mobile */
       .hero h1 {
         font-size: 2.8rem;
+        line-height: 1.1;
       }
       
       .hero-description {
         font-size: 1.1rem;
+        padding: 0 1rem;
+      }
+      
+      .hero-content {
+        padding: 0 1.5rem;
+      }
+      
+      /* Scroll indicator mobile - CORREGIDO */
+      .scroll-indicator {
+        bottom: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      
+      .scroll-text {
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+        margin-bottom: 1rem;
+      }
+      
+      .scroll-arrow {
+        height: 3rem;
       }
     }
     
     @media (max-width: 480px) {
+      .nav-container {
+        padding: 0 0.8rem;
+        gap: 0.8rem;
+      }
+      
+      .logo {
+        font-size: 1rem;
+      }
+      
+      .lang-link {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.65rem;
+      }
+      
       .hero h1 {
         font-size: 2.2rem;
       }
@@ -380,6 +478,26 @@
       .hero-description {
         font-size: 1rem;
         padding: 0 1rem;
+        line-height: 1.6;
+      }
+      
+      .hero-content {
+        padding: 0 1rem;
+      }
+      
+      /* Scroll indicator mobile pequeño */
+      .scroll-indicator {
+        bottom: 1rem;
+      }
+      
+      .scroll-text {
+        font-size: 0.65rem;
+        letter-spacing: 1px;
+        margin-bottom: 0.8rem;
+      }
+      
+      .scroll-arrow {
+        height: 2.5rem;
       }
     }
   </style>
@@ -423,22 +541,22 @@
   }
   </script>
   
- <!-- Google Analytics desactivado temporalmente -->
-{% comment %}
-{% if site.google_analytics and jekyll.environment == 'production' %}
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', '{{ site.google_analytics }}', {
-      'send_page_view': false
-    });
-    
-    window.addEventListener('load', function() {
-      gtag('event', 'page_view');
-    });
-  </script>
-{% endif %}
-{% endcomment %}
+  <!-- Google Analytics DESACTIVADO para optimizar PageSpeed -->
+  {% comment %}
+  {% if site.google_analytics and jekyll.environment == 'production' %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ site.google_analytics }}', {
+        'send_page_view': false
+      });
+      
+      window.addEventListener('load', function() {
+        gtag('event', 'page_view');
+      });
+    </script>
+  {% endif %}
+  {% endcomment %}
 </head>
