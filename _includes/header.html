@@ -1,4 +1,4 @@
-<!-- Header -->
+<!-- Header CORREGIDO Y OPTIMIZADO -->
 <header class="header" id="header">
   <nav class="nav-container">
     <a href="{{ '/' | relative_url }}" class="logo">{{ site.title }}</a>
@@ -51,7 +51,11 @@
     </div>
     
     <!-- Mobile menu button -->
-    <button class="mobile-menu-btn" aria-label="{% if page.lang == 'en' %}Open navigation menu{% else %}Abrir menú de navegación{% endif %}" aria-expanded="false" aria-controls="mobile-nav" type="button">
+    <button class="mobile-menu-btn" 
+            aria-label="{% if page.lang == 'en' %}Open navigation menu{% else %}Abrir menú de navegación{% endif %}" 
+            aria-expanded="false" 
+            aria-controls="mobile-nav" 
+            type="button">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
