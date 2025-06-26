@@ -1,0 +1,60 @@
+<!-- Header -->
+<header class="header" id="header">
+  <nav class="nav-container">
+    <a href="{{ '/' | relative_url }}" class="logo">{{ site.title }}</a>
+    
+    <!-- Navigation Menu -->
+    <ul class="nav-menu" id="mobile-nav" role="navigation">
+      {% if page.lang == 'en' %}
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#values" class="nav-link">Values</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="{{ '/blog/' | relative_url }}" class="nav-link">Blog</a></li>
+      {% else %}
+        <li><a href="#about" class="nav-link">Nosotros</a></li>
+        <li><a href="#services" class="nav-link">Servicios</a></li>
+        <li><a href="#values" class="nav-link">Valores</a></li>
+        <li><a href="#contact" class="nav-link">Contacto</a></li>
+        <li><a href="{{ '/blog/' | relative_url }}" class="nav-link">Blog</a></li>
+      {% endif %}
+    </ul>
+    
+    <!-- Contact Info y Language Switcher -->
+    <div class="header-right">
+      <!-- Contact Info en Header (solo desktop) -->
+      <div class="header-contact">
+        <a href="tel:{{ site.phone }}" class="header-contact-item">
+          <span class="header-contact-icon">📞</span>
+          <span>{{ site.phone }}</span>
+        </a>
+        <a href="mailto:{{ site.email }}" class="header-contact-item">
+          <span class="header-contact-icon">✉️</span>
+          <span>{{ site.email }}</span>
+        </a>
+      </div>
+      
+      <!-- Language Switcher -->
+      <div class="language-switcher">
+        {% if page.lang == 'en' %}
+          <a href="{{ '/' | relative_url }}" class="lang-link" title="Ver en Español">
+            <span class="flag">🇪🇸</span>
+            <span class="lang-text">ES</span>
+          </a>
+        {% else %}
+          <a href="{{ '/en/' | relative_url }}" class="lang-link" title="View in English">
+            <span class="flag">🇺🇸</span>
+            <span class="lang-text">EN</span>
+          </a>
+        {% endif %}
+      </div>
+    </div>
+    
+    <!-- Mobile menu button -->
+    <button class="mobile-menu-btn" aria-label="{% if page.lang == 'en' %}Open navigation menu{% else %}Abrir menú de navegación{% endif %}" aria-expanded="false" aria-controls="mobile-nav" type="button">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </nav>
+</header>

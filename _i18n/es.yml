@@ -1,0 +1,115 @@
+# Traducciones en Español
+site:
+  title: "Perseus & RC Abogados"
+  description: "Despacho de abogados especializado en A Coruña. Expertos en delitos informáticos, recuperación de deudas, derecho civil, penal y laboral. Consulta jurídica online disponible."
+  keywords: "abogados A Coruña, especialistas delitos informáticos, recuperación deudas, derecho civil penal laboral, consulta jurídica online, Perseus RC Abogados"
+
+nav:
+  about: "Nosotros"
+  services: "Servicios"
+  values: "Valores"
+  contact: "Contacto"
+  blog: "Blog"
+  language_switch: "English"
+
+hero:
+  subtitle: "Despacho de Abogados A Coruña"
+  title: "Perseus & RC<br>Abogados"
+  description: "Combinamos la experiencia jurídica con estrategias especializadas. Nuestro enfoque aprovecha el conocimiento profundo del derecho y la experiencia práctica para identificar y resolver los desafíos legales más complejos."
+  scroll_text: "Desliza hacia abajo"
+
+about:
+  intro: "Quiénes Somos"
+  title: "Especializados en diversas áreas del derecho"
+  description: "Perseus & RC Abogados es un despacho de abogados establecido en A Coruña, construido sobre la experiencia de profesionales líderes en el sector jurídico. Con sólidas bases en el mundo legal, ofrecemos un enfoque distintivo para los servicios jurídicos."
+
+services:
+  intro: "Nuestros Servicios"
+  title: "Áreas de Especialización"
+  subtitle: "Nos enfocamos en cinco áreas clave del derecho, donde nuestra experiencia nos permite ofrecer soluciones jurídicas excepcionales y resultados superiores."
+
+values:
+  intro: "Nuestros Valores"
+  title: "¿Por Qué Perseus & RC Abogados?"
+  subtitle: "Nuestros principios fundamentales guían cada decisión y acción, garantizando un servicio excepcional y resultados superiores para nuestros clientes."
+
+cta:
+  intro: "Consulta Jurídica Online"
+  title: "Siempre contigo cuando nos necesites"
+  description: "Hemos habilitado un completo servicio de consulta jurídica online con todas las garantías de seguridad y privacidad. Accede a asesoramiento profesional desde cualquier lugar."
+  button: "Accede Ya"
+
+contact:
+  intro: "Contacto"
+  title: "Estamos aquí para ayudarte"
+  description: "En Perseus & RC Abogados, estamos disponibles para atender tus consultas y ofrecerte nuestro servicio especializado en el ámbito del derecho."
+  info_title: "Información de Contacto"
+  location_label: "Ubicación"
+  phone_label: "Teléfono"
+  email_label: "Email"
+  online_label: "Consulta Online"
+  online_value: "Disponible 24/7"
+  form:
+    name: "Nombre completo"
+    email: "Email"
+    phone: "Teléfono"
+    service: "Servicio de interés"
+    message: "Mensaje"
+    submit: "Enviar consulta"
+    privacy: "Acepto la política de privacidad"
+
+footer:
+  copyright: "Despacho de Abogados en A Coruña."
+  description: "Especialistas en Delitos Informáticos, Recuperación de Deudas, Derecho Civil, Penal y Laboral."
+  legal_notice: "Aviso Legal"
+  privacy_policy: "Política de Privacidad"
+  cookies_policy: "Política de Cookies"
+
+blog:
+  title: "Blog Jurídico"
+  description: "Artículos y noticias sobre derecho"
+  read_more: "Leer más"
+  recent_posts: "Artículos Recientes"
+
+# Meta descriptions para SEO
+meta:
+  home: "Despacho de abogados en A Coruña especializado en delitos informáticos, recuperación de deudas, derecho civil, penal y laboral. Consulta jurídica online disponible."
+  about: "Conoce a Perseus & RC Abogados, despacho especializado en A Coruña con amplia experiencia en derecho civil, penal, laboral y delitos informáticos."
+  services: "Servicios legales especializados en A Coruña: delitos informáticos, recuperación de deudas, derecho civil, penal y laboral. Consulta online disponible."
+  contact: "Contacta con Perseus & RC Abogados en A Coruña. Teléfono, email y consulta jurídica online. Asesoramiento legal profesional disponible 24/7."
+
+# Textos de servicios
+services_list:
+  cyber_crimes:
+    title: "Delitos Informáticos"
+    description: "Asesoramiento y representación en casos relacionados con ciberdelitos, como estafas en línea, phishing, acceso ilegal a sistemas, robo de datos y ataques informáticos."
+  debt_recovery:
+    title: "Recuperación de Deudas"
+    description: "Gestión y negociación de cobros extrajudiciales, reclamaciones judiciales de impagos, ejecución de garantías y embargos, e insolvencias."
+  civil_law:
+    title: "Derecho Civil"
+    description: "Asesoramiento y representación en asuntos relacionados con contratos, responsabilidad civil, propiedad, arrendamientos, herencias y sucesiones."
+  criminal_law:
+    title: "Derecho Penal"
+    description: "Defensa y acusación en delitos, asistencia al detenido, juicios rápidos, procedimientos abreviados y ordinarios, y recursos penales."
+  labor_law:
+    title: "Derecho Laboral"
+    description: "Defensa y asesoramiento en despidos, reclamaciones de cantidad, incapacidades, sanciones, acoso laboral y negociación de convenios colectivos."
+  online_consultation:
+    title: "Consulta Jurídica Online"
+    description: "Servicio completo de consulta jurídica online con todas las garantías de seguridad y privacidad. Siempre contigo cuando nos necesites."
+
+# Valores de la empresa
+values_list:
+  experience:
+    title: "Experiencia"
+    description: "Nuestros abogados cuentan con años de experiencia y un amplio conocimiento en sus respectivas áreas del derecho, garantizando asesoramiento experto."
+  personalized:
+    title: "Atención Personalizada"
+    description: "Cada cliente es único y merece un trato personalizado. Nos tomamos el tiempo necesario para conocer a fondo tu caso y ofrecerte soluciones adaptadas."
+  commitment:
+    title: "Compromiso"
+    description: "Estamos comprometidos con la defensa de tus derechos e intereses, trabajando incansablemente para lograr los mejores resultados posibles en cada caso."
+  confidentiality:
+    title: "Confidencialidad"
+    description: "La confidencialidad y protección de tus datos es nuestra prioridad. Trabajamos con discreción bajo estrictas normas de confidencialidad profesional."

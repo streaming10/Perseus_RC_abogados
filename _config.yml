@@ -1,0 +1,85 @@
+# Configuración del sitio Perseus & RC Abogados - COMPATIBLE GITHUB PAGES
+title: "Perseus & RC Abogados"
+description: "Despacho de abogados especializado en A Coruña. Expertos en delitos informáticos, recuperación de deudas, derecho civil, penal y laboral."
+
+# IMPORTANTE: Configuración correcta para tu repositorio
+baseurl: "/Perseus_RC_abogados" # Subpath del sitio
+url: "https://streaming10.github.io" # URL base del sitio
+
+# IMPORTANTE: Desactivar tema por defecto para evitar conflictos
+theme: null
+
+# Información de contacto
+phone: "+34 677 841 007"
+email: "info@perseusyrcabogados.com"
+location: "A Coruña, Galicia"
+country: "España"
+
+# SEO y Social Media
+author: "Perseus & RC Abogados"
+logo: "/assets/images/logo.png"
+image: "/assets/images/og-image.jpg"
+twitter: "@perseusrcabogados"
+linkedin: "https://linkedin.com/company/perseus-rc-abogados"
+
+# Google Analytics y Search Console
+google_analytics: "G-XXXXXXXXXX"
+google_site_verification: "your-verification-code"
+
+# Configuración Jekyll
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+timezone: Europe/Madrid
+lang: es
+
+# SOLO plugins compatibles con GitHub Pages
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Optimización básica compatible
+sass:
+  style: compressed
+
+# Collections para contenido estructurado
+collections:
+  services:
+    output: true
+    permalink: /:collection/:name/
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/
+
+# Configuración por defecto
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Perseus & RC Abogados"
+  - scope:
+      path: ""
+      type: "services"
+    values:
+      layout: "service"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# Excluir archivos del build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  - README.md
+  - LICENSE.md
+  - .sass-cache/
+  - .jekyll-cache/
+  - .git/
+  - .gitignore

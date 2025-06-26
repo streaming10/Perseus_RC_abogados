@@ -1,0 +1,44 @@
+User-agent: *
+Allow: /
+
+# Sitemap locations
+Sitemap: {{ site.url }}/sitemap.xml
+Sitemap: {{ site.url }}/es/sitemap.xml
+Sitemap: {{ site.url }}/en/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /assets/private/
+Disallow: /_includes/
+Disallow: /_layouts/
+Disallow: /_sass/
+
+# Allow specific crawlers full access
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Crawl delay for general bots
+User-agent: *
+Crawl-delay: 1
+
+# Block AI training crawlers (optional)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /

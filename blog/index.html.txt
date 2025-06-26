@@ -1,0 +1,118 @@
+---
+layout: page
+title: "Blog Jurídico - Perseus & RC Abogados"
+description: "Últimas noticias, artículos y consejos legales de Perseus & RC Abogados. Manténgase informado sobre derecho civil, penal, laboral y delitos informáticos."
+keywords: "blog jurídico, noticias legales, consejos abogados, derecho A Coruña, actualidad jurídica"
+permalink: /blog/
+---
+
+<div class="blog-header">
+  <div class="container">
+    <h1>Blog Jurídico</h1>
+    <p class="blog-subtitle">Análisis, noticias y consejos legales de nuestros expertos</p>
+  </div>
+</div>
+
+<section class="blog-content">
+  <div class="container">
+    <div class="blog-grid">
+      
+      <!-- Artículo Destacado -->
+      <article class="featured-post">
+        <div class="post-image">
+          <img src="{{ '/assets/images/delitos-informaticos-2024.jpg' | relative_url }}" alt="Delitos informáticos en 2024" loading="lazy">
+        </div>
+        <div class="post-content">
+          <div class="post-meta">
+            <span class="post-category">Delitos Informáticos</span>
+            <time class="post-date">15 Enero 2024</time>
+          </div>
+          <h2><a href="{{ '/blog/delitos-informaticos-aumento-2024/' | relative_url }}">Aumento de Delitos Informáticos en 2024: Cómo Protegerse</a></h2>
+          <p>Los delitos informáticos han aumentado un 35% en Galicia durante el último año. Analizamos las nuevas modalidades de ciberataques y cómo proteger tu empresa...</p>
+          <a href="{{ '/blog/delitos-informaticos-aumento-2024/' | relative_url }}" class="read-more">Leer más</a>
+        </div>
+      </article>
+
+      <!-- Artículos Recientes -->
+      <div class="recent-posts">
+        <h3>Artículos Recientes</h3>
+        
+        <article class="post-item">
+          <div class="post-meta">
+            <span class="post-category">Derecho Laboral</span>
+            <time class="post-date">10 Enero 2024</time>
+          </div>
+          <h4><a href="{{ '/blog/nuevas-regulaciones-despido-2024/' | relative_url }}">Nuevas Regulaciones sobre Despido en 2024</a></h4>
+          <p>Las últimas modificaciones en la legislación laboral española afectan directamente a los procedimientos de despido...</p>
+        </article>
+
+        <article class="post-item">
+          <div class="post-meta">
+            <span class="post-category">Recuperación de Deudas</span>
+            <time class="post-date">5 Enero 2024</time>
+          </div>
+          <h4><a href="{{ '/blog/estrategias-recuperacion-deudas-empresas/' | relative_url }}">Estrategias Efectivas para la Recuperación de Deudas Empresariales</a></h4>
+          <p>Métodos probados para recuperar impagos sin dañar las relaciones comerciales. Procedimientos extrajudiciales y judiciales...</p>
+        </article>
+
+        <article class="post-item">
+          <div class="post-meta">
+            <span class="post-category">Derecho Civil</span>
+            <time class="post-date">28 Diciembre 2023</time>
+          </div>
+          <h4><a href="{{ '/blog/herencias-sin-testamento-galicia/' | relative_url }}">Herencias sin Testamento en Galicia: Guía Completa</a></h4>
+          <p>Todo lo que necesitas saber sobre la sucesión intestada en Galicia. Procedimientos, plazos y documentación necesaria...</p>
+        </article>
+
+        <article class="post-item">
+          <div class="post-meta">
+            <span class="post-category">Derecho Penal</span>
+            <time class="post-date">20 Diciembre 2023</time>
+          </div>
+          <h4><a href="{{ '/blog/violencia-genero-nuevas-medidas-proteccion/' | relative_url }}">Violencia de Género: Nuevas Medidas de Protección</a></h4>
+          <p>Análisis de las últimas reformas en materia de violencia de género y los nuevos mecanismos de protección a las víctimas...</p>
+        </article>
+      </div>
+    </div>
+
+    <!-- Categorías -->
+    <aside class="blog-sidebar">
+      <div class="widget">
+        <h3>Categorías</h3>
+        <ul class="categories-list">
+          <li><a href="{{ '/blog/categoria/delitos-informaticos/' | relative_url }}">Delitos Informáticos <span>(8)</span></a></li>
+          <li><a href="{{ '/blog/categoria/recuperacion-deudas/' | relative_url }}">Recuperación de Deudas <span>(12)</span></a></li>
+          <li><a href="{{ '/blog/categoria/derecho-civil/' | relative_url }}">Derecho Civil <span>(15)</span></a></li>
+          <li><a href="{{ '/blog/categoria/derecho-penal/' | relative_url }}">Derecho Penal <span>(10)</span></a></li>
+          <li><a href="{{ '/blog/categoria/derecho-laboral/' | relative_url }}">Derecho Laboral <span>(14)</span></a></li>
+          <li><a href="{{ '/blog/categoria/actualidad-juridica/' | relative_url }}">Actualidad Jurídica <span>(20)</span></a></li>
+        </ul>
+      </div>
+
+      <div class="widget">
+        <h3>Recursos Útiles</h3>
+        <ul class="resources-list">
+          <li><a href="{{ '/recursos/calculadora-indemnizacion/' | relative_url }}">Calculadora de Indemnización</a></li>
+          <li><a href="{{ '/recursos/modelos-contratos/' | relative_url }}">Modelos de Contratos</a></li>
+          <li><a href="{{ '/recursos/guia-denuncia-online/' | relative_url }}">Guía para Denunciar Online</a></li>
+          <li><a href="{{ '/recursos/directorio-juzgados-galicia/' | relative_url }}">Directorio Juzgados Galicia</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- CTA Newsletter -->
+<section class="newsletter-cta">
+  <div class="container">
+    <div class="newsletter-content">
+      <h3>Mantente Informado</h3>
+      <p>Recibe las últimas noticias jurídicas y análisis de nuestros expertos directamente en tu email</p>
+      <form class="newsletter-form" action="https://formspree.io/f/{{ site.formspree_id }}" method="POST">
+        <input type="email" name="email" placeholder="Tu email" required>
+        <button type="submit">Suscribirse</button>
+        <input type="hidden" name="_subject" value="Suscripción Newsletter Blog Jurídico">
+      </form>
+    </div>
+  </div>
+</section>
