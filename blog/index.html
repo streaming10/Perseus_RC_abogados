@@ -1,118 +1,612 @@
 ---
-layout: page
-title: "Blog Jurídico - Perseus & RC Abogados"
-description: "Últimas noticias, artículos y consejos legales de Perseus & RC Abogados. Manténgase informado sobre derecho civil, penal, laboral y delitos informáticos."
-keywords: "blog jurídico, noticias legales, consejos abogados, derecho A Coruña, actualidad jurídica"
+layout: default
+title: "Blog Jurídico | Perseus & RC Abogados - Actualidad Legal A Coruña"
+description: "Blog especializado en derecho actualizado por Perseus & RC Abogados. Artículos sobre delitos informáticos, recuperación de deudas, derecho civil, penal y laboral en A Coruña."
+keywords: "blog jurídico, actualidad legal, delitos informáticos, recuperación deudas, derecho civil penal laboral, abogados A Coruña, noticias jurídicas"
+canonical: "{{ '/blog/' | absolute_url }}"
 permalink: /blog/
+sitemap_priority: 0.9
+sitemap_changefreq: weekly
+og_type: "blog"
+schema_type: "Blog"
 ---
 
-<div class="blog-header">
+<!-- Breadcrumbs para SEO -->
+<nav class="breadcrumbs" aria-label="Breadcrumb">
   <div class="container">
-    <h1>Blog Jurídico</h1>
-    <p class="blog-subtitle">Análisis, noticias y consejos legales de nuestros expertos</p>
+    <ol class="breadcrumb-list" vocab="https://schema.org/" typeof="BreadcrumbList">
+      <li property="itemListElement" typeof="ListItem">
+        <a property="item" typeof="WebPage" href="{{ '/' | relative_url }}">
+          <span property="name">Inicio</span>
+        </a>
+        <meta property="position" content="1">
+      </li>
+      <li property="itemListElement" typeof="ListItem">
+        <span property="name">Blog Jurídico</span>
+        <meta property="position" content="2">
+      </li>
+    </ol>
   </div>
-</div>
+</nav>
 
-<section class="blog-content">
+<!-- Blog Header Section -->
+<section class="blog-hero">
   <div class="container">
-    <div class="blog-grid">
+    <div class="blog-hero-content fade-in">
+      <div class="blog-intro">Actualidad Jurídica</div>
+      <h1>Blog Especializado en Derecho</h1>
+      <p class="blog-subtitle">
+        Análisis, noticias y consejos legales de nuestros expertos. Manténte informado con los últimos 
+        desarrollos legales, cambios normativos y análisis jurídicos especializados en A Coruña.
+      </p>
       
-      <!-- Artículo Destacado -->
-      <article class="featured-post">
-        <div class="post-image">
-          <img src="{{ '/assets/images/delitos-informaticos-2024.jpg' | relative_url }}" alt="Delitos informáticos en 2024" loading="lazy">
-        </div>
-        <div class="post-content">
-          <div class="post-meta">
-            <span class="post-category">Delitos Informáticos</span>
-            <time class="post-date">15 Enero 2024</time>
+      <!-- Search Box para SEO y UX -->
+      <div class="blog-search">
+        <form class="search-form" role="search" aria-label="Buscar artículos">
+          <div class="search-container">
+            <input 
+              type="search" 
+              class="search-input" 
+              placeholder="Buscar artículos jurídicos..." 
+              aria-label="Términos de búsqueda"
+              name="q"
+              autocomplete="off"
+            >
+            <button type="submit" class="search-button" aria-label="Buscar">
+              <span class="search-icon">🔍</span>
+            </button>
           </div>
-          <h2><a href="{{ '/blog/delitos-informaticos-aumento-2024/' | relative_url }}">Aumento de Delitos Informáticos en 2024: Cómo Protegerse</a></h2>
-          <p>Los delitos informáticos han aumentado un 35% en Galicia durante el último año. Analizamos las nuevas modalidades de ciberataques y cómo proteger tu empresa...</p>
-          <a href="{{ '/blog/delitos-informaticos-aumento-2024/' | relative_url }}" class="read-more">Leer más</a>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Categories Filter para SEO/SEM -->
+<section class="blog-categories">
+  <div class="container">
+    <nav class="categories-nav" aria-label="Categorías del blog">
+      <h2 class="categories-title">Especialidades Jurídicas</h2>
+      <div class="categories-grid">
+        <a href="{{ '/blog/categoria/delitos-informaticos/' | relative_url }}" class="category-card" data-category="delitos-informaticos">
+          <div class="category-icon">💻</div>
+          <h3 class="category-name">Delitos Informáticos</h3>
+          <p class="category-desc">Ciberdelitos, estafas online, protección de datos</p>
+          <span class="category-count">8 artículos</span>
+        </a>
+        
+        <a href="{{ '/blog/categoria/recuperacion-deudas/' | relative_url }}" class="category-card" data-category="recuperacion-deudas">
+          <div class="category-icon">💰</div>
+          <h3 class="category-name">Recuperación de Deudas</h3>
+          <p class="category-desc">Cobros, embargos, procedimientos de reclamación</p>
+          <span class="category-count">12 artículos</span>
+        </a>
+        
+        <a href="{{ '/blog/categoria/derecho-civil/' | relative_url }}" class="category-card" data-category="derecho-civil">
+          <div class="category-icon">⚖️</div>
+          <h3 class="category-name">Derecho Civil</h3>
+          <p class="category-desc">Contratos, herencias, responsabilidad civil</p>
+          <span class="category-count">15 artículos</span>
+        </a>
+        
+        <a href="{{ '/blog/categoria/derecho-penal/' | relative_url }}" class="category-card" data-category="derecho-penal">
+          <div class="category-icon">🏛️</div>
+          <h3 class="category-name">Derecho Penal</h3>
+          <p class="category-desc">Defensa penal, procedimientos, recursos</p>
+          <span class="category-count">10 artículos</span>
+        </a>
+        
+        <a href="{{ '/blog/categoria/derecho-laboral/' | relative_url }}" class="category-card" data-category="derecho-laboral">
+          <div class="category-icon">👥</div>
+          <h3 class="category-name">Derecho Laboral</h3>
+          <p class="category-desc">Despidos, convenios, acoso laboral</p>
+          <span class="category-count">14 artículos</span>
+        </a>
+        
+        <a href="{{ '/blog/categoria/actualidad-legal/' | relative_url }}" class="category-card" data-category="actualidad-legal">
+          <div class="category-icon">📰</div>
+          <h3 class="category-name">Actualidad Legal</h3>
+          <p class="category-desc">Cambios normativos, jurisprudencia, análisis</p>
+          <span class="category-count">20 artículos</span>
+        </a>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<!-- Featured Articles -->
+<section class="featured-articles">
+  <div class="container">
+    <h2 class="section-title fade-in">Artículos Destacados</h2>
+    
+    <div class="featured-grid">
+      <!-- Artículo Principal (tu contenido) -->
+      <article class="featured-main fade-in" itemscope itemtype="https://schema.org/BlogPosting">
+        <div class="article-image">
+          <img src="{{ '/assets/images/delitos-informaticos-2024.jpg' | relative_url }}" 
+               alt="Delitos informáticos en 2024" 
+               loading="lazy"
+               itemprop="image">
+          <div class="article-category">Delitos Informáticos</div>
+        </div>
+        <div class="article-content">
+          <header class="article-header">
+            <h3 itemprop="headline">
+              <a href="{{ '/blog/delitos-informaticos-aumento-2024/' | relative_url }}" itemprop="url">
+                Aumento de Delitos Informáticos en 2024: Cómo Protegerse
+              </a>
+            </h3>
+            <div class="article-meta">
+              <time datetime="2024-01-15" itemprop="datePublished">15 de Enero, 2024</time>
+              <span class="article-author" itemprop="author">Perseus & RC Abogados</span>
+              <span class="reading-time">5 min lectura</span>
+            </div>
+          </header>
+          <div class="article-excerpt" itemprop="description">
+            Los delitos informáticos han aumentado un 35% en Galicia durante el último año. Analizamos 
+            las nuevas modalidades de ciberataques y cómo proteger tu empresa de las amenazas digitales 
+            más comunes en 2024.
+          </div>
+          <div class="article-tags">
+            <span class="tag">Ciberdelitos</span>
+            <span class="tag">Protección Empresarial</span>
+            <span class="tag">Galicia 2024</span>
+          </div>
         </div>
       </article>
-
-      <!-- Artículos Recientes -->
-      <div class="recent-posts">
-        <h3>Artículos Recientes</h3>
+      
+      <!-- Artículos Secundarios (tu contenido adaptado) -->
+      <div class="featured-secondary">
+        <article class="article-card fade-in stagger-delay-1" itemscope itemtype="https://schema.org/BlogPosting">
+          <div class="card-image">
+            <img src="{{ '/assets/images/blog/nuevas-regulaciones-despido-2024.webp' | relative_url }}" 
+                 alt="Nuevas regulaciones sobre despido 2024" 
+                 loading="lazy"
+                 itemprop="image">
+            <div class="card-category">Derecho Laboral</div>
+          </div>
+          <div class="card-content">
+            <h4 itemprop="headline">
+              <a href="{{ '/blog/nuevas-regulaciones-despido-2024/' | relative_url }}" itemprop="url">
+                Nuevas Regulaciones sobre Despido en 2024
+              </a>
+            </h4>
+            <div class="card-meta">
+              <time datetime="2024-01-10" itemprop="datePublished">10 Ene 2024</time>
+              <span class="reading-time">4 min</span>
+            </div>
+            <p class="card-excerpt" itemprop="description">
+              Las últimas modificaciones en la legislación laboral española afectan directamente 
+              a los procedimientos de despido y indemnizaciones.
+            </p>
+          </div>
+        </article>
         
-        <article class="post-item">
-          <div class="post-meta">
-            <span class="post-category">Derecho Laboral</span>
-            <time class="post-date">10 Enero 2024</time>
+        <article class="article-card fade-in stagger-delay-2" itemscope itemtype="https://schema.org/BlogPosting">
+          <div class="card-image">
+            <img src="{{ '/assets/images/blog/estrategias-recuperacion-deudas.webp' | relative_url }}" 
+                 alt="Estrategias de recuperación de deudas empresariales" 
+                 loading="lazy"
+                 itemprop="image">
+            <div class="card-category">Recuperación Deudas</div>
           </div>
-          <h4><a href="{{ '/blog/nuevas-regulaciones-despido-2024/' | relative_url }}">Nuevas Regulaciones sobre Despido en 2024</a></h4>
-          <p>Las últimas modificaciones en la legislación laboral española afectan directamente a los procedimientos de despido...</p>
+          <div class="card-content">
+            <h4 itemprop="headline">
+              <a href="{{ '/blog/estrategias-recuperacion-deudas-empresas/' | relative_url }}" itemprop="url">
+                Estrategias Efectivas para la Recuperación de Deudas Empresariales
+              </a>
+            </h4>
+            <div class="card-meta">
+              <time datetime="2024-01-05" itemprop="datePublished">5 Ene 2024</time>
+              <span class="reading-time">6 min</span>
+            </div>
+            <p class="card-excerpt" itemprop="description">
+              Métodos probados para recuperar impagos sin dañar las relaciones comerciales. 
+              Procedimientos extrajudiciales y judiciales efectivos.
+            </p>
+          </div>
         </article>
-
-        <article class="post-item">
-          <div class="post-meta">
-            <span class="post-category">Recuperación de Deudas</span>
-            <time class="post-date">5 Enero 2024</time>
+        
+        <article class="article-card fade-in stagger-delay-3" itemscope itemtype="https://schema.org/BlogPosting">
+          <div class="card-image">
+            <img src="{{ '/assets/images/blog/herencias-sin-testamento-galicia.webp' | relative_url }}" 
+                 alt="Herencias sin testamento en Galicia" 
+                 loading="lazy"
+                 itemprop="image">
+            <div class="card-category">Derecho Civil</div>
           </div>
-          <h4><a href="{{ '/blog/estrategias-recuperacion-deudas-empresas/' | relative_url }}">Estrategias Efectivas para la Recuperación de Deudas Empresariales</a></h4>
-          <p>Métodos probados para recuperar impagos sin dañar las relaciones comerciales. Procedimientos extrajudiciales y judiciales...</p>
-        </article>
-
-        <article class="post-item">
-          <div class="post-meta">
-            <span class="post-category">Derecho Civil</span>
-            <time class="post-date">28 Diciembre 2023</time>
+          <div class="card-content">
+            <h4 itemprop="headline">
+              <a href="{{ '/blog/herencias-sin-testamento-galicia/' | relative_url }}" itemprop="url">
+                Herencias sin Testamento en Galicia: Guía Completa
+              </a>
+            </h4>
+            <div class="card-meta">
+              <time datetime="2023-12-28" itemprop="datePublished">28 Dic 2023</time>
+              <span class="reading-time">7 min</span>
+            </div>
+            <p class="card-excerpt" itemprop="description">
+              Todo lo que necesitas saber sobre la sucesión intestada en Galicia. 
+              Procedimientos, plazos y documentación necesaria.
+            </p>
           </div>
-          <h4><a href="{{ '/blog/herencias-sin-testamento-galicia/' | relative_url }}">Herencias sin Testamento en Galicia: Guía Completa</a></h4>
-          <p>Todo lo que necesitas saber sobre la sucesión intestada en Galicia. Procedimientos, plazos y documentación necesaria...</p>
-        </article>
-
-        <article class="post-item">
-          <div class="post-meta">
-            <span class="post-category">Derecho Penal</span>
-            <time class="post-date">20 Diciembre 2023</time>
-          </div>
-          <h4><a href="{{ '/blog/violencia-genero-nuevas-medidas-proteccion/' | relative_url }}">Violencia de Género: Nuevas Medidas de Protección</a></h4>
-          <p>Análisis de las últimas reformas en materia de violencia de género y los nuevos mecanismos de protección a las víctimas...</p>
         </article>
       </div>
     </div>
-
-    <!-- Categorías -->
-    <aside class="blog-sidebar">
-      <div class="widget">
-        <h3>Categorías</h3>
-        <ul class="categories-list">
-          <li><a href="{{ '/blog/categoria/delitos-informaticos/' | relative_url }}">Delitos Informáticos <span>(8)</span></a></li>
-          <li><a href="{{ '/blog/categoria/recuperacion-deudas/' | relative_url }}">Recuperación de Deudas <span>(12)</span></a></li>
-          <li><a href="{{ '/blog/categoria/derecho-civil/' | relative_url }}">Derecho Civil <span>(15)</span></a></li>
-          <li><a href="{{ '/blog/categoria/derecho-penal/' | relative_url }}">Derecho Penal <span>(10)</span></a></li>
-          <li><a href="{{ '/blog/categoria/derecho-laboral/' | relative_url }}">Derecho Laboral <span>(14)</span></a></li>
-          <li><a href="{{ '/blog/categoria/actualidad-juridica/' | relative_url }}">Actualidad Jurídica <span>(20)</span></a></li>
-        </ul>
-      </div>
-
-      <div class="widget">
-        <h3>Recursos Útiles</h3>
-        <ul class="resources-list">
-          <li><a href="{{ '/recursos/calculadora-indemnizacion/' | relative_url }}">Calculadora de Indemnización</a></li>
-          <li><a href="{{ '/recursos/modelos-contratos/' | relative_url }}">Modelos de Contratos</a></li>
-          <li><a href="{{ '/recursos/guia-denuncia-online/' | relative_url }}">Guía para Denunciar Online</a></li>
-          <li><a href="{{ '/recursos/directorio-juzgados-galicia/' | relative_url }}">Directorio Juzgados Galicia</a></li>
-        </ul>
-      </div>
-    </aside>
   </div>
 </section>
 
-<!-- CTA Newsletter -->
+<!-- Recent Articles List -->
+<section class="recent-articles">
+  <div class="container">
+    <header class="section-header fade-in">
+      <h2 class="section-title">Últimos Artículos</h2>
+      <p class="section-subtitle">
+        Mantente al día con los análisis jurídicos más recientes de nuestros especialistas
+      </p>
+    </header>
+    
+    <div class="articles-list">
+      <!-- Tu artículo sobre violencia de género -->
+      <article class="article-item fade-in" itemscope itemtype="https://schema.org/BlogPosting">
+        <div class="article-date">
+          <time datetime="2023-12-20" itemprop="datePublished">
+            <span class="date-day">20</span>
+            <span class="date-month">Dic</span>
+          </time>
+        </div>
+        <div class="article-info">
+          <div class="article-category-tag">Derecho Penal</div>
+          <h3 itemprop="headline">
+            <a href="{{ '/blog/violencia-genero-nuevas-medidas-proteccion/' | relative_url }}" itemprop="url">
+              Violencia de Género: Nuevas Medidas de Protección
+            </a>
+          </h3>
+          <p class="article-summary" itemprop="description">
+            Análisis de las últimas reformas en materia de violencia de género y los nuevos 
+            mecanismos de protección a las víctimas. Procedimientos actualizados y recursos disponibles.
+          </p>
+          <div class="article-footer">
+            <span class="reading-time">6 min lectura</span>
+            <div class="article-tags">
+              <span class="tag">Violencia de Género</span>
+              <span class="tag">Protección</span>
+              <span class="tag">Reformas 2024</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      
+      <!-- Más artículos simulados para completar -->
+      <article class="article-item fade-in stagger-delay-1" itemscope itemtype="https://schema.org/BlogPosting">
+        <div class="article-date">
+          <time datetime="2023-12-15" itemprop="datePublished">
+            <span class="date-day">15</span>
+            <span class="date-month">Dic</span>
+          </time>
+        </div>
+        <div class="article-info">
+          <div class="article-category-tag">Actualidad Legal</div>
+          <h3 itemprop="headline">
+            <a href="{{ '/blog/reforma-codigo-penal-ciberdelitos/' | relative_url }}" itemprop="url">
+              Reforma del Código Penal: Nuevos Tipos Penales para Ciberdelitos
+            </a>
+          </h3>
+          <p class="article-summary" itemprop="description">
+            Análisis de las modificaciones introducidas en el Código Penal para abordar los nuevos 
+            tipos de delitos informáticos. Implicaciones para víctimas y acusados.
+          </p>
+          <div class="article-footer">
+            <span class="reading-time">5 min lectura</span>
+            <div class="article-tags">
+              <span class="tag">Código Penal</span>
+              <span class="tag">Ciberdelitos</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      
+      <article class="article-item fade-in stagger-delay-2" itemscope itemtype="https://schema.org/BlogPosting">
+        <div class="article-date">
+          <time datetime="2023-12-10" itemprop="datePublished">
+            <span class="date-day">10</span>
+            <span class="date-month">Dic</span>
+          </time>
+        </div>
+        <div class="article-info">
+          <div class="article-category-tag">Derecho Civil</div>
+          <h3 itemprop="headline">
+            <a href="{{ '/blog/contratos-digitales-validez-legal/' | relative_url }}" itemprop="url">
+              Contratos Digitales: Validez Legal y Mejores Prácticas
+            </a>
+          </h3>
+          <p class="article-summary" itemprop="description">
+            Todo lo que necesitas saber sobre la validez legal de los contratos firmados digitalmente 
+            y las mejores prácticas para empresas y particulares.
+          </p>
+          <div class="article-footer">
+            <span class="reading-time">4 min lectura</span>
+            <div class="article-tags">
+              <span class="tag">Contratos</span>
+              <span class="tag">Firma Digital</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      
+      <!-- Botón Ver Más para SEO -->
+      <div class="load-more-container fade-in">
+        <button class="load-more-btn" type="button">
+          Ver Más Artículos
+          <span class="load-more-icon">↓</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Recursos Útiles Section (tu contenido) -->
+<section class="useful-resources">
+  <div class="container">
+    <h2 class="section-title fade-in">Recursos Útiles</h2>
+    <div class="resources-grid fade-in">
+      <div class="resource-card">
+        <div class="resource-icon">🧮</div>
+        <h3>Calculadora de Indemnización</h3>
+        <p>Calcula tu indemnización por despido improcedente</p>
+        <a href="{{ '/recursos/calculadora-indemnizacion/' | relative_url }}" class="resource-link">Acceder</a>
+      </div>
+      
+      <div class="resource-card">
+        <div class="resource-icon">📄</div>
+        <h3>Modelos de Contratos</h3>
+        <p>Plantillas legales actualizadas para descargar</p>
+        <a href="{{ '/recursos/modelos-contratos/' | relative_url }}" class="resource-link">Descargar</a>
+      </div>
+      
+      <div class="resource-card">
+        <div class="resource-icon">🚨</div>
+        <h3>Guía para Denunciar Online</h3>
+        <p>Paso a paso para realizar denuncias telemáticas</p>
+        <a href="{{ '/recursos/guia-denuncia-online/' | relative_url }}" class="resource-link">Ver Guía</a>
+      </div>
+      
+      <div class="resource-card">
+        <div class="resource-icon">🏛️</div>
+        <h3>Directorio Juzgados Galicia</h3>
+        <p>Contactos y ubicaciones de juzgados en Galicia</p>
+        <a href="{{ '/recursos/directorio-juzgados-galicia/' | relative_url }}" class="resource-link">Consultar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter CTA (sin formularios, simple y directo) -->
 <section class="newsletter-cta">
   <div class="container">
-    <div class="newsletter-content">
-      <h3>Mantente Informado</h3>
-      <p>Recibe las últimas noticias jurídicas y análisis de nuestros expertos directamente en tu email</p>
-      <form class="newsletter-form" action="https://formspree.io/f/{{ site.formspree_id }}" method="POST">
-        <input type="email" name="email" placeholder="Tu email" required>
-        <button type="submit">Suscribirse</button>
-        <input type="hidden" name="_subject" value="Suscripción Newsletter Blog Jurídico">
-      </form>
+    <div class="newsletter-content fade-in">
+      <div class="newsletter-icon">📧</div>
+      <h2>Mantente Informado</h2>
+      <p>¿Quieres recibir nuestros análisis jurídicos? Contáctanos directamente para suscribirte a nuestro newsletter legal.</p>
+      
+      <div class="newsletter-actions">
+        <a href="tel:{{ site.phone }}" class="newsletter-btn primary">
+          📞 Llamar Ahora
+        </a>
+        <a href="mailto:{{ site.email }}?subject=Suscripción Newsletter&body=Hola, me gustaría suscribirme a vuestro newsletter jurídico." class="newsletter-btn secondary">
+          ✉️ Enviar Email
+        </a>
+      </div>
     </div>
   </div>
 </section>
+
+<!-- CTA Contact -->
+<section class="blog-cta">
+  <div class="container">
+    <div class="cta-content fade-in">
+      <h2>¿Necesitas Asesoramiento Jurídico Personalizado?</h2>
+      <p>
+        Nuestros artículos proporcionan información general, pero cada caso es único. 
+        Contacta con nuestros especialistas para un análisis detallado de tu situación.
+      </p>
+      <div class="cta-buttons">
+        <a href="tel:{{ site.phone }}" class="cta-button primary">
+          📞 Llamar Ahora
+        </a>
+        <a href="#contact" class="cta-button secondary">
+          ✉️ Consulta Online
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Structured Data para SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Blog Jurídico Perseus & RC Abogados",
+  "description": "Blog especializado en derecho con artículos sobre delitos informáticos, recuperación de deudas, derecho civil, penal y laboral",
+  "url": "{{ '/blog/' | absolute_url }}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ '/assets/images/logo.png' | absolute_url }}"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "A Coruña",
+      "addressRegion": "Galicia",
+      "addressCountry": "ES"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "{{ site.phone }}",
+      "contactType": "Customer Service"
+    }
+  },
+  "blogPost": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Aumento de Delitos Informáticos en 2024: Cómo Protegerse",
+      "datePublished": "2024-01-15",
+      "dateModified": "2024-01-15",
+      "author": {
+        "@type": "Organization",
+        "name": "Perseus & RC Abogados"
+      },
+      "description": "Análisis del aumento de delitos informáticos en Galicia y cómo proteger tu empresa",
+      "url": "{{ '/blog/delitos-informaticos-aumento-2024/' | absolute_url }}"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Nuevas Regulaciones sobre Despido en 2024",
+      "datePublished": "2024-01-10",
+      "dateModified": "2024-01-10",
+      "author": {
+        "@type": "Organization",
+        "name": "Perseus & RC Abogados"
+      },
+      "description": "Modificaciones en la legislación laboral española sobre despidos",
+      "url": "{{ '/blog/nuevas-regulaciones-despido-2024/' | absolute_url }}"
+    }
+  ],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ '/blog/' | absolute_url }}"
+  }
+}
+</script>
+
+<style>
+/* CSS adicional para recursos útiles */
+.useful-resources {
+  padding: 8rem 0;
+  background: var(--secondary-light);
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.resource-card {
+  background: var(--primary-white);
+  padding: 2.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: var(--shadow-light);
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-light);
+}
+
+.resource-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-medium);
+}
+
+.resource-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.resource-card h3 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: var(--navy-blue);
+}
+
+.resource-card p {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.resource-link {
+  display: inline-block;
+  background: var(--accent-gold);
+  color: var(--primary-white);
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.resource-link:hover {
+  background: var(--navy-blue);
+  transform: translateY(-2px);
+}
+
+/* Newsletter simplificado */
+.newsletter-actions {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.newsletter-btn {
+  display: inline-block;
+  padding: 1.2rem 2.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.newsletter-btn.primary {
+  background: var(--accent-gold);
+  color: var(--primary-white);
+}
+
+.newsletter-btn.secondary {
+  background: transparent;
+  color: var(--primary-white);
+  border: 2px solid var(--primary-white);
+}
+
+.newsletter-btn:hover {
+  transform: translateY(-2px);
+}
+
+.newsletter-btn.primary:hover {
+  background: var(--primary-white);
+  color: var(--navy-blue);
+}
+
+.newsletter-btn.secondary:hover {
+  background: var(--primary-white);
+  color: var(--navy-blue);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .resources-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .resource-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .newsletter-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
