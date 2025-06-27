@@ -11,6 +11,9 @@ og_type: "blog"
 schema_type: "Blog"
 ---
 
+<!-- CSS específico del blog -->
+<link rel="stylesheet" href="{{ '/assets/css/blog.css' | relative_url }}" media="screen">
+
 <!-- Breadcrumbs para SEO -->
 <nav class="breadcrumbs" aria-label="Breadcrumb">
   <div class="container">
@@ -120,7 +123,7 @@ schema_type: "Blog"
     <h2 class="section-title fade-in">Artículos Destacados</h2>
     
     <div class="featured-grid">
-      <!-- Artículo Principal (tu contenido) -->
+      <!-- Artículo Principal -->
       <article class="featured-main fade-in" itemscope itemtype="https://schema.org/BlogPosting">
         <div class="article-image">
           <img src="{{ '/assets/images/delitos-informaticos-2024.jpg' | relative_url }}" 
@@ -155,7 +158,7 @@ schema_type: "Blog"
         </div>
       </article>
       
-      <!-- Artículos Secundarios (tu contenido adaptado) -->
+      <!-- Artículos Secundarios -->
       <div class="featured-secondary">
         <article class="article-card fade-in stagger-delay-1" itemscope itemtype="https://schema.org/BlogPosting">
           <div class="card-image">
@@ -247,7 +250,7 @@ schema_type: "Blog"
     </header>
     
     <div class="articles-list">
-      <!-- Tu artículo sobre violencia de género -->
+      <!-- Artículo sobre violencia de género -->
       <article class="article-item fade-in" itemscope itemtype="https://schema.org/BlogPosting">
         <div class="article-date">
           <time datetime="2023-12-20" itemprop="datePublished">
@@ -277,7 +280,7 @@ schema_type: "Blog"
         </div>
       </article>
       
-      <!-- Más artículos simulados para completar -->
+      <!-- Más artículos -->
       <article class="article-item fade-in stagger-delay-1" itemscope itemtype="https://schema.org/BlogPosting">
         <div class="article-date">
           <time datetime="2023-12-15" itemprop="datePublished">
@@ -345,7 +348,7 @@ schema_type: "Blog"
   </div>
 </section>
 
-<!-- Recursos Útiles Section (tu contenido) -->
+<!-- Recursos Útiles Section -->
 <section class="useful-resources">
   <div class="container">
     <h2 class="section-title fade-in">Recursos Útiles</h2>
@@ -381,7 +384,7 @@ schema_type: "Blog"
   </div>
 </section>
 
-<!-- Newsletter CTA (sin formularios, simple y directo) -->
+<!-- Newsletter CTA -->
 <section class="newsletter-cta">
   <div class="container">
     <div class="newsletter-content fade-in">
@@ -481,132 +484,3 @@ schema_type: "Blog"
   }
 }
 </script>
-
-<style>
-/* CSS adicional para recursos útiles */
-.useful-resources {
-  padding: 8rem 0;
-  background: var(--secondary-light);
-}
-
-.resources-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 4rem;
-}
-
-.resource-card {
-  background: var(--primary-white);
-  padding: 2.5rem;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: var(--shadow-light);
-  transition: all 0.3s ease;
-  border: 1px solid var(--border-light);
-}
-
-.resource-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-medium);
-}
-
-.resource-icon {
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-}
-
-.resource-card h3 {
-  font-size: 1.3rem;
-  font-weight: 300;
-  margin-bottom: 1rem;
-  color: var(--navy-blue);
-}
-
-.resource-card p {
-  color: var(--text-secondary);
-  margin-bottom: 2rem;
-  line-height: 1.6;
-}
-
-.resource-link {
-  display: inline-block;
-  background: var(--accent-gold);
-  color: var(--primary-white);
-  padding: 0.8rem 2rem;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 0.9rem;
-}
-
-.resource-link:hover {
-  background: var(--navy-blue);
-  transform: translateY(-2px);
-}
-
-/* Newsletter simplificado */
-.newsletter-actions {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.newsletter-btn {
-  display: inline-block;
-  padding: 1.2rem 2.5rem;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 0.9rem;
-}
-
-.newsletter-btn.primary {
-  background: var(--accent-gold);
-  color: var(--primary-white);
-}
-
-.newsletter-btn.secondary {
-  background: transparent;
-  color: var(--primary-white);
-  border: 2px solid var(--primary-white);
-}
-
-.newsletter-btn:hover {
-  transform: translateY(-2px);
-}
-
-.newsletter-btn.primary:hover {
-  background: var(--primary-white);
-  color: var(--navy-blue);
-}
-
-.newsletter-btn.secondary:hover {
-  background: var(--primary-white);
-  color: var(--navy-blue);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .resources-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  
-  .resource-card {
-    padding: 2rem 1.5rem;
-  }
-  
-  .newsletter-actions {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-</style>
