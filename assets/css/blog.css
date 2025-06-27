@@ -643,84 +643,6 @@
 }
 
 /* =================================================================
-   NEWSLETTER CTA
-   ================================================================= */
-.newsletter-cta {
-  padding: 5rem 0;
-  background: linear-gradient(135deg, var(--navy-blue) 0%, #2d3748 100%);
-  color: var(--primary-white);
-  text-align: center;
-}
-
-.newsletter-content {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.newsletter-icon {
-  font-size: 4rem;
-  margin-bottom: 2rem;
-  display: block;
-}
-
-.newsletter-cta h2 {
-  font-size: 2.2rem;
-  font-weight: 300;
-  margin-bottom: 1.5rem;
-}
-
-.newsletter-cta p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 3rem;
-  opacity: 0.9;
-}
-
-.newsletter-actions {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.newsletter-btn {
-  display: inline-block;
-  padding: 1.2rem 2.5rem;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: var(--transition-base);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 0.9rem;
-}
-
-.newsletter-btn.primary {
-  background: var(--accent-gold);
-  color: var(--primary-white);
-}
-
-.newsletter-btn.secondary {
-  background: transparent;
-  color: var(--primary-white);
-  border: 2px solid var(--primary-white);
-}
-
-.newsletter-btn:hover {
-  transform: translateY(-2px);
-}
-
-.newsletter-btn.primary:hover {
-  background: var(--primary-white);
-  color: var(--navy-blue);
-}
-
-.newsletter-btn.secondary:hover {
-  background: var(--primary-white);
-  color: var(--navy-blue);
-}
-
-/* =================================================================
    BLOG CTA
    ================================================================= */
 .blog-cta {
@@ -926,7 +848,6 @@
    ================================================================= */
 @media print {
   .blog-search,
-  .newsletter-cta,
   .blog-cta,
   .useful-resources {
     display: none;
