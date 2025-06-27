@@ -91,6 +91,8 @@
   line-height: 1.6;
   margin-bottom: 3rem;
   opacity: 0.9;
+  word-break: keep-all;
+  hyphens: none;
 }
 
 /* Search Box */
