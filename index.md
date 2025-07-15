@@ -8,7 +8,7 @@ keywords: "abogados A Coruña, especialistas delitos informáticos, recuperació
 <!-- Hero Section -->
 <section class="hero" id="hero">
   <div class="hero-content">
-    <div class="hero-subtitle">Despacho de Abogados A Coruña</div>
+    <div class="hero-subtitle">Despacho de Abogados en A Coruña</div>
     <h1>Perseus & RC<br>Abogados</h1>
     <p class="hero-description">
       Combinamos la experiencia jurídica con estrategias especializadas. Nuestro enfoque aprovecha el conocimiento 
