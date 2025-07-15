@@ -41,6 +41,12 @@ keywords: "abogados A Coruña, especialistas delitos informáticos, recuperació
           de especialistas experimentados para identificar y aprovechar oportunidades que maximicen el 
           valor para nuestros clientes.
         </p>
+        <div class="about-cta">
+          <a href="/about" class="about-link" aria-label="Conoce más sobre nuestro equipo">
+            <span class="link-text">Conoce a nuestro equipo</span>
+            <span class="link-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
