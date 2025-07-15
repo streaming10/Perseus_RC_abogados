@@ -39,7 +39,7 @@ permalink: /about/
           Licenciada en Derecho por la Universidad de A Coruña y Máster en 
           Derecho de Empresa. Colegiada en el Ilustre Colegio de Abogados de A Coruña.
         </p>
-        <a href="#" style="color: var(--accent-gold); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;">
+        <a href="https://www.linkedin.com/in/ana-m%C2%AA-reza-corti%C3%B1as-72107570" style="color: var(--accent-gold); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;">
           <span>LinkedIn</span>
           <span>→</span>
         </a>
@@ -59,7 +59,7 @@ permalink: /about/
           Licenciado en Derecho por la Universidad de Sevilla y especializado en delitos informáticos.
           Miembro activo del Ilustre Colegio de Abogados de A Coruña.
         </p>
-        <a href="#" style="color: var(--accent-gold); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;">
+        <a href="https://www.linkedin.com/in/luisjuradocano/" style="color: var(--accent-gold); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;">
           <span>LinkedIn</span>
           <span>→</span>
         </a>
