@@ -42,7 +42,7 @@ keywords: "abogados A Coruña, especialistas delitos informáticos, recuperació
           valor para nuestros clientes.
         </p>
         <div class="about-cta">
-          <a href="/about" class="about-link" aria-label="Conoce más sobre nuestro equipo">
+          <a href="/Perseus_RC_abogados/about" class="about-link" aria-label="Conoce más sobre nuestro equipo">
             <span class="link-text">Conoce a nuestro equipo</span>
             <span class="link-arrow" aria-hidden="true">→</span>
           </a>
