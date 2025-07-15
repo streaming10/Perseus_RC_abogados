@@ -146,6 +146,74 @@ body.menu-open {
   line-height: 1.8;
 }
 
+/* About Section Link - Añadir después de .about-text */
+.about-cta {
+  margin-top: 2.5rem;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out 0.4s forwards;
+}
+
+.about-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--accent-gold);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  position: relative;
+  padding-bottom: 2px;
+  text-transform: uppercase;
+}
+
+.about-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--accent-gold);
+  transition: width 0.3s ease;
+}
+
+.about-link:hover::after {
+  width: calc(100% - 2rem); /* No incluye la flecha */
+}
+
+.about-link .link-text {
+  transition: transform 0.3s ease;
+}
+
+.about-link .link-arrow {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  font-weight: 200;
+}
+
+.about-link:hover {
+  color: var(--navy-blue);
+}
+
+.about-link:hover .link-arrow {
+  transform: translateX(5px);
+}
+
+/* Animación fadeInUp para about-cta */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Services Section */
 .services {
   padding: 10rem 0;
@@ -635,6 +703,16 @@ body.menu-open {
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 4rem;
+  }
+
+  /* Añadir dentro de @media (max-width: 768px) */
+  .about-cta {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .about-link {
+    font-size: 1rem;
   }
 
   .services h2 {
