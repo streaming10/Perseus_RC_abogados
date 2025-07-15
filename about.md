@@ -36,7 +36,7 @@ permalink: /about/
         <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 1px;">Área Civil y Empresa</p>
         <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 2rem;">
           Especialista en derecho civil y empresarial con más de 15 años de experiencia. 
-          Licenciada en Derecho por la Universidad de Santiago de Compostela y Máster en 
+          Licenciada en Derecho por la Universidad de A Coruña y Máster en 
           Derecho de Empresa. Colegiada en el Ilustre Colegio de Abogados de A Coruña.
         </p>
         <a href="#" style="color: var(--accent-gold); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;">
@@ -55,8 +55,8 @@ permalink: /about/
         <h3 style="font-size: 1.1rem; color: var(--accent-gold); font-weight: 300; margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 2px;">Socio Director</h3>
         <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 1px;">Área Penal</p>
         <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 2rem;">
-          Experto en derecho penal con amplia trayectoria en la defensa de casos complejos. 
-          Licenciado en Derecho y especializado en delitos informáticos y económicos. 
+          Experto en derecho penal con amplia trayectoria en la defensa de casos complejos.
+          Licenciado en Derecho por la Universidad de Sevilla y especializado en delitos informáticos.
           Miembro activo del Ilustre Colegio de Abogados de A Coruña.
         </p>
         <a href="#" style="color: var(--accent-gold); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;">
@@ -93,7 +93,7 @@ permalink: /about/
         <h3 style="color: var(--navy-blue); font-weight: 300; margin-bottom: 1rem;">Responsabilidad Social</h3>
         <p style="color: var(--text-secondary); line-height: 1.8;">
           Participamos activamente en la comunidad de A Coruña, colaborando con diversas 
-          iniciativas sociales y ofreciendo asesoramiento pro bono cuando es necesario.
+          iniciativas sociales y ofreciendo asesoramiento *pro bono* cuando es necesario.
         </p>
       </div>
     </div>
