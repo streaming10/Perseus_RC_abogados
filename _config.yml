@@ -3,8 +3,8 @@ title: "Perseus & RC Abogados"
 description: "Despacho de abogados especializado en A Coruña. Expertos en delitos informáticos, recuperación de deudas, derecho civil, penal y laboral."
 
 # IMPORTANTE: Configuración correcta para tu repositorio
-baseurl: "/Perseus_RC_abogados" # Subpath del sitio
-url: "https://streaming10.github.io" # URL base del sitio
+baseurl: "" # Vacío para dominio principal
+url: "https://perseusyrcabogados.com" # URL base del sitio
 
 # IMPORTANTE: Desactivar tema por defecto para evitar conflictos
 theme: null
