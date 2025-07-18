@@ -167,7 +167,7 @@ meta:
 pwa:
   name: "Perseus & RC Abogados"
   short_name: "Perseus RC"
-  description: "Especialistas en derecho en A Coruña"
+  description: "Abogados en A Coruña"
   theme_color: "#1a2332"
   background_color: "#ffffff"
   display: "standalone"
