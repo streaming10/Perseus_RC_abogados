@@ -3,7 +3,7 @@ layout: default
 title: "Nuestro Equipo | Perseus & RC Abogados"
 description: "Conoce al equipo de profesionales de Perseus & RC Abogados. Abogados especializados en A Coruña con amplia experiencia en derecho civil, penal, laboral y delitos informáticos."
 keywords: "equipo abogados A Coruña, Ana Reza abogada, Luis Jurado abogado, despacho abogados Coruña"
-permalink: /sobre-nosotros/
+permalink: /nuestro-equipo/
 ---
 
 <!-- Team Hero Section -->
