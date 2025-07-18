@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Perseus & RC Abogados | Abogados en A Coruña"
+title: "Perseus & RC | Abogados en A Coruña"
 description: "Abogados en A Coruña especializados en delitos informáticos, recuperación de deudas y derecho civil, penal y laboral. Consulta online."
 keywords: "abogados en A Coruña, especialistas delitos informáticos, abogados delitos informáticos, recuperación deudas, derecho civil, derecho penal, derecho laboral, consulta jurídica online"
 ---
