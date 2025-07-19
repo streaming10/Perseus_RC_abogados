@@ -18,10 +18,21 @@
       
       <!-- Enlaces legales -->
       <div class="footer-legal" style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(201, 169, 106, 0.3);">
-        <p style="margin: 0; font-size: 0.9rem;">
+        <p style="margin: 0 0 1rem 0; font-size: 0.9rem;">
           <a href="{{ '/aviso-legal/' | relative_url }}" style="color: var(--accent-light-gold); text-decoration: none; margin-right: 1rem;">Aviso Legal</a>
           <a href="{{ '/politica-privacidad/' | relative_url }}" style="color: var(--accent-light-gold); text-decoration: none;">Política de Privacidad</a>
         </p>
+        
+        <!-- Enlaces externos de autoridad -->
+        <div class="footer-external" style="margin-top: 1rem; padding-top: 0.8rem; border-top: 1px solid rgba(201, 169, 106, 0.2);">
+          <p style="margin: 0; font-size: 0.85rem; color: rgba(255, 255, 255, 0.7);">
+            <strong style="color: var(--accent-light-gold);">Colegiados en:</strong>
+            <a href="https://www.icacor.es/" target="_blank" rel="noopener" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; margin-left: 0.5rem;">ICACOR</a> •
+            <a href="https://www.boe.es/" target="_blank" rel="noopener" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; margin: 0 0.5rem;">BOE</a> •
+            <a href="https://www.xunta.gal/" target="_blank" rel="noopener" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; margin-right: 0.5rem;">Xunta de Galicia</a> •
+            <a href="https://www.incibe.es/" target="_blank" rel="noopener" style="color: rgba(255, 255, 255, 0.8); text-decoration: none;">INCIBE</a>
+          </p>
+        </div>
       </div>
       
     </div>
@@ -31,7 +42,8 @@
 <!-- Estilos básicos para hover -->
 <style>
 .footer-contact a:hover,
-.footer-legal a:hover {
+.footer-legal a:hover,
+.footer-external a:hover {
   color: var(--accent-gold) !important;
   text-decoration: underline !important;
 }
@@ -49,6 +61,14 @@
   .footer-legal a {
     display: inline-block;
     margin: 0.2rem 0.5rem;
+  }
+  
+  .footer-external {
+    text-align: center;
+  }
+  
+  .footer-external p {
+    line-height: 1.8;
   }
 }
 </style>
