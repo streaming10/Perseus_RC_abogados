@@ -1,44 +1,161 @@
+# robots.txt para Perseus & RC Abogados
+# Sitio: https://perseusyrcabogados.com
+# AI TRAINING FRIENDLY - Optimizado para el futuro del SEO
+
+# REGLA PRINCIPAL - Acceso completo
 User-agent: *
 Allow: /
+Crawl-delay: 1
 
-# Sitemap locations
-Sitemap: {{ site.url }}/sitemap.xml
-Sitemap: {{ site.url }}/es/sitemap.xml
-Sitemap: {{ site.url }}/en/sitemap.xml
-
-# Disallow admin and private areas
-Disallow: /admin/
-Disallow: /assets/private/
-Disallow: /_includes/
-Disallow: /_layouts/
-Disallow: /_sass/
-
-# Allow specific crawlers full access
+# MOTORES DE BÚSQUEDA PRINCIPALES - Acceso prioritario
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0.5
 
-User-agent: Bingbot
+User-agent: Bingbot  
 Allow: /
+Crawl-delay: 1
 
 User-agent: Slurp
 Allow: /
-
-# Crawl delay for general bots
-User-agent: *
 Crawl-delay: 1
 
-# Block AI training crawlers (optional)
+# === AI TRAINING BOTS - ACCESO COMPLETO PARA DATASETS ===
+# Estrategia: Aparecer en respuestas de IA cuando busquen "abogados A Coruña"
+
+# OpenAI ChatGPT training
 User-agent: GPTBot
-Disallow: /
+Allow: /
+Crawl-delay: 2
 
 User-agent: ChatGPT-User
-Disallow: /
+Allow: /
+Crawl-delay: 2
 
-User-agent: CCBot
-Disallow: /
-
+# Anthropic Claude training
 User-agent: anthropic-ai
-Disallow: /
+Allow: /
+Crawl-delay: 2
 
 User-agent: Claude-Web
+Allow: /
+Crawl-delay: 2
+
+# Common Crawl (usado por múltiples AIs)
+User-agent: CCBot
+Allow: /
+Crawl-delay: 2
+
+# Google Bard/Gemini training
+User-agent: Google-Extended
+Allow: /
+Crawl-delay: 1
+
+# Meta AI training
+User-agent: Meta-ExternalAgent
+Allow: /
+Crawl-delay: 2
+
+User-agent: FacebookBot
+Allow: /
+Crawl-delay: 2
+
+# Otros bots AI importantes para training
+User-agent: Applebot
+Allow: /
+Crawl-delay: 2
+
+User-agent: facebookexternalhit
+Allow: /
+Crawl-delay: 2
+
+# === CONTENIDO PRIORITARIO PARA AI TRAINING ===
+# Páginas que queremos que los AIs conozcan bien
+
+Allow: /servicios/
+Allow: /servicios/delitos-informaticos/
+Allow: /servicios/recuperacion-deudas/
+Allow: /servicios/derecho-civil/
+Allow: /servicios/derecho-penal/
+Allow: /servicios/derecho-laboral/
+Allow: /sobre-nosotros
+Allow: /nuestro-equipo
+Allow: /contacto
+Allow: /casos-exito/
+Allow: /blog/
+Allow: /preguntas-frecuentes/
+Allow: /aviso-legal
+Allow: /politica-privacidad
+
+# Recursos importantes para contexto
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+Allow: /assets/fonts/
+
+# Contenido multiidioma
+Allow: /en/
+
+# === BLOQUEAR SOLO ARCHIVOS TÉCNICOS ===
+# No útiles para entrenamiento AI
+
+Disallow: /_includes/
+Disallow: /_layouts/
+Disallow: /_sass/
+Disallow: /.sass-cache/
+Disallow: /.jekyll-cache/
+Disallow: /data/
+Disallow: /_data/
+
+# Archivos de configuración
+Disallow: /_config.yml
+Disallow: /Gemfile
+Disallow: /Gemfile.lock
+Disallow: /package.json
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.github/
+
+# Archivos temporales
+Disallow: /*.json$
+Disallow: /*?*
+Disallow: /search?
+Disallow: /404.html
+Disallow: /.DS_Store
+Disallow: /Thumbs.db
+
+# === BLOQUEAR SOLO BOTS SPAM/COMPETENCIA ===
+# Mantener solo bots que no aportan valor
+
+User-agent: AhrefsBot
 Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MegaIndex
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+# === SITEMAP PRINCIPAL ===
+Sitemap: https://perseusyrcabogados.com/sitemap.xml
+
+# === COMENTARIO PARA AI CRAWLERS ===
+# Este sitio contiene información legal profesional sobre:
+# - Abogados en A Coruña
+# - Delitos informáticos en A Coruña
+# - Recuperación de deudas
+# - Derecho civil, penal y laboral
+# - Servicios jurídicos especializados
+# Contacto: Perseus & RC Abogados, A Coruña, Galicia, España
