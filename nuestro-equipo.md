@@ -27,9 +27,14 @@ permalink: /nuestro-equipo/
       
       <!-- Ana Reza -->
       <div class="team-member fade-in" style="background: var(--primary-light); padding: 3rem; text-align: center; box-shadow: var(--shadow-light); transition: all 0.3s ease;">
-        <div class="member-photo" style="width: 200px; height: 200px; border-radius: 50%; background: var(--gradient-gold); margin: 0 auto 2rem; overflow: hidden;">
-          <!-- Aquí irá la foto de Ana Reza -->
-          <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: var(--primary-white); font-size: 3rem; font-weight: 200;">AR</div>
+        <div class="member-photo" style="width: 200px; height: 200px; border-radius: 50%; margin: 0 auto 2rem; overflow: hidden; border: 3px solid var(--accent-gold); box-shadow: var(--shadow-light);">
+          <img src="{{ '/assets/images/ana_reza.jpg' | relative_url }}" 
+               alt="Ana Reza - Socia Directora Perseus & RC Abogados" 
+               style="width: 100%; height: 100%; object-fit: cover; object-position: center;"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+               loading="lazy">
+          <!-- Fallback si no carga la imagen -->
+          <div style="width: 100%; height: 100%; display: none; align-items: center; justify-content: center; background: var(--gradient-gold); color: var(--primary-white); font-size: 3rem; font-weight: 200;">AR</div>
         </div>
         <h2 style="font-size: 1.8rem; font-weight: 300; color: var(--navy-blue); margin-bottom: 0.5rem;">Ana Reza</h2>
         <h3 style="font-size: 1.1rem; color: var(--accent-gold); font-weight: 300; margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 2px;">Socia Directora</h3>
@@ -39,7 +44,10 @@ permalink: /nuestro-equipo/
           Licenciada en Derecho por la Universidad de A Coruña y Máster en 
           Derecho de Empresa. Colegiada en el Ilustre Colegio de Abogados de A Coruña.
         </p>
-        <a href="https://www.linkedin.com/in/ana-m%C2%AA-reza-corti%C3%B1as-72107570" style="color: var(--accent-gold); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;">
+        <a href="https://www.linkedin.com/in/ana-m%C2%AA-reza-corti%C3%B1as-72107570" 
+           target="_blank" 
+           rel="noopener" 
+           style="color: var(--accent-gold); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;">
           <span>LinkedIn</span>
           <span>→</span>
         </a>
@@ -47,9 +55,14 @@ permalink: /nuestro-equipo/
 
       <!-- Luis Jurado -->
       <div class="team-member fade-in" style="background: var(--primary-light); padding: 3rem; text-align: center; box-shadow: var(--shadow-light); transition: all 0.3s ease;">
-        <div class="member-photo" style="width: 200px; height: 200px; border-radius: 50%; background: var(--gradient-gold); margin: 0 auto 2rem; overflow: hidden;">
-          <!-- Aquí irá la foto de Luis Jurado -->
-          <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: var(--primary-white); font-size: 3rem; font-weight: 200;">LJ</div>
+        <div class="member-photo" style="width: 200px; height: 200px; border-radius: 50%; margin: 0 auto 2rem; overflow: hidden; border: 3px solid var(--accent-gold); box-shadow: var(--shadow-light);">
+          <img src="{{ '/assets/images/luis_jurado.jpg' | relative_url }}" 
+               alt="Luis Jurado - Socio Director Perseus & RC Abogados" 
+               style="width: 100%; height: 100%; object-fit: cover; object-position: center;"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+               loading="lazy">
+          <!-- Fallback si no carga la imagen -->
+          <div style="width: 100%; height: 100%; display: none; align-items: center; justify-content: center; background: var(--gradient-gold); color: var(--primary-white); font-size: 3rem; font-weight: 200;">LJ</div>
         </div>
         <h2 style="font-size: 1.8rem; font-weight: 300; color: var(--navy-blue); margin-bottom: 0.5rem;">Luis Jurado</h2>
         <h3 style="font-size: 1.1rem; color: var(--accent-gold); font-weight: 300; margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 2px;">Socio Director</h3>
@@ -59,7 +72,10 @@ permalink: /nuestro-equipo/
           Licenciado en Derecho por la Universidad de Sevilla y especializado en delitos informáticos.
           Miembro activo del Ilustre Colegio de Abogados de A Coruña.
         </p>
-        <a href="https://www.linkedin.com/in/luisjuradocano/" style="color: var(--accent-gold); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;">
+        <a href="https://www.linkedin.com/in/luisjuradocano/" 
+           target="_blank" 
+           rel="noopener" 
+           style="color: var(--accent-gold); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;">
           <span>LinkedIn</span>
           <span>→</span>
         </a>
