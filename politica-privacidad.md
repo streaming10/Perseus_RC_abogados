@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Política de Privacidad | Perseus & RC Abogados"
-description: "Política de privacidad y protección de datos de Perseus & RC Abogados. Información sobre el tratamiento de datos personales y derechos RGPD."
+description: "Política de privacidad minimalista de Perseus & RC Abogados. Sin cookies, sin tracking, sin logs. Solo procesamos datos que nos facilita directamente."
 keywords: "política privacidad Perseus RC, protección datos abogados, RGPD despacho abogados A Coruña"
 permalink: /politica-privacidad/
 sitemap:
@@ -27,8 +27,8 @@ canonical_url: "https://perseusyrcabogados.com/politica-privacidad/"
         Política de Privacidad
       </h1>
       <p style="font-size: 1.1rem; color: var(--text-secondary); line-height: 1.7;">
-        Perseus & RC Abogados se compromete a proteger la privacidad de nuestros clientes y usuarios, 
-        cumpliendo con el RGPD y la normativa española de protección de datos.
+        Perseus & RC Abogados garantiza máxima privacidad: <strong>no usamos cookies, no rastreamos navegación, 
+        ni recopilamos datos automáticamente</strong>. Solo procesamos información que usted nos facilita directamente.
       </p>
     </div>
   </div>
@@ -56,25 +56,16 @@ Puedes contactar con nuestro DPD en: **info@perseusyrcabogados.com**
 
 ## **2. Datos que Recopilamos**
 
-Podemos recopilar los siguientes **datos personales**:
+**IMPORTANTE:** Solo recopilamos datos cuando usted nos los facilita **directamente**. No utilizamos cookies, no rastreamos su navegación ni recopilamos datos automáticamente.
 
-### **2.1 Datos de Identificación**
+### **2.1 Datos de Identificación y Contacto**
 - Nombre y apellidos
 - DNI/NIE
 - Dirección postal
 - Teléfono y email
 - Datos profesionales
 
-### **2.2 Datos de Navegación**
-A través de los logs del servidor recopilamos:
-- Dirección IP
-- Tipo de navegador
-- Páginas visitadas
-- Tiempo de permanencia
-
-*No utilizamos cookies ni tecnologías de seguimiento.*
-
-### **2.3 Datos de Contacto y Consultas**
+### **2.2 Datos de Contacto y Consultas**
 - Información proporcionada en [formularios de contacto]({{ '/contacto/' | relative_url }})
 - Consultas sobre [delitos informáticos]({{ '/servicios/delitos-informaticos/' | relative_url }})
 - Solicitudes de [recuperación de deudas]({{ '/servicios/recuperacion-deudas/' | relative_url }})
@@ -114,7 +105,7 @@ Para comunicaciones comerciales y newsletter
 Para la prestación de servicios jurídicos contratados
 
 ### **4.3 Interés Legítimo**
-Para mejora de servicios y seguridad del sitio web
+Para la seguridad del sitio web y cumplimiento de obligaciones profesionales
 
 ### **4.4 Obligación Legal**
 Cumplimiento de normativas profesionales y legales
@@ -163,10 +154,10 @@ Implementamos medidas **técnicas y organizativas** apropiadas:
 
 - Cifrado SSL en el sitio web
 - Acceso restringido a datos
-- Copias de seguridad regulares
+- Copias de seguridad regulares  
 - Formación del personal
 - Auditorías de seguridad
-- Navegación sin cookies de seguimiento
+- Navegación completamente privada (sin tracking ni logs)
 
 ---
 
@@ -183,19 +174,35 @@ Salvo obligación legal o consentimiento expreso
 
 ---
 
-## **9. Transferencias Internacionales**
+## **9. Qué NO Recopilamos**
+
+Para garantizar máxima privacidad, **NO recopilamos**:
+
+- Cookies de ningún tipo
+- Datos de navegación (páginas visitadas, tiempo de permanencia)
+- Direcciones IP en logs
+- Información de localización
+- Datos de dispositivos
+- Historial de navegación
+- Análiticas web (Google Analytics, etc.)
+
+**Solo procesamos datos que usted nos facilita voluntariamente.**
+
+---
+
+## **10. Transferencias Internacionales**
 
 No realizamos transferencias de datos fuera del **Espacio Económico Europeo** salvo servicios técnicos con garantías adecuadas.
 
 ---
 
-## **10. Menores de Edad**
+## **11. Menores de Edad**
 
 No recopilamos intencionadamente datos de **menores de 14 años**. Si detectamos esta situación, procederemos a su eliminación inmediata.
 
 ---
 
-## **11. Actualizaciones**
+## **12. Actualizaciones**
 
 Esta política puede actualizarse. La **versión vigente** estará siempre disponible en nuestro sitio web.
 
@@ -203,7 +210,7 @@ Esta política puede actualizarse. La **versión vigente** estará siempre dispo
 
 ---
 
-## **12. Contacto**
+## **13. Contacto**
 
 Para cualquier consulta sobre esta política de privacidad:
 
