@@ -1,120 +1,213 @@
 ---
-layout: page
-title: "Aviso Legal - Perseus & RC Abogados"
-description: "Aviso legal de Perseus & RC Abogados. Información sobre responsabilidades, términos de uso y condiciones legales de nuestro sitio web."
-keywords: "aviso legal, términos uso, condiciones legales, abogados A Coruña"
+layout: default
+title: "Aviso Legal | Perseus & RC Abogados A Coruña"
+description: "Aviso legal de Perseus & RC Abogados. Información corporativa, condiciones de uso y datos legales del despacho de abogados especializado en A Coruña."
+keywords: "aviso legal Perseus RC, información legal abogados A Coruña, condiciones uso, datos corporativos despacho abogados"
 permalink: /aviso-legal/
+sitemap:
+  priority: 0.3
+  changefreq: yearly
+  lastmod: 2025-07-19
+schema_type: "LegalService"
+canonical_url: "https://perseusyrcabogados.com/aviso-legal/"
 ---
 
-# Aviso Legal
+<!-- Breadcrumbs SEO -->
+<nav class="breadcrumb" style="padding: 1rem 0; margin-top: 80px; background: var(--primary-light);">
+  <div class="container">
+    <a href="{{ '/' | relative_url }}">Inicio</a> › 
+    <span class="current">Aviso Legal</span>
+  </div>
+</nav>
 
-## 1. Datos Identificativos
+<!-- Header Section -->
+<section class="legal-header" style="padding: 4rem 0; background: var(--primary-white);">
+  <div class="container">
+    <div class="legal-intro" style="max-width: 800px; margin: 0 auto; text-align: center;">
+      <h1 style="font-size: 2.8rem; font-weight: 200; color: var(--navy-blue); margin-bottom: 1.5rem;">
+        Aviso Legal
+      </h1>
+      <p style="font-size: 1.1rem; color: var(--text-secondary); line-height: 1.7;">
+        Información legal y corporativa de Perseus & RC Abogados, despacho especializado en 
+        <a href="{{ '/servicios/delitos-informaticos/' | relative_url }}">delitos informáticos</a> y 
+        <a href="{{ '/servicios/recuperacion-deudas/' | relative_url }}">recuperación de deudas</a> en A Coruña.
+      </p>
+    </div>
+  </div>
+</section>
 
-En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico, se ponen a disposición de los usuarios los siguientes datos identificativos:
+<!-- Main Legal Content -->
+<section class="legal-content" style="padding: 3rem 0; background: var(--primary-light);">
+  <div class="container">
+    <div class="legal-text" style="max-width: 900px; margin: 0 auto; background: var(--primary-white); padding: 3rem; box-shadow: var(--shadow-light);">
 
-**Denominación Social:** Perseus & RC Abogados  
-**Domicilio:** A Coruña, Galicia, España  
-**Teléfono:** {{ site.phone }}  
-**Email:** {{ site.email }}  
-**Sitio Web:** {{ site.url }}
+## **1. Datos Identificativos del Despacho**
 
-### Datos Profesionales
-- **Número de Colegiación:** [Pendiente de asignación]
-- **Colegio Profesional:** Ilustre Colegio de Abogados de A Coruña
-- **Dirección del Colegio:** Plaza de María Pita, 12, 15001 A Coruña
-- **Normativa Profesional Aplicable:** Estatuto General de la Abogacía Española
+En cumplimiento del **artículo 10 de la Ley 34/2002**, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico, ponemos en su conocimiento los siguientes datos:
 
-## 2. Objeto del Sitio Web
+### **Denominación Social:**
+**Perseus & RC Abogados**
 
-Este aviso legal regula el uso del sitio web {{ site.url }} (en adelante, "la web"), propiedad de Perseus & RC Abogados.
+### **Titulares del Despacho:**
 
-El acceso a la web es gratuito salvo en lo relativo al coste de la conexión a través de la red de telecomunicaciones suministrada por el proveedor de acceso contratado por el usuario.
+**Ana María Reza Cortiñas**
+- **NIF:** [Número de identificación]
+- **Colegio:** Ilustre Colegio de Abogados de A Coruña (ICACOR)
+- **Número de Colegiación:** [Número de colegiada]
 
-## 3. Condiciones de Uso
+**Luis Jurado Cano**
+- **NIF:** 49040412L
+- **Colegio:** Ilustre Colegio de Abogados de A Coruña (ICACOR)
+- **Número de Colegiación:** 6317
 
-### 3.1 Aceptación de las Condiciones
-El acceso y uso de esta web atribuye la condición de usuario y implica la aceptación plena y sin reservas de todas y cada una de las disposiciones incluidas en este aviso legal.
+### **Domicilio Profesional:**
+**Calle Torreiro, 13, 3º C**  
+**15001 A Coruña, Galicia (España)**
 
-### 3.2 Uso Adecuado
-El usuario se compromete a:
-- Hacer un uso adecuado y lícito de la web
-- No emplear la web para actividades contrarias a la ley, la moral o el orden público
-- No introducir virus informáticos o realizar acciones que puedan alterar, dañar o inutilizar los sistemas
-- No intentar acceder a áreas restringidas de la web
-- No realizar actividades publicitarias o de explotación comercial sin autorización
+### **Datos de Contacto:**
+- **Teléfono:** +34 677 841 007
+- **Email:** info@perseusyrcabogados.com
+- **Web:** [perseusyrcabogados.com](https://perseusyrcabogados.com)
 
-### 3.3 Contenidos
-Los contenidos de esta web tienen una finalidad meramente informativa. La información proporcionada no constituye asesoramiento legal específico y no debe ser considerada como tal sin una consulta personalizada.
+### **Información Colegial:**
+Nuestros abogados están colegiados en el [Ilustre Colegio de Abogados de A Coruña](https://www.icacor.es/), cumpliendo con todas las normativas deontológicas y profesionales aplicables al ejercicio de la abogacía en España.
 
-## 4. Responsabilidad
+---
 
-### 4.1 Información y Contenidos
-Perseus & RC Abogados se reserva el derecho a modificar cualquier tipo de información que pudiera aparecer en el sitio web, sin que exista obligación de preavisar o poner en conocimiento de los usuarios dichas obligaciones.
+## **2. Objeto y Ámbito de Aplicación**
 
-No se garantiza la exactitud, veracidad, adecuación o actualidad de los contenidos, quedando exonerado Perseus & RC Abogados de cualquier responsabilidad derivada de la utilización de los mismos.
+El presente aviso legal regula las **condiciones de uso** del sitio web **perseusyrcabogados.com**, propiedad de Perseus & RC Abogados, especializado en:
 
-### 4.2 Disponibilidad del Servicio
-Perseus & RC Abogados no garantiza la disponibilidad y continuidad del funcionamiento de la web. No se hace responsable de los daños que puedan derivarse de:
-- Interrupciones del servicio
-- Fallos técnicos, sobrecargas o errores en las comunicaciones
-- Intromisiones ilegítimas mediante el uso de programas maliciosos
+- [Delitos informáticos y cibercrimen]({{ '/servicios/delitos-informaticos/' | relative_url }})
+- [Recuperación de deudas]({{ '/servicios/recuperacion-deudas/' | relative_url }})
+- [Derecho civil]({{ '/servicios/derecho-civil/' | relative_url }})
+- [Derecho penal]({{ '/servicios/derecho-penal/' | relative_url }})
+- [Derecho laboral]({{ '/servicios/derecho-laboral/' | relative_url }})
 
-### 4.3 Enlaces a Terceros
-La web puede contener enlaces a otros sitios web. Perseus & RC Abogados no ejerce control alguno sobre dichos sitios y no se hace responsable de sus contenidos.
+El acceso y uso de este sitio web implica la **aceptación** de todas las condiciones aquí establecidas.
 
-## 5. Propiedad Intelectual e Industrial
+---
 
-### 5.1 Derechos de Propiedad
-Todos los contenidos de la web (textos, imágenes, sonidos, bases de datos, software, diseños, etc.) son propiedad de Perseus & RC Abogados o de terceros que han autorizado su uso.
+## **3. Condiciones de Uso del Sitio Web**
 
-### 5.2 Prohibición de Uso
-Queda prohibida la reproducción, distribución, comunicación pública, transformación o cualquier otra actividad que se pueda realizar con los contenidos de la web sin la autorización expresa y por escrito de Perseus & RC Abogados.
+### **3.1 Uso Autorizado**
+El usuario se compromete a utilizar el sitio web conforme a la **ley** y al presente aviso legal, absteniéndose de:
 
-### 5.3 Marcas y Nombres Comerciales
-Las marcas, nombres comerciales o signos distintivos que aparecen en la web son titularidad de Perseus & RC Abogados o de terceros autorizados.
+- Realizar actos contrarios a la ley, moral o buenas costumbres
+- Introducir virus o realizar acciones que dañen el sistema
+- Intentar acceder a datos restringidos o cuentas de otros usuarios
+- Utilizar el contenido para fines comerciales sin autorización
 
-## 6. Protección de Datos Personales
+### **3.2 Responsabilidad del Usuario**
+El usuario es responsable de la veracidad de los **datos proporcionados** a través de formularios de [contacto]({{ '/contacto/' | relative_url }}) y se compromete a mantenerlos actualizados.
 
-Para información detallada sobre el tratamiento de datos personales, consulte nuestra [Política de Privacidad]({{ '/politica-privacidad/' | relative_url }}).
+---
 
-### Información Básica sobre Protección de Datos
-- **Responsable:** Perseus & RC Abogados
-- **Finalidad:** Gestión de consultas y prestación de servicios jurídicos
-- **Legitimación:** Consentimiento del interesado
-- **Destinatarios:** No se cederán datos a terceros salvo obligación legal
-- **Derechos:** Acceso, rectificación, supresión, limitación, portabilidad y oposición
+## **4. Propiedad Intelectual e Industrial**
 
-## 7. Política de Cookies
+### **4.1 Derechos de Autor**
+Todo el **contenido** del sitio web (textos, imágenes, diseño, logotipos, código fuente) está protegido por derechos de propiedad intelectual e industrial propiedad de Perseus & RC Abogados.
 
-Este sitio web utiliza cookies para mejorar la experiencia del usuario. Para más información, consulte nuestra [Política de Cookies]({{ '/politica-cookies/' | relative_url }}).
+### **4.2 Uso Permitido**
+Se autoriza la **visualización** y descarga temporal de los contenidos únicamente para uso personal y no comercial, siempre que:
+- No se modifique el contenido
+- Se mantenga la referencia al autor
+- No se utilice para fines comerciales sin autorización expresa
 
-## 8. Ley Aplicable y Jurisdicción
+### **4.3 Marcas Registradas**
+**"Perseus & RC Abogados"** y otros distintivos del sitio web constituyen marcas registradas cuyo uso está prohibido sin autorización expresa.
 
-### 8.1 Ley Aplicable
-Este aviso legal se rige por la legislación española, específicamente:
-- Ley 34/2002, de Servicios de la Sociedad de la Información y de Comercio Electrónico
-- Reglamento (UE) 2016/679 de Protección de Datos (RGPD)
-- Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales
+---
 
-### 8.2 Jurisdicción
-Para la resolución de cualquier controversia que pudiera derivarse del acceso o uso de la web, Perseus & RC Abogados y el usuario se someten expresamente a la jurisdicción de los Juzgados y Tribunales de A Coruña, renunciando expresamente a cualquier otro fuero que pudiera corresponderles.
+## **5. Protección de Datos Personales**
 
-## 9. Modificaciones
+Para información detallada sobre el tratamiento de datos personales, consulte nuestra [Política de Privacidad]({{ '/politica-privacidad/' | relative_url }}) donde se especifican:
 
-Perseus & RC Abogados se reserva el derecho a modificar el presente aviso legal con el fin de adecuarlo a posibles cambios normativos, jurisprudenciales o de la propia web.
+- **Finalidades** del tratamiento de datos
+- **Derechos** del usuario (acceso, rectificación, supresión)
+- **Medidas de seguridad** implementadas
+- **Conservación** de la información
 
-Las modificaciones serán efectivas desde su publicación en la web. Se recomienda revisar periódicamente este aviso legal.
+---
 
-## 10. Contacto
+## **6. Limitación de Responsabilidad**
+
+### **6.1 Disponibilidad del Servicio**
+Perseus & RC Abogados no garantiza la **disponibilidad** ininterrumpida del sitio web ni la ausencia de errores, aunque se compromete a solucionarlos con la mayor brevedad posible.
+
+### **6.2 Contenido de Terceros**
+No nos responsabilizamos del contenido de **sitios web externos** enlazados desde nuestra página, siendo responsabilidad exclusiva de sus titulares.
+
+### **6.3 Información Legal General**
+La información contenida en el sitio web tiene carácter **general** y no constituye asesoramiento jurídico específico. Para consultas particulares, recomendamos [contactar directamente]({{ '/contacto/' | relative_url }}) con nuestro equipo.
+
+---
+
+## **7. Enlaces a Sitios Web de Terceros**
+
+Nuestro sitio web puede contener enlaces a:
+- [Ilustre Colegio de Abogados de A Coruña](https://www.icacor.es/)
+- [Boletín Oficial del Estado](https://www.boe.es/)
+- [Xunta de Galicia](https://www.xunta.gal/)
+
+Estos enlaces se proporcionan únicamente por **conveniencia** y no implican respaldo del contenido de dichos sitios.
+
+---
+
+## **8. Modificaciones del Aviso Legal**
+
+Perseus & RC Abogados se reserva el derecho a **modificar** el presente aviso legal en cualquier momento, siendo efectivos desde su publicación en el sitio web.
+
+**Última actualización:** 19 de julio de 2025
+
+---
+
+## **9. Legislación Aplicable y Jurisdicción**
+
+### **9.1 Legislación Aplicable**
+El presente aviso legal se rige por la **legislación española**, específicamente:
+- Ley 34/2002 de Servicios de la Sociedad de la Información
+- Reglamento General de Protección de Datos (RGPD)
+- Ley Orgánica 3/2018 de Protección de Datos Personales
+
+### **9.2 Jurisdicción Competente**
+Para cualquier controversia derivada del uso del sitio web, las partes se someten a los **Juzgados y Tribunales de A Coruña** (España), con renuncia expresa a cualquier otro fuero que pudiera corresponder.
+
+---
+
+## **10. Contacto Legal**
 
 Para cualquier consulta relacionada con este aviso legal, puede contactar con nosotros:
 
-- **Email:** {{ site.email }}
-- **Teléfono:** {{ site.phone }}
-- **Dirección:** A Coruña, Galicia, España
+**📧 Email:** info@perseusyrcabogados.com  
+**📞 Teléfono:** +34 677 841 007  
+**📍 Dirección:** Calle Torreiro, 13, 3º C, 15001 A Coruña  
 
----
+Nuestro equipo de [abogados especialistas]({{ '/nuestro-equipo/' | relative_url }}) estará encantado de resolver cualquier duda legal.
 
-**Última actualización:** {{ 'now' | date: "%d de %B de %Y" }}
+    </div>
+  </div>
+</section>
 
-**Perseus & RC Abogados** - Todos los derechos reservados
+<!-- Related Legal Pages -->
+<section class="legal-related" style="padding: 3rem 0; background: var(--primary-white);">
+  <div class="container">
+    <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+      <h2 style="font-size: 2rem; color: var(--navy-blue); margin-bottom: 2rem;">Información Legal Adicional</h2>
+      <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
+        <a href="{{ '/politica-privacidad/' | relative_url }}" style="display: block; padding: 1.5rem; background: var(--primary-light); text-decoration: none; color: var(--navy-blue); border-radius: 8px; transition: all 0.3s ease;">
+          <strong>Política de Privacidad</strong><br>
+          <small style="color: var(--text-secondary);">Protección de datos personales</small>
+        </a>
+        <a href="{{ '/contacto/' | relative_url }}" style="display: block; padding: 1.5rem; background: var(--primary-light); text-decoration: none; color: var(--navy-blue); border-radius: 8px; transition: all 0.3s ease;">
+          <strong>Contactar</strong><br>
+          <small style="color: var(--text-secondary);">Consultas legales</small>
+        </a>
+        <a href="{{ '/sobre-nosotros/' | relative_url }}" style="display: block; padding: 1.5rem; background: var(--primary-light); text-decoration: none; color: var(--navy-blue); border-radius: 8px; transition: all 0.3s ease;">
+          <strong>Sobre Nosotros</strong><br>
+          <small style="color: var(--text-secondary);">Información del despacho</small>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
