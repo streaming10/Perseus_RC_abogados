@@ -7,7 +7,7 @@ permalink: /contacto/
 lang: es
 sitemap:
   priority: 0.9
-  changefreq: yearly
+  changefreq: monthly
   lastmod: 2025-07-19
 ---
 
