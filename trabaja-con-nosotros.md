@@ -7,7 +7,7 @@ permalink: /trabaja-con-nosotros/
 lang: es
 sitemap:
   priority: 0.6
-  changefreq: monthly
+  changefreq: yearly
   lastmod: 2025-07-19
 ---
 
