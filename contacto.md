@@ -118,8 +118,8 @@ sitemap:
         </div>
 
         <div style="text-align: center;">
-          <a href="https://www.google.com/maps/search/Calle+Torreiro,+13,+15001+A+Coruña,+Galicia,+Spain" target="_blank" rel="noopener" style="display: inline-block; background: var(--accent-gold); color: var(--navy-blue); padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 25px; font-weight: 500; transition: all 0.3s ease;">
-              Abrir en Google Maps
+          <a href="https://maps.app.goo.gl/ZJgMb1dB2e63eJNe7" target="_blank" rel="noopener" style="display: inline-block; background: var(--accent-gold); color: var(--navy-blue); padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 25px; font-weight: 500; transition: all 0.3s ease;">
+               Abrir en Google Maps
           </a>
         </div>
       </div>
