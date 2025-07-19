@@ -1,45 +1,30 @@
 ---
-layout: default
-title: "Aviso Legal | Perseus & RC Abogados A Coruña"
+layout: pages
+title: "Aviso Legal"
 description: "Aviso legal de Perseus & RC Abogados. Información corporativa, condiciones de uso y datos legales del despacho de abogados especializado en A Coruña."
 keywords: "aviso legal Perseus RC, información legal abogados A Coruña, condiciones uso, datos corporativos despacho abogados"
 permalink: /aviso-legal/
+lang: es
 sitemap:
   priority: 0.3
   changefreq: yearly
   lastmod: 2025-07-19
-schema_type: "LegalService"
-canonical_url: "https://perseusyrcabogados.com/aviso-legal/"
 ---
 
-<!-- Breadcrumbs SEO -->
-<nav class="breadcrumb" style="padding: 1rem 0; margin-top: 80px; background: var(--primary-light);">
-  <div class="container">
-    <a href="{{ '/' | relative_url }}">Inicio</a> › 
-    <span class="current">Aviso Legal</span>
-  </div>
-</nav>
-
 <!-- Header Section -->
-<section class="legal-header" style="padding: 4rem 0; background: var(--primary-white);">
-  <div class="container">
-    <div class="legal-intro" style="max-width: 800px; margin: 0 auto; text-align: center;">
-      <h1 style="font-size: 2.8rem; font-weight: 200; color: var(--navy-blue); margin-bottom: 1.5rem;">
-        Aviso Legal
-      </h1>
-      <p style="font-size: 1.1rem; color: var(--text-secondary); line-height: 1.7;">
-        Información legal y corporativa de Perseus & RC Abogados, despacho especializado en 
-        <a href="{{ '/servicios/delitos-informaticos/' | relative_url }}">delitos informáticos</a> y 
-        <a href="{{ '/servicios/recuperacion-deudas/' | relative_url }}">recuperación de deudas</a> en A Coruña.
-      </p>
-    </div>
-  </div>
-</section>
+<div class="legal-header" style="padding: 2rem 0; text-align: center; margin-bottom: 2rem;">
+  <h1 style="font-size: 2.8rem; font-weight: 200; color: var(--navy-blue); margin-bottom: 1.5rem;">
+    Aviso Legal
+  </h1>
+  <p style="font-size: 1.1rem; color: var(--text-secondary); line-height: 1.7; max-width: 800px; margin: 0 auto;">
+    Información legal y corporativa de Perseus & RC Abogados, despacho especializado en 
+    <a href="{{ '/servicios/delitos-informaticos/' | relative_url }}">delitos informáticos</a> y 
+    <a href="{{ '/servicios/recuperacion-deudas/' | relative_url }}">recuperación de deudas</a> en A Coruña.
+  </p>
+</div>
 
 <!-- Main Legal Content -->
-<section class="legal-content" style="padding: 3rem 0; background: var(--primary-light);">
-  <div class="container">
-    <div class="legal-text" style="max-width: 900px; margin: 0 auto; background: var(--primary-white); padding: 3rem; box-shadow: var(--shadow-light);">
+<div class="legal-content" style="background: var(--primary-white); padding: 3rem; box-shadow: var(--shadow-light); border-radius: 8px; margin-bottom: 2rem;">
 
 ## **1. Datos Identificativos del Despacho**
 
