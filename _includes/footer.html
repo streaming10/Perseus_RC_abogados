@@ -1,204 +1,54 @@
-<!-- Footer Optimizado para UX y SEO -->
-<footer class="footer" style="background: var(--navy-blue); color: var(--primary-white); padding: 3rem 0 2rem 0;">
+<!-- Footer Mejorado - Versión Simple -->
+<footer class="footer">
   <div class="container">
     
-    <!-- Main Footer Content -->
-    <div class="footer-main" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+    <!-- Contenido principal del footer -->
+    <div class="footer-content">
+      <p>© {{ "now" | date: "%Y" }} {{ site.title }}. Despacho de Abogados en A Coruña, Galicia.</p>
+      <p>Especialistas en Delitos Informáticos, Recuperación de Deudas, Derecho Civil, Penal y Laboral.</p>
       
-      <!-- Información Corporativa -->
-      <div class="footer-section">
-        <h3 style="color: var(--accent-gold); font-size: 1.2rem; margin-bottom: 1rem; font-weight: 300;">Perseus & RC Abogados</h3>
-        <p style="line-height: 1.6; color: rgba(255, 255, 255, 0.8); margin-bottom: 1rem;">
-          Despacho especializado en A Coruña con más de 15 años de experiencia en 
-          <a href="{{ '/servicios/delitos-informaticos/' | relative_url }}" style="color: var(--accent-light-gold); text-decoration: none;">delitos informáticos</a> 
-          y <a href="{{ '/servicios/recuperacion-deudas/' | relative_url }}" style="color: var(--accent-light-gold); text-decoration: none;">recuperación de deudas</a>.
+      <!-- Datos de contacto -->
+      <div class="footer-contact" style="margin: 1.5rem 0; color: rgba(255, 255, 255, 0.9);">
+        <p style="margin: 0.3rem 0;">
+          📞 <a href="tel:+34677841007" style="color: rgba(255, 255, 255, 0.9); text-decoration: none;">+34 677 841 007</a> • 
+          ✉️ <a href="mailto:info@perseusyrcabogados.com" style="color: rgba(255, 255, 255, 0.9); text-decoration: none;">info@perseusyrcabogados.com</a>
         </p>
-        <div class="footer-contact">
-          <p style="margin: 0.5rem 0; color: rgba(255, 255, 255, 0.9);">
-            <span style="color: var(--accent-gold);">📍</span> Calle Torreiro, 13, 3º C<br>
-            <span style="margin-left: 1.2rem;">15001 A Coruña, Galicia</span>
-          </p>
-          <p style="margin: 0.5rem 0; color: rgba(255, 255, 255, 0.9);">
-            <span style="color: var(--accent-gold);">📞</span> <a href="tel:+34677841007" style="color: rgba(255, 255, 255, 0.9); text-decoration: none;">+34 677 841 007</a>
-          </p>
-          <p style="margin: 0.5rem 0; color: rgba(255, 255, 255, 0.9);">
-            <span style="color: var(--accent-gold);">✉️</span> <a href="mailto:info@perseusyrcabogados.com" style="color: rgba(255, 255, 255, 0.9); text-decoration: none;">info@perseusyrcabogados.com</a>
-          </p>
-        </div>
+        <p style="margin: 0.3rem 0;">📍 Calle Torreiro, 13, 3º C - 15001 A Coruña</p>
       </div>
-
-      <!-- Servicios Legales -->
-      <div class="footer-section">
-        <h3 style="color: var(--accent-gold); font-size: 1.2rem; margin-bottom: 1rem; font-weight: 300;">Nuestros Servicios</h3>
-        <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
-          <li style="margin-bottom: 0.5rem;">
-            <a href="{{ '/servicios/delitos-informaticos/' | relative_url }}" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: color 0.3s ease;">
-              → Delitos Informáticos
-            </a>
-          </li>
-          <li style="margin-bottom: 0.5rem;">
-            <a href="{{ '/servicios/recuperacion-deudas/' | relative_url }}" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: color 0.3s ease;">
-              → Recuperación de Deudas
-            </a>
-          </li>
-          <li style="margin-bottom: 0.5rem;">
-            <a href="{{ '/servicios/derecho-civil/' | relative_url }}" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: color 0.3s ease;">
-              → Derecho Civil
-            </a>
-          </li>
-          <li style="margin-bottom: 0.5rem;">
-            <a href="{{ '/servicios/derecho-penal/' | relative_url }}" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: color 0.3s ease;">
-              → Derecho Penal
-            </a>
-          </li>
-          <li style="margin-bottom: 0.5rem;">
-            <a href="{{ '/servicios/derecho-laboral/' | relative_url }}" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: color 0.3s ease;">
-              → Derecho Laboral
-            </a>
-          </li>
-        </ul>
+      
+      <!-- Enlaces legales -->
+      <div class="footer-legal" style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(201, 169, 106, 0.3);">
+        <p style="margin: 0; font-size: 0.9rem;">
+          <a href="{{ '/aviso-legal/' | relative_url }}" style="color: var(--accent-light-gold); text-decoration: none; margin-right: 1rem;">Aviso Legal</a>
+          <a href="{{ '/politica-privacidad/' | relative_url }}" style="color: var(--accent-light-gold); text-decoration: none;">Política de Privacidad</a>
+        </p>
       </div>
-
-      <!-- Información del Despacho -->
-      <div class="footer-section">
-        <h3 style="color: var(--accent-gold); font-size: 1.2rem; margin-bottom: 1rem; font-weight: 300;">Información</h3>
-        <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
-          <li style="margin-bottom: 0.5rem;">
-            <a href="{{ '/sobre-nosotros/' | relative_url }}" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: color 0.3s ease;">
-              → Sobre Nosotros
-            </a>
-          </li>
-          <li style="margin-bottom: 0.5rem;">
-            <a href="{{ '/nuestro-equipo/' | relative_url }}" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: color 0.3s ease;">
-              → Nuestro Equipo
-            </a>
-          </li>
-          <li style="margin-bottom: 0.5rem;">
-            <a href="{{ '/casos-exito/' | relative_url }}" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: color 0.3s ease;">
-              → Casos de Éxito
-            </a>
-          </li>
-          <li style="margin-bottom: 0.5rem;">
-            <a href="{{ '/preguntas-frecuentes/' | relative_url }}" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: color 0.3s ease;">
-              → Preguntas Frecuentes
-            </a>
-          </li>
-          <li style="margin-bottom: 0.5rem;">
-            <a href="{{ '/contacto/' | relative_url }}" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: color 0.3s ease;">
-              → Contacto
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Información Legal -->
-      <div class="footer-section">
-        <h3 style="color: var(--accent-gold); font-size: 1.2rem; margin-bottom: 1rem; font-weight: 300;">Información Legal</h3>
-        <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
-          <li style="margin-bottom: 0.5rem;">
-            <a href="{{ '/aviso-legal/' | relative_url }}" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: color 0.3s ease;">
-              → Aviso Legal
-            </a>
-          </li>
-          <li style="margin-bottom: 0.5rem;">
-            <a href="{{ '/politica-privacidad/' | relative_url }}" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: color 0.3s ease;">
-              → Política de Privacidad
-            </a>
-          </li>
-        </ul>
-        
-        <!-- Información Colegial -->
-        <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(201, 169, 106, 0.3);">
-          <p style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.7); line-height: 1.5;">
-            <strong style="color: var(--accent-light-gold);">Colegiados en:</strong><br>
-            <a href="https://www.icacor.es/" target="_blank" rel="noopener" style="color: rgba(255, 255, 255, 0.8); text-decoration: none;">
-              Ilustre Colegio de Abogados de A Coruña
-            </a>
-          </p>
-        </div>
-
-        <!-- Privacidad Destacada -->
-        <div style="margin-top: 1rem; background: rgba(201, 169, 106, 0.1); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--accent-gold);">
-          <p style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.9); margin: 0; line-height: 1.4;">
-            <strong>🔒 Navegación 100% Privada</strong><br>
-            Sin cookies • Sin tracking • Sin logs
-          </p>
-        </div>
-      </div>
-
+      
     </div>
-
-    <!-- Copyright y Legal Bottom -->
-    <div class="footer-bottom" style="border-top: 1px solid rgba(201, 169, 106, 0.3); padding-top: 1.5rem; text-align: center;">
-      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-        
-        <!-- Copyright -->
-        <div style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem;">
-          <p style="margin: 0;">
-            © {{ "now" | date: "%Y" }} Perseus & RC Abogados. Todos los derechos reservados.
-          </p>
-          <p style="margin: 0.5rem 0 0 0;">
-            Despacho de abogados en A Coruña, Galicia • Especialistas en delitos informáticos y recuperación de deudas
-          </p>
-        </div>
-
-        <!-- Enlaces Legales Destacados -->
-        <div style="display: flex; gap: 1rem; font-size: 0.9rem;">
-          <a href="{{ '/aviso-legal/' | relative_url }}" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; padding: 0.3rem 0.8rem; border: 1px solid rgba(201, 169, 106, 0.3); border-radius: 15px; transition: all 0.3s ease;">
-            Aviso Legal
-          </a>
-          <a href="{{ '/politica-privacidad/' | relative_url }}" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; padding: 0.3rem 0.8rem; border: 1px solid rgba(201, 169, 106, 0.3); border-radius: 15px; transition: all 0.3s ease;">
-            Privacidad
-          </a>
-        </div>
-
-      </div>
-    </div>
-
   </div>
 </footer>
 
-<!-- Estilos adicionales para hover effects -->
+<!-- Estilos básicos para hover -->
 <style>
-.footer a:hover {
+.footer-contact a:hover,
+.footer-legal a:hover {
   color: var(--accent-gold) !important;
-  transform: translateX(3px);
-}
-
-.footer-bottom a:hover {
-  background: rgba(201, 169, 106, 0.2);
-  border-color: var(--accent-gold);
+  text-decoration: underline !important;
 }
 
 @media (max-width: 768px) {
-  .footer-main {
-    grid-template-columns: 1fr !important;
-    gap: 1.5rem !important;
+  .footer-contact p {
+    font-size: 0.9rem;
+    line-height: 1.6;
   }
   
-  .footer-bottom > div {
-    flex-direction: column;
+  .footer-legal {
     text-align: center;
   }
   
-  .footer-bottom > div > div:last-child {
-    margin-top: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .footer {
-    padding: 2rem 0 1.5rem 0 !important;
-  }
-  
-  .footer-bottom > div > div:last-child {
-    flex-direction: column;
-    gap: 0.5rem !important;
-  }
-  
-  .footer-bottom a {
-    padding: 0.4rem 1rem !important;
-    font-size: 0.8rem !important;
+  .footer-legal a {
+    display: inline-block;
+    margin: 0.2rem 0.5rem;
   }
 }
 </style>
