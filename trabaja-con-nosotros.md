@@ -1,8 +1,8 @@
 ---
 layout: pages
 title: "Trabaja con Nosotros | Perseus & RC Abogados"
-description: "Únete al equipo de Perseus & RC Abogados en A Coruña. Buscamos abogados especializados en delitos informáticos, recuperación de deudas y derecho civil. Envía tu CV."
-keywords: "trabajar Perseus RC, empleo abogados A Coruña, trabajo despacho abogados, carrera jurídica Galicia, ofertas empleo derecho"
+description: "Únete al equipo de Perseus & RC Abogados. Buscamos abogados en A Coruña y colaboradores en Madrid especializados en delitos informáticos y recuperación de deudas."
+keywords: "trabajar Perseus RC, empleo abogados A Coruña, trabajo despacho abogados, colaboradores Madrid, carrera jurídica Galicia, ofertas empleo derecho"
 permalink: /trabaja-con-nosotros/
 lang: es
 sitemap:
@@ -21,7 +21,8 @@ sitemap:
     <p style="font-size: 1.2rem; color: var(--text-secondary); line-height: 1.7; max-width: 700px; margin: 0 auto;">
       Únete a <strong>Perseus & RC Abogados</strong>, el despacho especializado líder en 
       <a href="{{ '/servicios/delitos-informaticos/' | relative_url }}">delitos informáticos</a> 
-      y <a href="{{ '/servicios/recuperacion-deudas/' | relative_url }}">recuperación de deudas</a> en A Coruña.
+      y <a href="{{ '/servicios/recuperacion-deudas/' | relative_url }}">recuperación de deudas</a>. 
+      Buscamos profesionales para nuestras oficinas en A Coruña y colaboradores en Madrid.
     </p>
   </div>
 
@@ -29,75 +30,30 @@ sitemap:
   <div class="why-work-section" style="background: var(--primary-white); padding: 2.5rem; border-radius: 8px; box-shadow: var(--shadow-light); margin-bottom: 2rem;">
     <h2 style="color: var(--navy-blue); font-size: 1.8rem; margin-bottom: 1.5rem; text-align: center;">¿Por qué elegir Perseus & RC?</h2>
     
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+    <div style="max-width: 800px; margin: 0 auto; color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem;">
+      <p style="margin-bottom: 1.5rem;">
+        En Perseus & RC Abogados destacamos por contar con un excelente grupo de profesionales. Trabajamos en un ambiente de 
+        <strong>motivación, creatividad y superación</strong>, especializándonos en la vanguardia del derecho tecnológico.
+      </p>
       
-      <div style="background: var(--primary-light); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--accent-gold);">
-        <h3 style="color: var(--navy-blue); margin-bottom: 1rem; font-size: 1.2rem;">🚀 Especialización Innovadora</h3>
-        <p style="color: var(--text-secondary); line-height: 1.6;">
-          Trabajamos en la vanguardia del derecho tecnológico, especializándonos en delitos informáticos y nuevas modalidades jurídicas que están definiendo el futuro de la profesión.
-        </p>
-      </div>
-
-      <div style="background: var(--primary-light); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--accent-gold);">
-        <h3 style="color: var(--navy-blue); margin-bottom: 1rem; font-size: 1.2rem;">📈 Crecimiento Profesional</h3>
-        <p style="color: var(--text-secondary); line-height: 1.6;">
-          Ofrecemos un ambiente de constante aprendizaje con formación continua, participación en casos complejos y oportunidades de desarrollo en áreas especializadas.
-        </p>
-      </div>
-
-      <div style="background: var(--primary-light); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--accent-gold);">
-        <h3 style="color: var(--navy-blue); margin-bottom: 1rem; font-size: 1.2rem;">⚖️ Ambiente Profesional</h3>
-        <p style="color: var(--text-secondary); line-height: 1.6;">
-          Trabajamos en un despacho con más de 15 años de experiencia, donde la excelencia, la ética profesional y el trabajo en equipo son nuestros valores fundamentales.
-        </p>
-      </div>
-
-      <div style="background: var(--primary-light); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--accent-gold);">
-        <h3 style="color: var(--navy-blue); margin-bottom: 1rem; font-size: 1.2rem;">🏆 Casos de Alto Impacto</h3>
-        <p style="color: var(--text-secondary); line-height: 1.6;">
-          Participarás en casos relevantes y complejos que marcan precedentes en delitos informáticos, recuperación de deudas y otras áreas especializadas.
-        </p>
-      </div>
+      <p style="margin-bottom: 1.5rem;">
+        Ofrecemos un ambiente de constante aprendizaje con <strong>formación continua</strong>, participación en casos complejos 
+        de delitos informáticos y recuperación de deudas, y oportunidades de desarrollo en áreas especializadas que están 
+        definiendo el futuro de la profesión jurídica.
+      </p>
       
-    </div>
-  </div>
-
-  <!-- Current Opportunities -->
-  <div class="opportunities-section" style="background: var(--primary-white); padding: 2.5rem; border-radius: 8px; box-shadow: var(--shadow-light); margin-bottom: 2rem;">
-    <h2 style="color: var(--navy-blue); font-size: 1.8rem; margin-bottom: 1.5rem; text-align: center;">Perfiles que Buscamos</h2>
-    
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+      <p style="margin-bottom: 1.5rem;">
+        Trabajamos en un despacho con más de <strong>15 años de experiencia</strong> en A Coruña, donde la excelencia, 
+        la ética profesional y el trabajo en equipo son nuestros valores fundamentales. Participarás en casos relevantes 
+        que marcan precedentes en nuestras áreas de especialización.
+      </p>
       
-      <div style="background: var(--accent-light-gold); padding: 1.5rem; border-radius: 8px;">
-        <h3 style="color: var(--navy-blue); margin-bottom: 1rem;">Abogado/a Especialista en Tecnología</h3>
-        <ul style="color: var(--text-secondary); line-height: 1.6;">
-          <li>Experiencia en delitos informáticos</li>
-          <li>Conocimientos en ciberseguridad jurídica</li>
-          <li>Interés en innovación legal</li>
-          <li>Colegiación en ICACOR (preferible)</li>
-        </ul>
+      <div style="background: var(--accent-light-gold); padding: 1.5rem; border-radius: 8px; margin-top: 2rem; text-align: center;">
+        <p style="margin: 0; font-size: 1.1rem; color: var(--navy-blue);">
+          <strong>Buscamos abogados para A Coruña y colaboradores externos en Madrid</strong><br>
+          <span style="font-size: 0.95rem;">Si eres un apasionado jurista, seguro que encontrarás atractivos los proyectos en los que estamos inmersos.</span>
+        </p>
       </div>
-
-      <div style="background: var(--accent-light-gold); padding: 1.5rem; border-radius: 8px;">
-        <h3 style="color: var(--navy-blue); margin-bottom: 1rem;">Abogado/a Mercantil</h3>
-        <ul style="color: var(--text-secondary); line-height: 1.6;">
-          <li>Experiencia en recuperación de deudas</li>
-          <li>Conocimientos en derecho concursal</li>
-          <li>Habilidades de negociación</li>
-          <li>Orientación a resultados</li>
-        </ul>
-      </div>
-
-      <div style="background: var(--accent-light-gold); padding: 1.5rem; border-radius: 8px;">
-        <h3 style="color: var(--navy-blue); margin-bottom: 1rem;">Abogado/a Junior</h3>
-        <ul style="color: var(--text-secondary); line-height: 1.6;">
-          <li>Recién graduado con excelente expediente</li>
-          <li>Motivación por el aprendizaje</li>
-          <li>Interés en especializaciones tecnológicas</li>
-          <li>Disponibilidad para formación</li>
-        </ul>
-      </div>
-
     </div>
   </div>
 
@@ -125,6 +81,7 @@ sitemap:
             <li>Flexibilidad horaria</li>
             <li>Tecnología y herramientas avanzadas</li>
             <li>Ubicación céntrica en A Coruña</li>
+            <li>Colaboraciones externas en Madrid</li>
           </ul>
         </div>
         
@@ -137,7 +94,9 @@ sitemap:
     <h2 style="color: var(--accent-gold); font-size: 1.8rem; margin-bottom: 1.5rem;">¿Listo para Unirte?</h2>
     
     <p style="font-size: 1.1rem; line-height: 1.7; max-width: 600px; margin: 0 auto 2rem;">
-      Constantemente evaluamos perfiles para contar con los mejores profesionales. Si eres un apasionado jurista y crees que puedes aportar valor a nuestro equipo, queremos conocerte.
+      Constantemente evaluamos perfiles para incorporar a nuestro equipo en <strong>A Coruña</strong> y para 
+      colaboraciones externas en <strong>Madrid</strong>. Si eres un apasionado jurista y crees que puedes aportar 
+      valor a nuestros proyectos, queremos conocerte.
     </p>
 
     <div style="background: rgba(201, 169, 106, 0.1); padding: 2rem; border-radius: 8px; margin: 2rem auto; max-width: 600px;">
@@ -147,12 +106,12 @@ sitemap:
         <strong style="color: var(--accent-gold); font-size: 1.1rem;">info@perseusyrcabogados.com</strong>
       </p>
       <p style="margin-bottom: 1.5rem; font-size: 0.95rem; color: rgba(255, 255, 255, 0.9);">
-        <strong>Asunto:</strong> CURRICULUM - [Tu Nombre]<br>
+        <strong>Asunto:</strong> CURRICULUM - [Tu Nombre] - [A Coruña/Madrid]<br>
         <strong>Incluye:</strong> CV, carta de motivación y cuéntanos por qué encajarías en nuestros proyectos
       </p>
       
       <div style="margin-top: 2rem;">
-        <a href="mailto:info@perseusyrcabogados.com?subject=CURRICULUM - [Tu Nombre]" style="display: inline-block; background: var(--accent-gold); color: var(--navy-blue); padding: 1rem 2rem; text-decoration: none; border-radius: 25px; font-weight: 500; transition: all 0.3s ease;">
+        <a href="mailto:info@perseusyrcabogados.com?subject=CURRICULUM - [Tu Nombre] - [A Coruña/Madrid]" style="display: inline-block; background: var(--accent-gold); color: var(--navy-blue); padding: 1rem 2rem; text-decoration: none; border-radius: 25px; font-weight: 500; transition: all 0.3s ease;">
           Enviar Candidatura
         </a>
       </div>
