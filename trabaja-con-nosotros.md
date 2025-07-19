@@ -7,7 +7,7 @@ permalink: /trabaja-con-nosotros/
 lang: es
 sitemap:
   priority: 0.6
-  changefreq: yearly
+  changefreq: monthly
   lastmod: 2025-07-19
 ---
 
@@ -128,8 +128,8 @@ sitemap:
   <!-- Call to Action Footer -->
   <div style="text-align: center; margin-top: 2rem; padding: 1.5rem;">
     <p style="color: var(--text-secondary); font-size: 0.95rem;">
-      Descubre más sobre nuestro <a href="{{ '/nuestro-equipo/' | relative_url }}" style="color: var(--navy-blue); text-decoration: none;">equipo profesional</a> 
-      y conoce nuestras <a href="{{ '/servicios/' | relative_url }}" style="color: var(--navy-blue); text-decoration: none;">áreas de especialización</a>.
+      Descubre más sobre nuestro <a href="{{ '/nuestro-equipo/' | relative_url }}" style="color: var(--accent-gold); text-decoration: none; font-weight: 500;">equipo profesional</a> 
+      y conoce nuestras <a href="{{ '/servicios/' | relative_url }}" style="color: var(--accent-gold); text-decoration: none; font-weight: 500;">áreas de especialización</a>.
     </p>
   </div>
 
