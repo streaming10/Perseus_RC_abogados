@@ -4,6 +4,8 @@ title: "Trabaja con Nosotros | Perseus & RC Abogados"
 description: "Únete al equipo de Perseus & RC Abogados. Buscamos abogados en A Coruña y colaboradores en Madrid especializados en delitos informáticos y recuperación de deudas."
 keywords: "trabajar Perseus RC, empleo abogados A Coruña, trabajo despacho abogados, colaboradores Madrid, carrera jurídica Galicia, ofertas empleo derecho"
 permalink: /trabaja-con-nosotros/
+redirect_from:
+  - /trabaja-con-nosotros.html
 lang: es
 sitemap:
   priority: 0.6
