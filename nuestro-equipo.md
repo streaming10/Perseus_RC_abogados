@@ -133,7 +133,7 @@ sitemap:
       <p class="cta-description">
         Nuestro equipo está listo para ayudarte con cualquier desafío legal que enfrentes.
       </p>
-      <a href="/Perseus_RC_abogados/#contact" class="cta-button" role="button">Contacta con Nosotros</a>
+      <a href="/contacto" class="cta-button" role="button">Contacta con Nosotros</a>
     </div>
   </div>
 </section>
