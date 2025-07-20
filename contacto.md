@@ -4,6 +4,9 @@ title: "Contacto Abogados A Coruña | Perseus & RC - Consulta Jurídica"
 description: "Contacta con Perseus & RC Abogados en A Coruña. Consulta jurídica especializada en delitos informáticos, recuperación de deudas y derecho civil. Teléfono 677 841 007."
 keywords: "contacto abogados A Coruña, consulta jurídica, Perseus RC teléfono, despacho abogados Torreiro, cita abogado Galicia"
 permalink: /contacto/
+redirect_from:
+  - /contacto.html
+  - /contact.html
 lang: es
 sitemap:
   priority: 0.9
