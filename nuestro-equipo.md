@@ -6,6 +6,7 @@ keywords: "equipo abogados A Coruña, Ana Reza abogada, Luis Jurado abogado, des
 permalink: /nuestro-equipo/
 redirect_from:
   - /acerca-de-nosotros.html
+  - /equipo.html
 lang: es
 sitemap:
   priority: 0.6
