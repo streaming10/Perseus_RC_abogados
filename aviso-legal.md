@@ -198,7 +198,7 @@ sitemap:
       <strong>Contactar</strong><br>
       <small style="color: var(--text-secondary);">Consultas legales</small>
     </a>
-    <a href="{{ '/sobre-nosotros/' | relative_url }}" style="display: block; padding: 1.5rem; background: var(--primary-light); text-decoration: none; color: var(--navy-blue); border-radius: 8px; transition: all 0.3s ease;">
+    <a href="{{ '/nuestro-equipo/' | relative_url }}" style="display: block; padding: 1.5rem; background: var(--primary-light); text-decoration: none; color: var(--navy-blue); border-radius: 8px; transition: all 0.3s ease;">
       <strong>Sobre Nosotros</strong><br>
       <small style="color: var(--text-secondary);">Información del despacho</small>
     </a>
