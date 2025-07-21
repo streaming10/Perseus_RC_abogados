@@ -107,11 +107,12 @@ keywords: "abogados en A Coruña, especialistas delitos informáticos, abogados 
 
       <div class="service-item fade-in stagger-delay-5">
         <div class="service-number">05</div>
-        <h3 class="service-title"><a href="/abogado-laboralista/">Derecho Laboral</a></h3>
+        <h3 class="service-title">Derecho Laboral</h3>
         <p class="service-description">
           Defensa y asesoramiento en despidos, reclamaciones de cantidad, incapacidades, sanciones, 
           acoso laboral y negociación de convenios colectivos. Tu futuro profesional en manos expertas.
         </p>
+        <a href="/abogado-laboralista/" class="service-link">Ver especialización completa →</a>
       </div>
 
       <div class="service-item fade-in stagger-delay-6">
