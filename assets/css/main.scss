@@ -780,8 +780,11 @@ body.menu-open {
   .footer-content {
     font-size: 0.8rem;
     line-height: 1.6;
+  }
+}
 
-    .service-link {
+/* Service Link - Enlace de especialización */
+.service-link {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -796,6 +799,4 @@ body.menu-open {
 .service-link:hover {
   color: var(--navy-blue);
   transform: translateX(3px);
-}
-  }
 }
