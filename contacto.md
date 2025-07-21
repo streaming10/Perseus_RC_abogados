@@ -107,9 +107,8 @@ sitemap:
           
           <p style="color: var(--navy-blue); font-weight: 500; margin-bottom: 0.5rem;">🕒 Horarios:</p>
           <p style="color: var(--text-secondary); margin-bottom: 1rem;">
-            Lunes a Viernes: 9:00 - 18:00<br>
-            Sábados: Cita previa<br>
-            Urgencias: 24/7
+            Lunes a Jueves: 9:00 - 20:00<br>
+            Viernes: 9:00 - 15:00<br>
           </p>
 
           <p style="color: var(--navy-blue); font-weight: 500; margin-bottom: 0.5rem;">🚗 Acceso:</p>
