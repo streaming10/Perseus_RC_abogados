@@ -45,8 +45,8 @@ sitemap:
         </a>
       </div>
       <p style="color: var(--text-muted); font-size: 0.9rem;">
-        Lunes a Viernes: 9:00 - 18:00<br>
-        Urgencias: 24/7
+        Lunes a Jueves: 9:00 - 20:00<br>
+        Viernes: 9:00 - 15:00
       </p>
     </div>
 
