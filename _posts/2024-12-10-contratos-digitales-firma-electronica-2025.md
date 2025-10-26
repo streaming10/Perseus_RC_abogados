@@ -310,3 +310,30 @@ Contratos digitales son válidos si cumplen requisitos legales. Elegir firma ade
 *Actualizado diciembre 2024. Información general. Casos requieren asesoramiento personalizado.*
 
 **#ContratosDigitales #FirmaElectrónica #eIDAS #ValidezLegal #LSSI #RGPD #DerechoDigital #AbogadoACoruña #Madrid #Barcelona #ComercioElectrónico**
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Contratos Digitales y Firma Electrónica 2025 | Validez Legal España",
+  "description": "Guía completa contratos digitales 2025. Tipos firma electrónica, validez legal, mejores prácticas.",
+  "image": "https://perseusyrcabogados.com/assets/images/blog/contratos-digitales-2025.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Perseus & RC Abogados"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Perseus & RC Abogados",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://perseusyrcabogados.com/assets/images/logo.png"
+    }
+  },
+  "datePublished": "2024-12-10",
+  "dateModified": "2024-12-10",
+  "mainEntityOfPage": "https://perseusyrcabogados.com/blog/contratos-digitales-firma-electronica-2025/",
+  "keywords": ["contratos digitales", "firma electrónica", "eIDAS", "validez legal", "RGPD"],
+  "articleSection": "Derecho Digital"
+}
+</script>

@@ -173,3 +173,30 @@ Reforma 2025 endurece significativamente penas por ciberdelitos, adaptándose a 
 *Actualizado diciembre 2024. Información general. Casos requieren análisis personalizado.*
 
 **#CódigoPenal2025 #Ciberdelitos #DelitosIA #Ransomware #DerechoPenal #AbogadoPenal #ACoruña #Madrid #Barcelona #DefensaPenal**
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Reforma Código Penal 2025: Nuevos Ciberdelitos",
+  "description": "Análisis reforma Código Penal 2025 en ciberdelitos. Nuevas penas, tipos penales IA, ransomware.",
+  "image": "https://perseusyrcabogados.com/assets/images/blog/codigo-penal-2025.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Perseus & RC Abogados"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Perseus & RC Abogados",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://perseusyrcabogados.com/assets/images/logo.png"
+    }
+  },
+  "datePublished": "2024-12-15",
+  "dateModified": "2024-12-15",
+  "mainEntityOfPage": "https://perseusyrcabogados.com/blog/codigo-penal-ciberdelitos-2025/",
+  "keywords": ["código penal", "ciberdelitos", "reforma penal", "inteligencia artificial", "ransomware"],
+  "articleSection": "Derecho Penal"
+}
+</script>

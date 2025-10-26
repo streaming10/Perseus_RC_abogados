@@ -211,3 +211,30 @@ Todas las víctimas violencia de género tienen derecho a abogado gratuito desde
 *Actualizado diciembre 2024. Si eres víctima de violencia de género, contacta inmediatamente con autoridades y servicios especializados.*
 
 **#ViolenciaDeGénero #OrdenAlejamiento #ProtecciónVíctimas #016 #NoEstásSola #AbogadoACoruña #DerechosVíctimas #Galicia #España**
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Violencia de Género 2025: Nuevas Medidas Protección",
+  "description": "Guía actualizada violencia de género 2025. Derechos víctimas, orden de alejamiento, recursos.",
+  "image": "https://perseusyrcabogados.com/assets/images/blog/violencia-genero-2025.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Perseus & RC Abogados"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Perseus & RC Abogados",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://perseusyrcabogados.com/assets/images/logo.png"
+    }
+  },
+  "datePublished": "2024-12-20",
+  "dateModified": "2024-12-20",
+  "mainEntityOfPage": "https://perseusyrcabogados.com/blog/violencia-genero-proteccion-2025/",
+  "keywords": ["violencia de género", "orden alejamiento", "protección víctimas", "016", "A Coruña"],
+  "articleSection": "Derecho Penal"
+}
+</script>

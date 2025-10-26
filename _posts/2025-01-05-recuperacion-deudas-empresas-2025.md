@@ -310,3 +310,30 @@ Jurisdicción: Juzgados de [A Coruña/Madrid/Barcelona].
 *Actualizado enero 2025. Información general. Casos específicos requieren análisis personalizado.*
 
 **#RecuperaciónDeudas #ProcedimientoMonitorio #CobroImpagos #ACoruña #Madrid #Barcelona #AbogadoMercantil #Morosidad #EmbargosCuentas #DeudaEmpresas**
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Recuperación de Deudas Empresas 2025 | Procedimiento Monitorio",
+  "description": "Guía completa recuperación deudas 2025. Procedimiento monitorio, tasas éxito, costes.",
+  "image": "https://perseusyrcabogados.com/assets/images/blog/recuperacion-deudas-2025.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Perseus & RC Abogados"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Perseus & RC Abogados",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://perseusyrcabogados.com/assets/images/logo.png"
+    }
+  },
+  "datePublished": "2025-01-05",
+  "dateModified": "2025-01-05",
+  "mainEntityOfPage": "https://perseusyrcabogados.com/blog/recuperacion-deudas-empresas-2025/",
+  "keywords": ["recuperación deudas", "procedimiento monitorio", "cobro impagos", "morosidad", "A Coruña"],
+  "articleSection": "Derecho Mercantil"
+}
+</script>

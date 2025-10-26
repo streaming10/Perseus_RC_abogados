@@ -69,50 +69,57 @@ keywords: "abogados en A Coruña, especialistas delitos informáticos, abogados 
         <div class="service-number">01</div>
         <h3 class="service-title">Delitos Informáticos</h3>
         <p class="service-description">
-          Asesoramiento y representación en casos relacionados con ciberdelitos, como estafas en línea, 
-          phishing, acceso ilegal a sistemas, robo de datos y ataques informáticos. Especialistas en la 
+          Asesoramiento y representación en casos relacionados con ciberdelitos, como estafas en línea,
+          phishing, acceso ilegal a sistemas, robo de datos y ataques informáticos. Especialistas en la
           era digital.
         </p>
+        <a href="/blog/delitos-informaticos-espana-2025/" class="service-link">Guía completa ciberdelitos 2025 →</a>
       </div>
 
       <div class="service-item fade-in stagger-delay-2">
         <div class="service-number">02</div>
         <h3 class="service-title">Recuperación de Deudas</h3>
         <p class="service-description">
-          Gestión y negociación de cobros extrajudiciales, reclamaciones judiciales de impagos, 
-          ejecución de garantías y embargos, e insolvencias. Recuperamos lo que te pertenece con 
+          Gestión y negociación de cobros extrajudiciales, reclamaciones judiciales de impagos,
+          ejecución de garantías y embargos, e insolvencias. Recuperamos lo que te pertenece con
           eficiencia y profesionalidad.
         </p>
+        <a href="/blog/recuperacion-deudas-empresas-2025/" class="service-link">Procedimiento monitorio 2025 →</a>
       </div>
 
       <div class="service-item fade-in stagger-delay-3">
         <div class="service-number">03</div>
         <h3 class="service-title">Derecho Civil</h3>
         <p class="service-description">
-          Asesoramiento y representación en asuntos relacionados con contratos, responsabilidad civil, 
-          propiedad, arrendamientos, herencias y sucesiones, entre otros aspectos fundamentales del 
+          Asesoramiento y representación en asuntos relacionados con contratos, responsabilidad civil,
+          propiedad, arrendamientos, herencias y sucesiones, entre otros aspectos fundamentales del
           derecho civil.
         </p>
+        <a href="/blog/herencias-sin-testamento-galicia-2025/" class="service-link">Herencias sin testamento Galicia →</a>
+        <a href="/blog/contratos-digitales-firma-electronica-2025/" class="service-link" style="margin-top: 0.5rem; display: inline-block;">Contratos digitales 2025 →</a>
       </div>
 
       <div class="service-item fade-in stagger-delay-4">
         <div class="service-number">04</div>
         <h3 class="service-title">Derecho Penal</h3>
         <p class="service-description">
-          Defensa y acusación en delitos, asistencia al detenido, juicios rápidos, procedimientos 
-          abreviados y ordinarios, y recursos penales. Protegemos tus derechos en cada etapa del 
+          Defensa y acusación en delitos, asistencia al detenido, juicios rápidos, procedimientos
+          abreviados y ordinarios, y recursos penales. Protegemos tus derechos en cada etapa del
           proceso judicial.
         </p>
+        <a href="/blog/codigo-penal-ciberdelitos-2025/" class="service-link">Reforma Código Penal 2025 →</a>
+        <a href="/blog/violencia-genero-proteccion-2025/" class="service-link" style="margin-top: 0.5rem; display: inline-block;">Violencia de género 2025 →</a>
       </div>
 
       <div class="service-item fade-in stagger-delay-5">
         <div class="service-number">05</div>
         <h3 class="service-title">Derecho Laboral</h3>
         <p class="service-description">
-          Defensa y asesoramiento en despidos, reclamaciones de cantidad, incapacidades, sanciones, 
+          Defensa y asesoramiento en despidos, reclamaciones de cantidad, incapacidades, sanciones,
           acoso laboral y negociación de convenios colectivos. Tu futuro profesional en manos expertas.
         </p>
         <a href="/abogado-laboralista/" class="service-link">Ver especialización completa →</a>
+        <a href="/blog/despido-indemnizacion-2025-espana/" class="service-link" style="margin-top: 0.5rem; display: inline-block;">Despido e indemnización 2025 →</a>
       </div>
 
       <div class="service-item fade-in stagger-delay-6">

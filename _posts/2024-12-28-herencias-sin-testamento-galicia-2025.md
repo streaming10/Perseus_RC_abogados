@@ -356,3 +356,30 @@ Tramitar una herencia sin testamento en Galicia es viable, pero más costoso y c
 *Actualizado diciembre 2024. Información general. Casos específicos requieren análisis personalizado.*
 
 **#HerenciasSinTestamento #SucesiónIntestada #Galicia #ACoruña #Vigo #Santiago #AbogadoHerencias #DerechoCivilGalicia #Abintestato #ParticiónHerencia**
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Herencia sin Testamento Galicia 2025 | Sucesión Intestada",
+  "description": "Guía completa tramitación herencias sin testamento en Galicia 2025. Procedimientos, costes, plazos.",
+  "image": "https://perseusyrcabogados.com/assets/images/blog/herencias-galicia-2025.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Perseus & RC Abogados"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Perseus & RC Abogados",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://perseusyrcabogados.com/assets/images/logo.png"
+    }
+  },
+  "datePublished": "2024-12-28",
+  "dateModified": "2024-12-28",
+  "mainEntityOfPage": "https://perseusyrcabogados.com/blog/herencias-sin-testamento-galicia-2025/",
+  "keywords": ["herencia sin testamento", "Galicia", "sucesión intestada", "A Coruña", "Vigo", "Santiago"],
+  "articleSection": "Derecho Civil"
+}
+</script>

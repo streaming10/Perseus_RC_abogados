@@ -166,3 +166,69 @@ El 2025 marca un punto de inflexión en ciberdelincuencia en España. **A Coruñ
 *Actualizado enero 2025. Asesoramiento jurídico general. Consulte casos específicos con abogado especializado.*
 
 **#DelitosInformáticos #CiberdeLitosEspaña #AbogadoACoruña #AbogadoMadrid #AbogadoBarcelona #Ransomware #Phishing #CiberseguridadEmpresas #RGPD #ProtecciónDatos**
+
+<!-- Structured Data JSON-LD para SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Delitos Informáticos en España 2025: Guía Completa | A Coruña, Madrid, Barcelona",
+  "description": "Los ciberdelitos aumentan un 42% en España. Guía completa de protección y defensa legal. Abogados especializados en A Coruña con cobertura nacional.",
+  "image": "https://perseusyrcabogados.com/assets/images/blog/delitos-informaticos-2025-españa.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Perseus & RC Abogados",
+    "url": "https://perseusyrcabogados.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://perseusyrcabogados.com/assets/images/logo.png"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle Torreiro 13, 3C",
+      "addressLocality": "A Coruña",
+      "addressRegion": "Galicia",
+      "postalCode": "15001",
+      "addressCountry": "ES"
+    },
+    "telephone": "+34-677-841-007",
+    "email": "info@perseusyrcabogados.com",
+    "areaServed": ["A Coruña", "Galicia", "Madrid", "Barcelona", "Valencia", "España"]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Perseus & RC Abogados",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://perseusyrcabogados.com/assets/images/logo.png"
+    }
+  },
+  "datePublished": "2025-01-15",
+  "dateModified": "2025-01-15",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://perseusyrcabogados.com/blog/delitos-informaticos-espana-2025/"
+  },
+  "keywords": ["delitos informáticos", "ciberdelitos España", "abogado A Coruña", "ransomware", "phishing", "estafas online", "protección datos"],
+  "articleSection": "Derecho Penal - Delitos Informáticos",
+  "inLanguage": "es-ES",
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Delitos Informáticos"
+    },
+    {
+      "@type": "Thing",
+      "name": "Ciberseguridad"
+    },
+    {
+      "@type": "Place",
+      "name": "A Coruña"
+    },
+    {
+      "@type": "Place",
+      "name": "España"
+    }
+  ]
+}
+</script>

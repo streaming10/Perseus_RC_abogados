@@ -218,3 +218,30 @@ permalink: /blog/despido-indemnizacion-2025-españa/
 *Actualizado enero 2025. Información general. Casos específicos requieren asesoramiento personalizado.*
 
 **#Despido2025 #IndemnizaciónDespido #AbogadoLaboralista #ACoruña #Madrid #Barcelona #DerechosTrabajador #DespidoImprocedente #ReformaLaboral #AbogadoLaboral**
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Despido e Indemnización 2025: Guía Completa España",
+  "description": "Nueva normativa de despido 2025. Calcula tu indemnización, conoce tus derechos. Abogados laboralistas especializados.",
+  "image": "https://perseusyrcabogados.com/assets/images/blog/despido-indemnizacion-2025.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Perseus & RC Abogados"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Perseus & RC Abogados",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://perseusyrcabogados.com/assets/images/logo.png"
+    }
+  },
+  "datePublished": "2025-01-10",
+  "dateModified": "2025-01-10",
+  "mainEntityOfPage": "https://perseusyrcabogados.com/blog/despido-indemnizacion-2025-españa/",
+  "keywords": ["despido improcedente", "indemnización", "abogado laboralista", "A Coruña", "España", "derechos trabajador"],
+  "articleSection": "Derecho Laboral"
+}
+</script>

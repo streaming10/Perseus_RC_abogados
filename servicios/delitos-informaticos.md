@@ -38,20 +38,22 @@ permalink: /servicios/delitos-informaticos/
 
         Los **delitos informáticos** o **ciberdelitos** son infracciones penales cometidas mediante el uso de tecnologías de la información y comunicación. En Perseus & RC Abogados somos especialistas en la defensa y asesoramiento legal en este tipo de delitos que han experimentado un crecimiento exponencial en los últimos años.
 
+        > **📊 Datos 2025**: Los delitos informáticos en España han aumentado un 42% según el Ministerio del Interior. Consulta nuestra [**guía completa sobre Delitos Informáticos 2025**](/blog/delitos-informaticos-espana-2025/) con estadísticas actualizadas, nuevas amenazas (IA, deepfakes, ransomware) y medidas de protección.
+
         ### Tipos de Delitos Informáticos que Defendemos
 
         #### 🔒 Estafas y Fraudes Online
         - Estafas en comercio electrónico
         - Fraude con tarjetas de crédito
         - Estafas románticas online
-        - Phishing y vishing
-        - Fraudes en criptomonedas
+        - Phishing y vishing (ver [**nuevas técnicas de phishing con IA**](/blog/delitos-informaticos-espana-2025/#1-phishing-con-ia-generativa))
+        - Fraudes en criptomonedas (artículo [**Reforma Código Penal 2025**](/blog/codigo-penal-ciberdelitos-2025/#fraude-criptomonedas))
 
         #### 💻 Ataques a Sistemas Informáticos
         - Acceso ilegal a sistemas
         - Sabotaje informático
         - Ataques DDoS
-        - Malware y ransomware
+        - Malware y **ransomware** ([**penas actualizadas 2025**: 3-8 años prisión](/blog/codigo-penal-ciberdelitos-2025/#ransomware-como-sabotaje))
         - Intercepción de comunicaciones
 
         #### 📱 Delitos contra la Intimidad
