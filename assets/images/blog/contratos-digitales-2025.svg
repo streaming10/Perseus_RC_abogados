@@ -1,0 +1,45 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a3a52;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2c5f7f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient7" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d4af37;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f4d03f;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGradient7)"/>
+
+  <circle cx="130" cy="100" r="100" fill="#2c5f7f" opacity="0.3"/>
+  <circle cx="1070" cy="530" r="120" fill="#2c5f7f" opacity="0.3"/>
+
+  <!-- Icon: Digital signature -->
+  <g transform="translate(100, 240)">
+    <rect x="-30" y="-30" width="60" height="60" rx="3" fill="none" stroke="#d4af37" stroke-width="3"/>
+    <path d="M-15 -10 Q-5 0 5 -10" fill="none" stroke="#d4af37" stroke-width="2"/>
+    <circle cx="12" cy="8" r="8" fill="none" stroke="#d4af37" stroke-width="2"/>
+    <line x1="12" y1="16" x2="12" y2="22" stroke="#d4af37" stroke-width="2"/>
+  </g>
+
+  <text x="240" y="260" font-family="Arial, sans-serif" font-size="54" font-weight="300" fill="#ffffff">
+    Contratos Digitales y
+  </text>
+  <text x="240" y="320" font-family="Arial, sans-serif" font-size="54" font-weight="300" fill="#ffffff">
+    Firma Electrónica 2025
+  </text>
+
+  <rect x="240" y="350" width="150" height="4" fill="url(#accentGradient7)"/>
+
+  <text x="240" y="400" font-family="Arial, sans-serif" font-size="24" font-weight="300" fill="#f4d03f">
+    Regulación eIDAS · Validez Legal · GDPR
+  </text>
+  <text x="240" y="435" font-family="Arial, sans-serif" font-size="20" font-weight="300" fill="rgba(255,255,255,0.8)">
+    Guía completa para empresas digitales
+  </text>
+
+  <text x="240" y="550" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#d4af37">
+    Perseus &amp; RC Abogados · A Coruña
+  </text>
+</svg>

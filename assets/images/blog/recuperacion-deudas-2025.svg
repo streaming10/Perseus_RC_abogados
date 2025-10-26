@@ -1,0 +1,43 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a3a52;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2c5f7f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d4af37;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f4d03f;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGradient3)"/>
+
+  <circle cx="120" cy="120" r="110" fill="#2c5f7f" opacity="0.3"/>
+  <circle cx="1080" cy="510" r="140" fill="#2c5f7f" opacity="0.3"/>
+
+  <!-- Icon: Document with euro symbol -->
+  <g transform="translate(100, 220)">
+    <rect x="-25" y="-30" width="50" height="70" rx="3" fill="none" stroke="#d4af37" stroke-width="3"/>
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#d4af37" text-anchor="middle">€</text>
+  </g>
+
+  <text x="240" y="270" font-family="Arial, sans-serif" font-size="54" font-weight="300" fill="#ffffff">
+    Recuperación de Deudas
+  </text>
+  <text x="240" y="330" font-family="Arial, sans-serif" font-size="54" font-weight="300" fill="#ffffff">
+    para Empresas 2025
+  </text>
+
+  <rect x="240" y="360" width="150" height="4" fill="url(#accentGradient3)"/>
+
+  <text x="240" y="410" font-family="Arial, sans-serif" font-size="24" font-weight="300" fill="#f4d03f">
+    Procedimiento Monitorio · Estrategias Efectivas
+  </text>
+  <text x="240" y="445" font-family="Arial, sans-serif" font-size="20" font-weight="300" fill="rgba(255,255,255,0.8)">
+    64% empresas afectadas por impagos
+  </text>
+
+  <text x="240" y="550" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#d4af37">
+    Perseus &amp; RC Abogados · A Coruña
+  </text>
+</svg>

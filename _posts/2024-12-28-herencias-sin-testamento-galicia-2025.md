@@ -6,7 +6,7 @@ date: 2024-12-28
 categories: [derecho-civil, herencias, sucesiones]
 tags: [herencia-sin-testamento, sucesión-intestada, galicia-2025, derecho-civil-galicia, abintestato]
 author: "Perseus & RC Abogados"
-image: /assets/images/blog/herencias-galicia-2025.jpg
+image: /assets/images/blog/herencias-galicia-2025.svg
 keywords: "herencia sin testamento Galicia, sucesión intestada A Coruña, abogado herencias Vigo, partición herencia Santiago, herederos legales Galicia, Derecho Civil gallego, acta notoriedad A Coruña"
 permalink: /blog/herencias-sin-testamento-galicia-2025/
 ---

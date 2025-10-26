@@ -6,7 +6,7 @@ date: 2024-12-20
 categories: [derecho-penal, violencia-genero]
 tags: [violencia-género-2025, orden-alejamiento, protección-víctimas, derechos-mujer, recursos-españa]
 author: "Perseus & RC Abogados"
-image: /assets/images/blog/violencia-genero-2025.jpg
+image: /assets/images/blog/violencia-genero-2025.svg
 keywords: "abogado violencia de género A Coruña, orden de alejamiento Galicia, protección víctimas España, denuncia maltrato 2025, derechos mujer víctima, recursos violencia género Madrid Barcelona"
 permalink: /blog/violencia-genero-proteccion-2025/
 ---

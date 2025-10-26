@@ -6,7 +6,7 @@ date: 2025-01-05
 categories: [recuperacion-deudas, derecho-mercantil]
 tags: [recuperación-deudas, procedimiento-monitorio, impagos, cobro-judicial, empresas-españa-2025]
 author: "Perseus & RC Abogados"
-image: /assets/images/blog/recuperacion-deudas-2025.jpg
+image: /assets/images/blog/recuperacion-deudas-2025.svg
 keywords: "recuperación deudas A Coruña, procedimiento monitorio 2025, cobro impagos Madrid Barcelona, abogado recuperación deudas España, reclamación judicial, embargo cuentas, morosidad empresas"
 permalink: /blog/recuperacion-deudas-empresas-2025/
 ---

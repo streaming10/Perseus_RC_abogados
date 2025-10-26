@@ -6,7 +6,7 @@ date: 2025-01-10
 categories: [derecho-laboral, despido]
 tags: [despido-2025, indemnización, abogado-laboralista, derechos-trabajador, reforma-laboral-españa]
 author: "Perseus & RC Abogados"
-image: /assets/images/blog/despido-indemnizacion-2025.jpg
+image: /assets/images/blog/despido-indemnizacion-2025.svg
 keywords: "despido improcedente A Coruña, indemnización despido 2025, abogado laboralista Madrid Barcelona, derechos trabajador, cálculo indemnización, despido Galicia, abogado laboral España"
 permalink: /blog/despido-indemnizacion-2025-españa/
 ---

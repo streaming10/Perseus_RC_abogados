@@ -1,0 +1,48 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a3a52;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2c5f7f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d4af37;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f4d03f;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGradient2)"/>
+
+  <!-- Decorative elements -->
+  <circle cx="1050" cy="100" r="100" fill="#2c5f7f" opacity="0.3"/>
+  <circle cx="150" cy="530" r="130" fill="#2c5f7f" opacity="0.3"/>
+
+  <!-- Icon: Balance scale -->
+  <g transform="translate(100, 220)">
+    <line x1="0" y1="-20" x2="0" y2="60" stroke="#d4af37" stroke-width="3"/>
+    <line x1="-40" y1="-20" x2="40" y2="-20" stroke="#d4af37" stroke-width="3"/>
+    <path d="M-40 -20 L-50 10 L-30 10 Z" fill="none" stroke="#d4af37" stroke-width="2"/>
+    <path d="M40 -20 L50 10 L30 10 Z" fill="none" stroke="#d4af37" stroke-width="2"/>
+    <rect x="-5" y="60" width="10" height="20" fill="#d4af37"/>
+  </g>
+
+  <!-- Main title -->
+  <text x="240" y="270" font-family="Arial, sans-serif" font-size="54" font-weight="300" fill="#ffffff">
+    Despido e Indemnización
+  </text>
+  <text x="240" y="330" font-family="Arial, sans-serif" font-size="54" font-weight="300" fill="#ffffff">
+    2025 en España
+  </text>
+
+  <rect x="240" y="360" width="150" height="4" fill="url(#accentGradient2)"/>
+
+  <text x="240" y="410" font-family="Arial, sans-serif" font-size="24" font-weight="300" fill="#f4d03f">
+    Cálculo de Indemnizaciones · SMI 1.184€
+  </text>
+  <text x="240" y="445" font-family="Arial, sans-serif" font-size="20" font-weight="300" fill="rgba(255,255,255,0.8)">
+    Nuevas regulaciones laborales 2025
+  </text>
+
+  <text x="240" y="550" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#d4af37">
+    Perseus &amp; RC Abogados · A Coruña
+  </text>
+</svg>

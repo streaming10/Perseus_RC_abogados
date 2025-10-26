@@ -6,7 +6,7 @@ date: 2024-12-15
 categories: [derecho-penal, ciberdelitos, legislacion]
 tags: [código-penal-2025, ciberdelitos, reforma-penal, delitos-ia, ransomware]
 author: "Perseus & RC Abogados"
-image: /assets/images/blog/codigo-penal-2025.jpg
+image: /assets/images/blog/codigo-penal-2025.svg
 keywords: "reforma código penal 2025, ciberdelitos España, delitos inteligencia artificial, abogado penal A Coruña Madrid, ransomware penas, defensa penal ciberdelitos"
 permalink: /blog/codigo-penal-ciberdelitos-2025/
 ---

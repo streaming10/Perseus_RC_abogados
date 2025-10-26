@@ -6,7 +6,7 @@ date: 2025-01-15
 categories: [delitos-informaticos, ciberseguridad]
 tags: [ciberdelitos-españa, protección-empresarial, galicia-2025, seguridad-digital, ransomware, phishing]
 author: "Perseus & RC Abogados"
-image: /assets/images/blog/delitos-informaticos-2025-españa.jpg
+image: /assets/images/blog/delitos-informaticos-2025-espana.svg
 keywords: "delitos informáticos A Coruña, ciberdelitos España 2025, abogado delitos informáticos Madrid Barcelona, estafas online, protección datos RGPD, ransomware España, phishing Galicia, abogado ciberseguridad"
 permalink: /blog/delitos-informaticos-espana-2025/
 ---

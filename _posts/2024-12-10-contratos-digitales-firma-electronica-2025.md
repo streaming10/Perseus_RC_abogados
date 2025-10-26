@@ -6,7 +6,7 @@ date: 2024-12-10
 categories: [derecho-digital, contratos, firma-electronica]
 tags: [contratos-digitales-2025, firma-electrónica, eidas, validez-legal, comercio-electrónico]
 author: "Perseus & RC Abogados"
-image: /assets/images/blog/contratos-digitales-2025.jpg
+image: /assets/images/blog/contratos-digitales-2025.svg
 keywords: "contratos digitales España 2025, firma electrónica cualificada, validez legal contratos, abogado derecho digital A Coruña Madrid, firma electrónica avanzada, eIDAS, RGPD contratos"
 permalink: /blog/contratos-digitales-firma-electronica-2025/
 ---

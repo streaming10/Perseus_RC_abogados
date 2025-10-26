@@ -1,0 +1,44 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a3a52;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2c5f7f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d4af37;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f4d03f;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGradient5)"/>
+
+  <circle cx="150" cy="120" r="100" fill="#2c5f7f" opacity="0.3"/>
+  <circle cx="1050" cy="510" r="130" fill="#2c5f7f" opacity="0.3"/>
+
+  <!-- Icon: Heart with shield -->
+  <g transform="translate(100, 240)">
+    <path d="M0 -15 C-15 -25 -30 -15 -30 0 C-30 15 0 30 0 30 C0 30 30 15 30 0 C30 -15 15 -25 0 -15 Z"
+          fill="none" stroke="#d4af37" stroke-width="3"/>
+    <circle cx="0" cy="5" r="12" fill="none" stroke="#d4af37" stroke-width="2"/>
+  </g>
+
+  <text x="240" y="260" font-family="Arial, sans-serif" font-size="54" font-weight="300" fill="#ffffff">
+    Violencia de Género:
+  </text>
+  <text x="240" y="320" font-family="Arial, sans-serif" font-size="54" font-weight="300" fill="#ffffff">
+    Protección Legal 2025
+  </text>
+
+  <rect x="240" y="350" width="150" height="4" fill="url(#accentGradient5)"/>
+
+  <text x="240" y="400" font-family="Arial, sans-serif" font-size="24" font-weight="300" fill="#f4d03f">
+    Órdenes de Protección · Recursos Gratuitos
+  </text>
+  <text x="240" y="435" font-family="Arial, sans-serif" font-size="20" font-weight="300" fill="rgba(255,255,255,0.8)">
+    Teléfono 016 · Atención 24/7
+  </text>
+
+  <text x="240" y="550" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#d4af37">
+    Perseus &amp; RC Abogados · A Coruña
+  </text>
+</svg>
