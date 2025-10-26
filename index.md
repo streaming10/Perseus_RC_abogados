@@ -73,7 +73,7 @@ keywords: "abogados en A Coruña, especialistas delitos informáticos, abogados 
           phishing, acceso ilegal a sistemas, robo de datos y ataques informáticos. Especialistas en la
           era digital.
         </p>
-        <a href="/blog/delitos-informaticos-espana-2025/" class="service-link">Guía completa ciberdelitos 2025 →</a>
+        <a href="/blog/delitos-informaticos-espana-2025" class="service-link">Guía completa ciberdelitos 2025 →</a>
       </div>
 
       <div class="service-item fade-in stagger-delay-2">
@@ -84,7 +84,7 @@ keywords: "abogados en A Coruña, especialistas delitos informáticos, abogados 
           ejecución de garantías y embargos, e insolvencias. Recuperamos lo que te pertenece con
           eficiencia y profesionalidad.
         </p>
-        <a href="/blog/recuperacion-deudas-empresas-2025/" class="service-link">Procedimiento monitorio 2025 →</a>
+        <a href="/blog/recuperacion-deudas-empresas-2025" class="service-link">Procedimiento monitorio 2025 →</a>
       </div>
 
       <div class="service-item fade-in stagger-delay-3">
@@ -95,8 +95,8 @@ keywords: "abogados en A Coruña, especialistas delitos informáticos, abogados 
           propiedad, arrendamientos, herencias y sucesiones, entre otros aspectos fundamentales del
           derecho civil.
         </p>
-        <a href="/blog/herencias-sin-testamento-galicia-2025/" class="service-link">Herencias sin testamento Galicia →</a>
-        <a href="/blog/contratos-digitales-firma-electronica-2025/" class="service-link" style="margin-top: 0.5rem; display: inline-block;">Contratos digitales 2025 →</a>
+        <a href="/blog/herencias-sin-testamento-galicia-2025" class="service-link">Herencias sin testamento Galicia →</a>
+        <a href="/blog/contratos-digitales-firma-electronica-2025" class="service-link" style="margin-top: 0.5rem; display: inline-block;">Contratos digitales 2025 →</a>
       </div>
 
       <div class="service-item fade-in stagger-delay-4">
@@ -107,8 +107,8 @@ keywords: "abogados en A Coruña, especialistas delitos informáticos, abogados 
           abreviados y ordinarios, y recursos penales. Protegemos tus derechos en cada etapa del
           proceso judicial.
         </p>
-        <a href="/blog/codigo-penal-ciberdelitos-2025/" class="service-link">Reforma Código Penal 2025 →</a>
-        <a href="/blog/violencia-genero-proteccion-2025/" class="service-link" style="margin-top: 0.5rem; display: inline-block;">Violencia de género 2025 →</a>
+        <a href="/blog/codigo-penal-ciberdelitos-2025" class="service-link">Reforma Código Penal 2025 →</a>
+        <a href="/blog/violencia-genero-proteccion-2025" class="service-link" style="margin-top: 0.5rem; display: inline-block;">Violencia de género 2025 →</a>
       </div>
 
       <div class="service-item fade-in stagger-delay-5">
@@ -119,7 +119,7 @@ keywords: "abogados en A Coruña, especialistas delitos informáticos, abogados 
           acoso laboral y negociación de convenios colectivos. Tu futuro profesional en manos expertas.
         </p>
         <a href="/abogado-laboralista/" class="service-link">Ver especialización completa →</a>
-        <a href="/blog/despido-indemnizacion-2025-espana/" class="service-link" style="margin-top: 0.5rem; display: inline-block;">Despido e indemnización 2025 →</a>
+        <a href="/blog/despido-indemnizacion-2025-espana" class="service-link" style="margin-top: 0.5rem; display: inline-block;">Despido e indemnización 2025 →</a>
       </div>
 
       <div class="service-item fade-in stagger-delay-6">
