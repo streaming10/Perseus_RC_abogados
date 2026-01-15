@@ -3,7 +3,7 @@ layout: pages
 title: "Aviso Legal"
 description: "Aviso legal de Perseus & RC Abogados. Información corporativa, condiciones de uso y datos legales del despacho de abogados especializado en A Coruña."
 keywords: "aviso legal Perseus RC, información legal abogados A Coruña, condiciones uso, datos corporativos despacho abogados"
-permalink: /aviso-legal/
+permalink: /legal/
 lang: es
 sitemap:
   priority: 0.3
@@ -204,5 +204,6 @@ sitemap:
     </a>
   </div>
 </div>
+
 
 
