@@ -8,7 +8,7 @@ lang: es
 sitemap:
   priority: 0.3
   changefreq: yearly
-  lastmod: 2025-07-19
+  lastmod: 2026-01-15
 ---
 
 <div class="legal-page" style="padding: 2rem 0;">
@@ -174,7 +174,7 @@ sitemap:
     <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border-light);">
       <p style="color: var(--text-muted); font-size: 0.9rem;">
         <strong>Última actualización:</strong> 19 de julio de 2025<br>
-        Consulte también nuestro <a href="{{ '/aviso-legal/' | relative_url }}">aviso legal</a> para más información corporativa.
+        Consulte también nuestro <a href="{{ '/legal/' | relative_url }}">aviso legal</a> para más información corporativa.
       </p>
     </div>
 
