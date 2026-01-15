@@ -8,7 +8,7 @@ lang: es
 sitemap:
   priority: 0.3
   changefreq: yearly
-  lastmod: 2025-07-19
+  lastmod: 2026-01-15
 ---
 
 <div class="legal-page" style="padding: 2rem 0;">
@@ -204,6 +204,7 @@ sitemap:
     </a>
   </div>
 </div>
+
 
 
 
