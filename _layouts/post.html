@@ -5,8 +5,8 @@
     {% include header.html %}
 
     <!-- Breadcrumbs -->
-    <nav class="breadcrumbs" aria-label="Breadcrumb">
-      <div class="container">
+    <nav class="breadcrumbs post-breadcrumbs" aria-label="Breadcrumb">
+      <div class="post-wrap">
         <ol class="breadcrumb-list">
           <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
           <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
@@ -15,15 +15,13 @@
       </div>
     </nav>
 
-    <main class="page-content">
-      <article class="container post" itemscope itemtype="https://schema.org/Article">
+    <main class="post-main">
+      <article class="post-wrap post" itemscope itemtype="https://schema.org/Article">
         <header class="post-header">
           <h1 itemprop="headline">{{ page.title }}</h1>
           <div class="post-meta">
             <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%d/%m/%Y' }}</time>
-            <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-              · <span itemprop="name">{{ page.author | default: site.author }}</span>
-            </span>
+            <span itemprop="author" itemscope itemtype="https://schema.org/Person">· <span itemprop="name">{{ page.author | default: site.author }}</span></span>
           </div>
           {% if page.description %}<p class="post-lead">{{ page.description }}</p>{% endif %}
         </header>
@@ -37,13 +35,45 @@
             <p class="post-author-name"><strong>{{ page.author | default: site.author }}</strong>{% if site.author_jobtitle %} — {{ site.author_jobtitle }}{% endif %}</p>
             {% if site.colegiado %}<p class="post-author-cred">{{ site.colegiado }}</p>{% endif %}
           </div>
-          <p>¿Tiene un caso relacionado? <a href="{{ '/contacto/' | relative_url }}">Consulte con el despacho</a> o llame al <a href="tel:{{ site.phone }}">{{ site.phone }}</a>.</p>
+          <p class="post-cta">¿Tiene un caso relacionado? <a href="{{ '/contacto/' | relative_url }}">Consulte con el despacho</a> o llame al <a href="tel:{{ site.phone }}">{{ site.phone }}</a>.</p>
         </footer>
       </article>
     </main>
 
     {% include footer.html %}
     {% include scripts.html %}
+
+    <style>
+      /* Artículo: ancho de lectura 900px y esquema del sitio */
+      .post-wrap { max-width: 900px; margin: 0 auto; padding-left: 1.5rem; padding-right: 1.5rem; }
+      .post-breadcrumbs { padding-top: 110px; }
+      .post-breadcrumbs .breadcrumb-list { list-style: none; display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; margin: 0; font-size: .85rem; color: var(--text-muted, #718096); }
+      .post-breadcrumbs a { color: var(--accent-gold, #c9a96a); text-decoration: none; }
+      .post-breadcrumbs li:not(:last-child)::after { content: '/'; margin-left: .5rem; color: var(--border-subtle, #cbd5e0); }
+      .post-main { padding: 1.5rem 0 4rem; }
+      .post-header h1 { font-size: 2.2rem; line-height: 1.25; color: var(--navy-blue, #1a2332); font-weight: 600; margin: .5rem 0 1rem; }
+      .post-meta { color: var(--text-muted, #718096); font-size: .95rem; display: flex; gap: .5rem; flex-wrap: wrap; }
+      .post-lead { font-size: 1.15rem; line-height: 1.6; color: var(--text-secondary, #4a5568); margin: 1.25rem 0 0; padding-top: 1.25rem; border-top: 2px solid var(--accent-gold, #c9a96a); }
+      .post-body { font-size: 1.08rem; line-height: 1.75; color: #2d3748; margin-top: 2rem; }
+      .post-body h2 { font-size: 1.6rem; color: var(--navy-blue, #1a2332); font-weight: 600; margin: 2.5rem 0 1rem; }
+      .post-body h3 { font-size: 1.25rem; color: var(--corporate-blue, #2c3e50); font-weight: 600; margin: 2rem 0 .75rem; }
+      .post-body p { margin: 0 0 1.25rem; }
+      .post-body a { color: var(--accent-gold, #c9a96a); }
+      .post-body ul, .post-body ol { margin: 0 0 1.25rem 1.25rem; }
+      .post-body li { margin: .4rem 0; }
+      .post-body blockquote { margin: 1.5rem 0; padding: .75rem 1.25rem; border-left: 3px solid var(--accent-gold, #c9a96a); background: var(--secondary-light, #f5f7fa); color: var(--text-secondary, #4a5568); font-style: italic; }
+      .post-body img { max-width: 100%; height: auto; }
+      .post-footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border-light, #e2e8f0); }
+      .post-author-box { background: var(--secondary-light, #f5f7fa); border-left: 3px solid var(--accent-gold, #c9a96a); padding: 1rem 1.25rem; border-radius: 4px; }
+      .post-author-name { margin: 0; color: var(--navy-blue, #1a2332); }
+      .post-author-cred { margin: .25rem 0 0; font-size: .9rem; color: var(--text-muted, #718096); }
+      .post-cta { margin-top: 1.5rem; color: var(--text-secondary, #4a5568); }
+      .post-cta a { color: var(--accent-gold, #c9a96a); }
+      @media (max-width: 768px) {
+        .post-breadcrumbs { padding-top: 90px; }
+        .post-header h1 { font-size: 1.7rem; }
+      }
+    </style>
 
     <!-- Structured Data: Article -->
     <script type="application/ld+json">
@@ -64,16 +94,10 @@
       "publisher": {
         "@type": "Organization",
         "name": {{ site.title | jsonify }},
-        "logo": {
-          "@type": "ImageObject",
-          "url": "{{ site.url }}{{ site.logo }}"
-        }
+        "logo": { "@type": "ImageObject", "url": "{{ site.url }}{{ site.logo }}" }
       },
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "{{ page.url | absolute_url }}"
-      },
-      "inLanguage": "es"
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ page.url | absolute_url }}" },
+      "inLanguage": "{% if page.lang %}{{ page.lang }}{% else %}es{% endif %}"
     }
     </script>
   </body>

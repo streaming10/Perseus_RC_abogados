@@ -5,17 +5,19 @@
     
     <!-- Navigation Menu -->
     <ul class="nav-menu" id="mobile-nav">
+      {% assign home_url = '/' | relative_url %}
       {% if page.lang == 'en' %}
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#values" class="nav-link">Values</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+        {% assign home_url = '/en/' | relative_url %}
+        <li><a href="{{ home_url }}#about" class="nav-link">About</a></li>
+        <li><a href="{{ home_url }}#services" class="nav-link">Services</a></li>
+        <li><a href="{{ home_url }}#values" class="nav-link">Values</a></li>
+        <li><a href="{{ home_url }}#contact" class="nav-link">Contact</a></li>
         <li><a href="{{ '/blog/' | relative_url }}" class="nav-link">Blog</a></li>
       {% else %}
-        <li><a href="#about" class="nav-link">Nosotros</a></li>
-        <li><a href="#services" class="nav-link">Servicios</a></li>
-        <li><a href="#values" class="nav-link">Valores</a></li>
-        <li><a href="#contact" class="nav-link">Contacto</a></li>
+        <li><a href="{{ home_url }}#about" class="nav-link">Nosotros</a></li>
+        <li><a href="{{ home_url }}#services" class="nav-link">Servicios</a></li>
+        <li><a href="{{ home_url }}#values" class="nav-link">Valores</a></li>
+        <li><a href="{{ home_url }}#contact" class="nav-link">Contacto</a></li>
         <li><a href="{{ '/blog/' | relative_url }}" class="nav-link">Blog</a></li>
       {% endif %}
     </ul>

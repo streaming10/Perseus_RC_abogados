@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="{% if page.lang %}{{ page.lang }}{% else %}es{% endif %}">
+  {% include head.html %}
+  <body class="page-layout servicio-layout">
+    {% include header.html %}
+
+    <nav class="breadcrumbs svc-breadcrumbs" aria-label="Breadcrumb">
+      <div class="svc-wrap">
+        <ol class="breadcrumb-list">
+          <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
+          <li><a href="{{ '/#services' | relative_url }}">Servicios</a></li>
+          <li aria-current="page">{{ page.short_title | default: page.title }}</li>
+        </ol>
+      </div>
+    </nav>
+
+    <header class="svc-hero">
+      <div class="svc-wrap">
+        <div class="svc-intro">{{ page.area | default: "Área de práctica" }} · A Coruña</div>
+        <h1>{{ page.h1 | default: page.title }}</h1>
+        {% if page.subtitle %}<p class="svc-subtitle">{{ page.subtitle }}</p>{% endif %}
+        <div class="svc-cta-row">
+          <a href="tel:{{ site.phone }}" class="svc-btn svc-btn-primary">Llamar {{ site.phone }}</a>
+          <a href="{{ '/contacto/' | relative_url }}" class="svc-btn svc-btn-secondary">Consulta online</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="svc-main">
+      <article class="svc-wrap svc-body">
+        {{ content }}
+
+        {% if page.faq %}
+        <section class="svc-faq" aria-labelledby="svc-faq-title">
+          <h2 id="svc-faq-title">Preguntas frecuentes</h2>
+          {% for item in page.faq %}
+          <div class="svc-faq-item">
+            <h3>{{ item.q }}</h3>
+            <p>{{ item.a }}</p>
+          </div>
+          {% endfor %}
+        </section>
+        {% endif %}
+      </article>
+    </main>
+
+    <section class="svc-contact-cta">
+      <div class="svc-wrap">
+        <h2>{% if page.cta_title %}{{ page.cta_title }}{% else %}¿Necesita asesoramiento?{% endif %}</h2>
+        <p>Cuéntenos su caso sin compromiso y le indicamos cómo podemos ayudarle.</p>
+        <div class="svc-cta-row">
+          <a href="tel:{{ site.phone }}" class="svc-btn svc-btn-primary">Llamar {{ site.phone }}</a>
+          <a href="{{ '/contacto/' | relative_url }}" class="svc-btn svc-btn-secondary">Consulta online</a>
+        </div>
+      </div>
+    </section>
+
+    {% include footer.html %}
+    {% include scripts.html %}
+
+    <style>
+      .svc-wrap { max-width: 920px; margin: 0 auto; padding-left: 1.5rem; padding-right: 1.5rem; }
+      .svc-breadcrumbs { padding-top: 110px; }
+      .svc-breadcrumbs .breadcrumb-list { list-style: none; display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; margin: 0; font-size: .85rem; color: var(--text-muted, #718096); }
+      .svc-breadcrumbs a { color: var(--accent-gold, #c9a96a); text-decoration: none; }
+      .svc-breadcrumbs li:not(:last-child)::after { content: '/'; margin-left: .5rem; color: var(--border-subtle, #cbd5e0); }
+
+      .svc-hero { padding: 2rem 0 2.5rem; border-bottom: 1px solid var(--border-light, #e2e8f0); }
+      .svc-intro { font-size: .8rem; letter-spacing: 2px; text-transform: uppercase; color: var(--accent-gold, #c9a96a); font-weight: 500; }
+      .svc-hero h1 { font-size: 2.4rem; font-weight: 300; color: var(--navy-blue, #1a2332); line-height: 1.2; margin: .5rem 0 1rem; }
+      .svc-subtitle { font-size: 1.15rem; line-height: 1.6; color: var(--text-secondary, #4a5568); max-width: 680px; margin: 0 0 1.5rem; }
+      .svc-cta-row { display: flex; gap: 1rem; flex-wrap: wrap; }
+      .svc-btn { display: inline-block; padding: .8rem 1.6rem; border-radius: 30px; text-decoration: none; font-weight: 500; transition: all .2s ease; }
+      .svc-btn-primary { background: var(--accent-gold, #c9a96a); color: #fff; }
+      .svc-btn-primary:hover { background: var(--navy-blue, #1a2332); }
+      .svc-btn-secondary { border: 1px solid var(--navy-blue, #1a2332); color: var(--navy-blue, #1a2332); }
+      .svc-btn-secondary:hover { background: var(--navy-blue, #1a2332); color: #fff; }
+
+      .svc-main { padding: 2.5rem 0 1rem; }
+      .svc-body { font-size: 1.06rem; line-height: 1.75; color: #2d3748; }
+      .svc-body h2 { font-size: 1.55rem; color: var(--navy-blue, #1a2332); font-weight: 600; margin: 2.5rem 0 1rem; }
+      .svc-body h3 { font-size: 1.2rem; color: var(--corporate-blue, #2c3e50); font-weight: 600; margin: 1.75rem 0 .5rem; }
+      .svc-body p { margin: 0 0 1.15rem; }
+      .svc-body ul { margin: 0 0 1.25rem 1.25rem; }
+      .svc-body li { margin: .4rem 0; }
+      .svc-body a { color: var(--accent-gold, #c9a96a); }
+      .svc-body strong { color: var(--navy-blue, #1a2332); }
+
+      .svc-contact-cta { background: var(--secondary-light, #f5f7fa); margin-top: 2rem; padding: 3rem 0; text-align: center; }
+      .svc-contact-cta h2 { font-size: 1.8rem; font-weight: 300; color: var(--navy-blue, #1a2332); margin: 0 0 .75rem; }
+      .svc-contact-cta p { color: var(--text-secondary, #4a5568); margin: 0 0 1.5rem; }
+      .svc-contact-cta .svc-cta-row { justify-content: center; }
+
+      .svc-faq { margin-top: 2.5rem; }
+      .svc-faq-item { padding: 1.1rem 0; border-bottom: 1px solid var(--border-light, #e2e8f0); }
+      .svc-faq-item h3 { margin: 0 0 .4rem; font-size: 1.1rem; color: var(--navy-blue, #1a2332); }
+      .svc-faq-item p { margin: 0; color: var(--text-secondary, #4a5568); }
+
+      @media (max-width: 768px) {
+        .svc-breadcrumbs { padding-top: 90px; }
+        .svc-hero h1 { font-size: 1.9rem; }
+      }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": {{ page.title | jsonify }},
+      "serviceType": {{ page.area | default: page.title | jsonify }},
+      "description": {{ page.description | jsonify }},
+      "url": "{{ page.url | absolute_url }}",
+      "areaServed": "A Coruña",
+      "provider": {
+        "@type": "LegalService",
+        "name": {{ site.title | jsonify }},
+        "telephone": "{{ site.phone }}",
+        "address": { "@type": "PostalAddress", "addressLocality": "A Coruña", "addressRegion": "Galicia", "addressCountry": "ES" }
+      }
+    }
+    </script>
+    {% if page.faq %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {% for item in page.faq %}{
+          "@type": "Question",
+          "name": {{ item.q | jsonify }},
+          "acceptedAnswer": { "@type": "Answer", "text": {{ item.a | jsonify }} }
+        }{% unless forloop.last %},{% endunless %}{% endfor %}
+      ]
+    }
+    </script>
+    {% endif %}
+  </body>
+</html>
