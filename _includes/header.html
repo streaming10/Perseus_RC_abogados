@@ -1,7 +1,7 @@
 <!-- Header -->
 <header class="header" id="header">
   <nav class="nav-container">
-    <a href="{{ '/' | relative_url }}" class="logo">{{ site.title }}</a>
+    <a href="{% if page.lang == 'en' %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}" class="logo">{{ site.title }}</a>
     
     <!-- Navigation Menu -->
     <ul class="nav-menu" id="mobile-nav">
