@@ -77,7 +77,7 @@ sitemap:
       </p>
       <div style="margin-bottom: 1rem;">
         <p style="color: var(--navy-blue); font-weight: 500; line-height: 1.5;">
-          Calle Torreiro, 13, 3º C<br>
+          Rúa Torreiro, 13, 3C<br>
           15001 A Coruña, Galicia
         </p>
       </div>
@@ -101,7 +101,7 @@ sitemap:
         <div style="background: var(--primary-light); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
           <p style="color: var(--navy-blue); font-weight: 500; margin-bottom: 0.5rem;">📍 Dirección:</p>
           <p style="color: var(--text-secondary); margin-bottom: 1rem;">
-            Calle Torreiro, 13, 3º C<br>
+            Rúa Torreiro, 13, 3C<br>
             15001 A Coruña, Galicia
           </p>
           
@@ -130,7 +130,7 @@ sitemap:
       <div style="position: relative;">
         <iframe 
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2900.2939880762697!2d-8.40240818428367!3d43.37087657865844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2e7c7ee9ffda1b%3A0x36da34856927cd9c!2sR%C3%BAa%20Torreiro%2C%2013%2C%2015001%20A%20Coru%C3%B1a!5e0!3m2!1ses!2ses!4v1612380763536!5m2!1ses!2ses" 
-          title="Ubicación Perseus & RC Abogados - Calle Torreiro 13, A Coruña" 
+          title="Ubicación Perseus & RC Abogados - Rúa Torreiro 13, A Coruña" 
           style="width: 100%; height: 300px; border: 0; border-radius: 8px;" 
           allowfullscreen="" 
           loading="lazy"

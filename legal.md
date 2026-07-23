@@ -54,7 +54,7 @@ sitemap:
       </div>
 
       <h3 style="color: var(--navy-blue); font-size: 1.4rem; margin: 1.5rem 0 1rem 0;">Datos de Contacto</h3>
-      <p><strong>Domicilio:</strong> Calle Torreiro, 13, 3º C, 15001 A Coruña, Galicia (España)</p>
+      <p><strong>Domicilio:</strong> Rúa Torreiro, 13, 3C, 15001 A Coruña, Galicia (España)</p>
       <p><strong>Teléfono:</strong> +34 677 841 007</p>
       <p><strong>Email:</strong> info@perseusyrcabogados.com</p>
       <p><strong>Web:</strong> <a href="https://perseusyrcabogados.com">perseusyrcabogados.com</a></p>
@@ -167,7 +167,7 @@ sitemap:
       <p style="margin-bottom: 1rem;"><strong>Para cualquier consulta relacionada con este aviso legal:</strong></p>
       <p><strong>📧 Email:</strong> info@perseusyrcabogados.com</p>
       <p><strong>📞 Teléfono:</strong> +34 677 841 007</p>
-      <p><strong>📍 Dirección:</strong> Calle Torreiro, 13, 3º C, 15001 A Coruña</p>
+      <p><strong>📍 Dirección:</strong> Rúa Torreiro, 13, 3C, 15001 A Coruña</p>
       <p style="margin-top: 1rem;">
         <a href="{{ '/contacto/' | relative_url }}" style="display: inline-block; background: var(--navy-blue); color: var(--primary-white); padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 25px; transition: all 0.3s ease;">Contactar Ahora</a>
       </p>

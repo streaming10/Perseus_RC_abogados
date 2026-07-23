@@ -31,7 +31,7 @@ sitemap:
       <p><strong>Titular:</strong> Luis Jurado Cano</p>
       <p><strong>NIF:</strong> 49040412L</p>
       <p><strong>Colegio:</strong> ICACOR Nº 6317</p>
-      <p><strong>Domicilio:</strong> Calle Torreiro, 13, 3º C, 15001 A Coruña</p>
+      <p><strong>Domicilio:</strong> Rúa Torreiro, 13, 3C, 15001 A Coruña</p>
       <p><strong>Email:</strong> info@perseusyrcabogados.com</p>
       <p><strong>Web:</strong> <a href="https://perseusyrcabogados.com">perseusyrcabogados.com</a></p>
     </div>
@@ -112,7 +112,7 @@ sitemap:
 
     <h3 style="color: var(--navy-blue); font-size: 1.4rem; margin: 1.5rem 0 1rem 0;">Ejercicio de Derechos</h3>
     <p><strong>Email:</strong> info@perseusyrcabogados.com</p>
-    <p><strong>Postal:</strong> Calle Torreiro, 13, 3º C, 15001 A Coruña</p>
+    <p><strong>Postal:</strong> Rúa Torreiro, 13, 3C, 15001 A Coruña</p>
     <p><strong>Reclamaciones:</strong> <a href="https://www.aepd.es/" target="_blank" rel="noopener">Agencia Española de Protección de Datos</a></p>
 
     <h2 style="color: var(--navy-blue); font-size: 1.8rem; margin: 2rem 0 1rem 0; border-bottom: 2px solid var(--accent-gold); padding-bottom: 0.5rem;">6. Qué NO Recopilamos</h2>
@@ -165,7 +165,7 @@ sitemap:
       <p style="margin-bottom: 1rem;"><strong>Para cualquier consulta sobre esta política:</strong></p>
       <p><strong>📧 Email:</strong> info@perseusyrcabogados.com</p>
       <p><strong>📞 Teléfono:</strong> +34 677 841 007</p>
-      <p><strong>📍 Oficina:</strong> Calle Torreiro, 13, 3º C, 15001 A Coruña</p>
+      <p><strong>📍 Oficina:</strong> Rúa Torreiro, 13, 3C, 15001 A Coruña</p>
       <p style="margin-top: 1rem;">
         <a href="{{ '/contacto/' | relative_url }}" style="display: inline-block; background: var(--navy-blue); color: var(--primary-white); padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 25px; transition: all 0.3s ease;">Contactar Ahora</a>
       </p>
