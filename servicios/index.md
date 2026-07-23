@@ -45,7 +45,7 @@ permalink: /servicios/
       <p>Defensa penal y asistencia al detenido, delitos económicos e informáticos, acusación particular.</p>
       <span class="svcidx-link">Ver área &rarr;</span>
     </a>
-    <a class="svcidx-card" href="{{ '/servicios/derecho-laboral/' | relative_url }}">
+    <a class="svcidx-card" href="{{ '/abogado-laboralista/' | relative_url }}">
       <h2>Derecho laboral</h2>
       <p>Despidos, reclamaciones de cantidad, sanciones, incapacidades y acoso laboral.</p>
       <span class="svcidx-link">Ver área &rarr;</span>
