@@ -8,6 +8,7 @@ categories: ["Derecho penal", "Delitos informáticos"]
 tags: [biometría, autoincriminación, derechos fundamentales, prueba, registro de dispositivos]
 keywords: "desbloqueo biométrico policía, huella dactilar contraseña, no autoincriminación 24.2 CE, registro de móvil autorización judicial, A Coruña"
 permalink: /blog/huellas-biometricas-no-son-contrasenas/
+alternate: /en/blog/fingerprints-are-not-passwords/
 ---
 
 Desde hace ya varios años se viene planteando esta controversia doctrinal acerca de si las huellas digitales, patrones faciales o cualquier otro sistema de reconocimiento basado en patrones biométricos, se pueden entender dentro del derecho a no confesarse culpable y a no declarar contra sí mismo derivado de los artículos 17.3 y 24.2 CE, así como de lo recogido en los arts. 14 del Pacto Internacional de Derechos Civiles y Políticos y 6 del Convenio Europeo de Derechos Humanos.
@@ -43,5 +44,5 @@ Si bien la doctrina tiene establecido que  **se admite el examen directo de la a
 
 Por eso no vale una respuesta única, si no que habrá que justificar y motivar caso por caso la injerencia en el derecho a la intimidad por el registro policial directo del terminal, cumpliendo siempre de forma justificada con arreglo a los criterios de urgencia y necesidad; pudiendo convertirse en caso de no hacerlo en una prueba de cargo nula, que derive en una no justificación de la condena del acusado. Para ello, es importante que dentro del protocolo policial se contemple, y ante la duda, se solicite la correspondiente orden judicial habilitante para revisar el contenido o extracción de información del dispositivo -siendo necesario que se realice en condiciones idóneas para que no se rompa la cadena de custodia que puedan derivar en otra nulidad de actuaciones-.
 
-Este artículo de mi autoría fue publicado en Legaltoday de Aranzadi-Thomson Reuters el día 30 de julio de 2018. [¿Por qué las huellas digitales o patrones faciales no deben entenderse como contraseñas?](http://www.legaltoday.com/opinion/articulos-de-opinion/por-que-las-huellas-digitales-o-patrones-faciales-no-deben-entenderse-como-contrasenas)
+Este artículo de mi autoría fue publicado en Legaltoday de Aranzadi-Thomson Reuters el día 30 de julio de 2018. [¿Por qué las huellas digitales o patrones faciales no deben entenderse como contraseñas?](https://www.legaltoday.com/opinion/articulos-de-opinion/por-que-las-huellas-digitales-o-patrones-faciales-no-deben-entenderse-como-contrasenas-2018-07-30/)
 

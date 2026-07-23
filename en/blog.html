@@ -1,21 +1,18 @@
 ---
 layout: default
-title: "Blog Jurídico | Perseus & RC Abogados - Actualidad Legal A Coruña"
-description: "Blog especializado en derecho por Perseus & RC Abogados. Análisis sobre delitos informáticos, prueba electrónica, derecho civil, penal y laboral en A Coruña."
-keywords: "blog jurídico, delitos informáticos, prueba electrónica, derecho civil penal laboral, abogados A Coruña"
-canonical: "{{ '/blog/' | absolute_url }}"
-permalink: /blog/
-alternate: /en/blog/
-sitemap_priority: 0.9
-sitemap_changefreq: weekly
-og_type: "blog"
-schema_type: "Blog"
+title: "Legal Blog | Perseus & RC Lawyers - A Coruña"
+description: "Legal blog by Perseus & RC Lawyers: analysis on cybercrime, electronic evidence, criminal, civil and labor law in A Coruña, Spain."
+keywords: "legal blog Spain, cybercrime, electronic evidence, criminal civil labor law, A Coruña lawyers"
+lang: en
+permalink: /en/blog/
+alternate: /blog/
+sitemap_priority: 0.8
 ---
 
 <nav class="breadcrumbs blog-breadcrumbs" aria-label="Breadcrumb">
   <div class="blog-wrap">
     <ol class="breadcrumb-list">
-      <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
+      <li><a href="{{ '/en/' | relative_url }}">Home</a></li>
       <li aria-current="page">Blog</li>
     </ol>
   </div>
@@ -23,15 +20,15 @@ schema_type: "Blog"
 
 <header class="blog-hero">
   <div class="blog-wrap">
-    <div class="blog-intro">Actualidad jurídica</div>
+    <div class="blog-intro">Legal updates</div>
     <h1>Blog</h1>
-    <p class="blog-subtitle">Análisis jurídicos de nuestros especialistas en A Coruña, con foco en delitos informáticos y prueba electrónica.</p>
+    <p class="blog-subtitle">Legal analysis from our specialists in A Coruña, with a focus on cybercrime and electronic evidence.</p>
   </div>
 </header>
 
 <section class="blog-list-section">
   <div class="blog-wrap">
-    {% assign blog_posts = site.posts | where_exp: "p", "p.lang != 'en'" %}
+    {% assign blog_posts = site.posts | where_exp: "p", "p.lang == 'en'" %}
     {% for post in blog_posts %}
     <article class="post-card" itemscope itemtype="https://schema.org/BlogPosting">
       <div class="post-card-meta">
@@ -40,23 +37,23 @@ schema_type: "Blog"
       </div>
       <h2 itemprop="headline"><a href="{{ post.url | relative_url }}" itemprop="url">{{ post.title }}</a></h2>
       <p class="post-card-excerpt" itemprop="description">{{ post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 220 }}</p>
-      <a class="post-card-link" href="{{ post.url | relative_url }}">Leer artículo &rarr;</a>
+      <a class="post-card-link" href="{{ post.url | relative_url }}">Read article &rarr;</a>
     </article>
     {% endfor %}
 
     {% if blog_posts.size == 0 %}
-    <p class="blog-empty">Estamos preparando nuevos análisis. Vuelve pronto.</p>
+    <p class="blog-empty">We are preparing new analyses. Check back soon.</p>
     {% endif %}
   </div>
 </section>
 
 <section class="blog-cta">
   <div class="blog-wrap">
-    <h2>¿Necesita asesoramiento jurídico?</h2>
-    <p>Cada caso es único. Contacte con el despacho para un análisis de su situación.</p>
+    <h2>Need legal advice?</h2>
+    <p>Every case is unique. Contact the firm for an analysis of your situation.</p>
     <div class="blog-cta-buttons">
-      <a href="tel:{{ site.phone }}" class="blog-btn blog-btn-primary">Llamar {{ site.phone }}</a>
-      <a href="{{ '/contacto/' | relative_url }}" class="blog-btn blog-btn-secondary">Consulta online</a>
+      <a href="tel:{{ site.phone }}" class="blog-btn blog-btn-primary">Call {{ site.phone }}</a>
+      <a href="{{ '/en/' | relative_url }}#contact" class="blog-btn blog-btn-secondary">Online consultation</a>
     </div>
   </div>
 </section>
@@ -101,26 +98,3 @@ schema_type: "Blog"
     .blog-hero h1 { font-size: 2rem; }
   }
 </style>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Blog",
-  "name": "Blog Jurídico Perseus & RC Abogados",
-  "url": "{{ '/blog/' | absolute_url }}",
-  "publisher": {
-    "@type": "Organization",
-    "name": {{ site.title | jsonify }},
-    "logo": { "@type": "ImageObject", "url": "{{ '/assets/images/logo.png' | absolute_url }}" }
-  },
-  "blogPost": [
-    {% assign es_posts = site.posts | where_exp: "p", "p.lang != 'en'" %}{% for post in es_posts %}{
-      "@type": "BlogPosting",
-      "headline": {{ post.title | jsonify }},
-      "datePublished": "{{ post.date | date_to_xmlschema }}",
-      "url": "{{ post.url | absolute_url }}"
-    }{% unless forloop.last %},{% endunless %}{% endfor %}
-  ],
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ '/blog/' | absolute_url }}" }
-}
-</script>

@@ -1,0 +1,86 @@
+<!-- Grafo de entidades del sitio (Organization <-> Person) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["LegalService", "Organization"],
+      "@id": "{{ site.url }}/#organization",
+      "name": "{{ site.title }}",
+      "url": "{{ site.url }}/",
+      "telephone": "{{ site.phone }}",
+      "email": "{{ site.email }}",
+      "image": "{{ site.url }}{{ site.image }}",
+      "logo": "{{ site.url }}{{ site.logo }}",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calle Torreiro 13, 3C",
+        "addressLocality": "A Coruña",
+        "postalCode": "15001",
+        "addressRegion": "Galicia",
+        "addressCountry": "ES"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "A Coruña" },
+        { "@type": "AdministrativeArea", "name": "Galicia" }
+      ],
+      "knowsAbout": ["Derecho penal", "Delitos informáticos", "Prueba electrónica", "Recuperación de deudas", "Derecho civil", "Derecho laboral"],
+      "sameAs": ["{{ site.linkedin }}"],
+      "founder": { "@id": "{{ site.url }}/#luis-jurado" },
+      "employee": { "@id": "{{ site.url }}/#luis-jurado" }
+    },
+    {
+      "@type": "Person",
+      "@id": "{{ site.url }}/#luis-jurado",
+      "name": "Luis Jurado Cano",
+      "jobTitle": "Abogado",
+      "worksFor": { "@id": "{{ site.url }}/#organization" },
+      "identifier": "Colegiado nº 6317 · ICACOR",
+      "knowsAbout": ["Derecho penal", "Delitos informáticos", "Prueba electrónica", "Investigación judicial", "Protección de datos"],
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "name": "Ilustre Colegio de Abogados de A Coruña (ICACOR)",
+          "url": "https://www.icacor.es/"
+        },
+        {
+          "@type": "Organization",
+          "name": "Consejo editorial — Revista científica (Universidad de Sevilla)",
+          "url": "https://revistascientificas.us.es/index.php/erips/about/editorialTeam"
+        }
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/luisjuradocano/",
+        "https://2018.secadmin.es/speakers/luis-jurado-cano/",
+        "https://www.empresia.es/persona/jurado-cano-luis/"
+      ],
+      "subjectOf": [
+        {
+          "@type": "NewsArticle",
+          "name": "Luis Jurado, abogado especializado en estafas con criptomonedas",
+          "url": "https://www.lavozdegalicia.es/noticia/coruna/vivir-coruna/2025/02/21/luis-jurado-abogado-estafado-gente-mileurista-piensa-metiendo-dinero-criptomonedas-va-rico/00031740135623337778706.htm",
+          "publisher": { "@type": "Organization", "name": "La Voz de Galicia" }
+        },
+        { "@type": "VideoObject", "url": "https://www.youtube.com/watch?v=a5GRfAL8oDc" },
+        { "@type": "VideoObject", "url": "https://www.youtube.com/watch?v=vKPMEXz3LXU" },
+        {
+          "@type": "Article",
+          "name": "El posicionamiento de terminales móviles: cómo obtener los datos que posee la operadora",
+          "url": "https://www.legaltoday.com/practica-juridica/derecho-publico/proteccion-datos/nuevos-avances-en-la-investigacion-judicial-el-posicionamiento-de-terminales-moviles-como-obtener-los-datos-que-posee-la-operadora-2018-05-31/"
+        },
+        {
+          "@type": "Article",
+          "name": "¿Por qué las huellas digitales o patrones faciales no deben entenderse como contraseñas?",
+          "url": "https://www.legaltoday.com/opinion/articulos-de-opinion/por-que-las-huellas-digitales-o-patrones-faciales-no-deben-entenderse-como-contrasenas-2018-07-30/"
+        },
+        { "@type": "Book", "url": "https://dialnet.unirioja.es/servlet/libro?codigo=766313" },
+        {
+          "@type": "Event",
+          "name": "Encuentro RAJyLEX",
+          "url": "https://www.rajylex.es/pdf/programacion-segundo-encuentro.pdf"
+        }
+      ]
+    }
+  ]
+}
+</script>

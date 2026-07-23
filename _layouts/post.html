@@ -4,12 +4,20 @@
   <body class="page-layout post-layout">
     {% include header.html %}
 
-    <!-- Breadcrumbs -->
+    {% assign t_home = 'Inicio' %}{% assign t_blog = 'Blog' %}
+    {% assign t_cta_pre = '¿Tiene un caso relacionado?' %}{% assign t_cta_link = 'Consulte con el despacho' %}{% assign t_cta_or = 'o llame al' %}
+    {% assign t_job = site.author_jobtitle %}{% assign t_cred = site.colegiado %}
+    {% if page.lang == 'en' %}
+      {% assign t_home = 'Home' %}{% assign t_blog = 'Blog' %}
+      {% assign t_cta_pre = 'Have a related matter?' %}{% assign t_cta_link = 'Contact the firm' %}{% assign t_cta_or = 'or call' %}
+      {% assign t_job = 'Lawyer' %}{% assign t_cred = 'Member of the A Coruña Bar Association (ICACOR), no. 6317' %}
+    {% endif %}
+
     <nav class="breadcrumbs post-breadcrumbs" aria-label="Breadcrumb">
       <div class="post-wrap">
         <ol class="breadcrumb-list">
-          <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
-          <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+          <li><a href="{% if page.lang == 'en' %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">{{ t_home }}</a></li>
+          <li><a href="{% if page.lang == 'en' %}{{ '/en/blog/' | relative_url }}{% else %}{{ '/blog/' | relative_url }}{% endif %}">{{ t_blog }}</a></li>
           <li aria-current="page">{{ page.title }}</li>
         </ol>
       </div>
@@ -32,10 +40,10 @@
 
         <footer class="post-footer">
           <div class="post-author-box">
-            <p class="post-author-name"><strong>{{ page.author | default: site.author }}</strong>{% if site.author_jobtitle %} — {{ site.author_jobtitle }}{% endif %}</p>
-            {% if site.colegiado %}<p class="post-author-cred">{{ site.colegiado }}</p>{% endif %}
+            <p class="post-author-name"><strong>{{ page.author | default: site.author }}</strong>{% if t_job %} — {{ t_job }}{% endif %}</p>
+            {% if t_cred %}<p class="post-author-cred">{{ t_cred }}</p>{% endif %}
           </div>
-          <p class="post-cta">¿Tiene un caso relacionado? <a href="{{ '/contacto/' | relative_url }}">Consulte con el despacho</a> o llame al <a href="tel:{{ site.phone }}">{{ site.phone }}</a>.</p>
+          <p class="post-cta">{{ t_cta_pre }} <a href="{% if page.lang == 'en' %}{{ '/en/' | relative_url }}#contact{% else %}{{ '/contacto/' | relative_url }}{% endif %}">{{ t_cta_link }}</a> {{ t_cta_or }} <a href="tel:{{ site.phone }}">{{ site.phone }}</a>.</p>
         </footer>
       </article>
     </main>
@@ -44,7 +52,6 @@
     {% include scripts.html %}
 
     <style>
-      /* Artículo: ancho de lectura 900px y esquema del sitio */
       .post-wrap { max-width: 900px; margin: 0 auto; padding-left: 1.5rem; padding-right: 1.5rem; }
       .post-breadcrumbs { padding-top: 110px; }
       .post-breadcrumbs .breadcrumb-list { list-style: none; display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; margin: 0; font-size: .85rem; color: var(--text-muted, #718096); }
@@ -75,7 +82,6 @@
       }
     </style>
 
-    <!-- Structured Data: Article -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -87,9 +93,9 @@
       "dateModified": "{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}",
       "author": {
         "@type": "Person",
-        "name": {{ page.author | default: site.author | jsonify }}{% if site.author_jobtitle %},
-        "jobTitle": {{ site.author_jobtitle | jsonify }}{% endif %}{% if site.colegiado %},
-        "description": {{ site.colegiado | jsonify }}{% endif %}
+        "name": {{ page.author | default: site.author | jsonify }}{% if t_job %},
+        "jobTitle": {{ t_job | jsonify }}{% endif %}{% if t_cred %},
+        "description": {{ t_cred | jsonify }}{% endif %}
       },
       "publisher": {
         "@type": "Organization",

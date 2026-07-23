@@ -12,7 +12,7 @@
         <li><a href="{{ home_url }}#services" class="nav-link">Services</a></li>
         <li><a href="{{ home_url }}#values" class="nav-link">Values</a></li>
         <li><a href="{{ home_url }}#contact" class="nav-link">Contact</a></li>
-        <li><a href="{{ '/blog/' | relative_url }}" class="nav-link">Blog</a></li>
+        <li><a href="{{ '/en/blog/' | relative_url }}" class="nav-link">Blog</a></li>
       {% else %}
         <li><a href="{{ home_url }}#about" class="nav-link">Nosotros</a></li>
         <li><a href="{{ home_url }}#services" class="nav-link">Servicios</a></li>
@@ -39,13 +39,13 @@
       <!-- Language Switcher -->
       <div class="language-switcher">
         {% if page.lang == 'en' %}
-          <a href="{{ '/' | relative_url }}" class="lang-link" title="Ver en Español">
+          <a href="{% if page.alternate %}{{ page.alternate | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}" class="lang-link" title="Ver en Español">
             <span class="flag">🇪🇸</span>
             <span class="lang-text">ES</span>
           </a>
         {% else %}
-          <a href="{{ '/en/' | relative_url }}" class="lang-link" title="View in English">
-            <span class="flag">🇺🇸</span>
+          <a href="{% if page.alternate %}{{ page.alternate | relative_url }}{% else %}{{ '/en/' | relative_url }}{% endif %}" class="lang-link" title="View in English">
+            <span class="flag">🇬🇧</span>
             <span class="lang-text">EN</span>
           </a>
         {% endif %}
