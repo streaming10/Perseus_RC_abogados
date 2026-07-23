@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: pages
 title: "Abogados Especialistas en Delitos Informáticos A Coruña"
 description: "Expertos en delitos informáticos en A Coruña. Estafas online, phishing, robo de datos, ciberataques. Defensa especializada en ciberdelitos. Consulta gratuita."
 keywords: "abogados delitos informáticos A Coruña, ciberdelitos, estafas online, phishing, robo datos, ciberataques, abogados ciberseguridad"

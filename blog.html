@@ -63,283 +63,45 @@ schema_type: "Blog"
   </div>
 </section>
 
-<!-- Categories Filter para SEO/SEM -->
-<section class="blog-categories">
-  <div class="container">
-    <nav class="categories-nav" aria-label="Categorías del blog">
-      <h2 class="categories-title">Especialidades Jurídicas</h2>
-      <div class="categories-grid">
-        <a href="{{ '/blog/categoria/delitos-informaticos/' | relative_url }}" class="category-card" data-category="delitos-informaticos">
-          <div class="category-icon">💻</div>
-          <h3 class="category-name">Delitos Informáticos</h3>
-          <p class="category-desc">Ciberdelitos, estafas online, protección de datos</p>
-          <span class="category-count">8 artículos</span>
-        </a>
-        
-        <a href="{{ '/blog/categoria/recuperacion-deudas/' | relative_url }}" class="category-card" data-category="recuperacion-deudas">
-          <div class="category-icon">💰</div>
-          <h3 class="category-name">Recuperación de Deudas</h3>
-          <p class="category-desc">Cobros, embargos, procedimientos de reclamación</p>
-          <span class="category-count">12 artículos</span>
-        </a>
-        
-        <a href="{{ '/blog/categoria/derecho-civil/' | relative_url }}" class="category-card" data-category="derecho-civil">
-          <div class="category-icon">⚖️</div>
-          <h3 class="category-name">Derecho Civil</h3>
-          <p class="category-desc">Contratos, herencias, responsabilidad civil</p>
-          <span class="category-count">15 artículos</span>
-        </a>
-        
-        <a href="{{ '/blog/categoria/derecho-penal/' | relative_url }}" class="category-card" data-category="derecho-penal">
-          <div class="category-icon">🏛️</div>
-          <h3 class="category-name">Derecho Penal</h3>
-          <p class="category-desc">Defensa penal, procedimientos, recursos</p>
-          <span class="category-count">10 artículos</span>
-        </a>
-        
-        <a href="{{ '/blog/categoria/derecho-laboral/' | relative_url }}" class="category-card" data-category="derecho-laboral">
-          <div class="category-icon">👥</div>
-          <h3 class="category-name">Derecho Laboral</h3>
-          <p class="category-desc">Despidos, convenios, acoso laboral</p>
-          <span class="category-count">14 artículos</span>
-        </a>
-        
-        <a href="{{ '/blog/categoria/actualidad-legal/' | relative_url }}" class="category-card" data-category="actualidad-legal">
-          <div class="category-icon">📰</div>
-          <h3 class="category-name">Actualidad Legal</h3>
-          <p class="category-desc">Cambios normativos, jurisprudencia, análisis</p>
-          <span class="category-count">6 artículos</span>
-        </a>
-      </div>
-    </nav>
-  </div>
-</section>
-
-<!-- Featured Articles -->
-<section class="featured-articles">
-  <div class="container">
-    <h2 class="section-title fade-in">Artículos Destacados</h2>
-    
-    <div class="featured-grid">
-      <!-- Artículo Principal -->
-      <article class="featured-main fade-in" itemscope itemtype="https://schema.org/BlogPosting">
-        <div class="article-image">
-          <img src="{{ '/assets/images/blog/delitos-informaticos-2024.webp' | relative_url }}" 
-               alt="Aumento de delitos informáticos en 2024" 
-               loading="lazy"
-               itemprop="image">
-          <div class="article-category">Delitos Informáticos</div>
-        </div>
-        <div class="article-content">
-          <header class="article-header">
-            <h3 itemprop="headline">
-              <a href="{{ '/blog/delitos-informaticos-aumento-2024/' | relative_url }}" itemprop="url">
-                El Aumento Exponencial de Delitos Informáticos en 2024: Qué Necesitas Saber
-              </a>
-            </h3>
-            <div class="article-meta">
-              <time datetime="2024-12-15" itemprop="datePublished">15 de Diciembre, 2024</time>
-              <span class="article-author" itemprop="author">Perseus & RC Abogados</span>
-              <span class="reading-time">5 min lectura</span>
-            </div>
-          </header>
-          <div class="article-excerpt" itemprop="description">
-            Los delitos informáticos han experimentado un crecimiento del 300% en 2024. Analizamos 
-            las nuevas modalidades de ciberdelitos, cómo protegerte y qué hacer si eres víctima. 
-            Guía completa con casos reales de nuestro despacho.
-          </div>
-          <div class="article-tags">
-            <span class="tag">Ciberdelitos</span>
-            <span class="tag">Estafas Online</span>
-            <span class="tag">Protección Datos</span>
-          </div>
-        </div>
-      </article>
-      
-      <!-- Artículos Secundarios -->
-      <div class="featured-secondary">
-        <article class="article-card fade-in stagger-delay-1" itemscope itemtype="https://schema.org/BlogPosting">
-          <div class="card-image">
-            <img src="{{ '/assets/images/blog/reforma-laboral-2024.webp' | relative_url }}" 
-                 alt="Nuevas regulaciones laborales 2024" 
-                 loading="lazy"
-                 itemprop="image">
-            <div class="card-category">Derecho Laboral</div>
-          </div>
-          <div class="card-content">
-            <h4 itemprop="headline">
-              <a href="{{ '/blog/nuevas-regulaciones-despido-2024/' | relative_url }}" itemprop="url">
-                Nuevas Regulaciones sobre Despido: Cambios Clave en 2024
-              </a>
-            </h4>
-            <div class="card-meta">
-              <time datetime="2024-12-10" itemprop="datePublished">10 Dic 2024</time>
-              <span class="reading-time">3 min</span>
-            </div>
-            <p class="card-excerpt" itemprop="description">
-              Análisis detallado de las modificaciones en la normativa laboral que afectan 
-              a despidos y indemnizaciones.
-            </p>
-          </div>
-        </article>
-        
-        <article class="article-card fade-in stagger-delay-2" itemscope itemtype="https://schema.org/BlogPosting">
-          <div class="card-image">
-            <img src="{{ '/assets/images/blog/recuperacion-deudas-galicia.webp' | relative_url }}" 
-                 alt="Procedimientos de recuperación de deudas en Galicia" 
-                 loading="lazy"
-                 itemprop="image">
-            <div class="card-category">Recuperación Deudas</div>
-          </div>
-          <div class="card-content">
-            <h4 itemprop="headline">
-              <a href="{{ '/blog/procedimientos-recuperacion-deudas-galicia/' | relative_url }}" itemprop="url">
-                Procedimientos de Recuperación de Deudas en Galicia: Guía 2024
-              </a>
-            </h4>
-            <div class="card-meta">
-              <time datetime="2024-12-05" itemprop="datePublished">5 Dic 2024</time>
-              <span class="reading-time">4 min</span>
-            </div>
-            <p class="card-excerpt" itemprop="description">
-              Todo lo que necesitas saber sobre los procedimientos judiciales y extrajudiciales 
-              para recuperar deudas en Galicia.
-            </p>
-          </div>
-        </article>
-        
-        <article class="article-card fade-in stagger-delay-3" itemscope itemtype="https://schema.org/BlogPosting">
-          <div class="card-image">
-            <img src="{{ '/assets/images/blog/herencias-covid-efectos.webp' | relative_url }}" 
-                 alt="Efectos del COVID en herencias y sucesiones" 
-                 loading="lazy"
-                 itemprop="image">
-            <div class="card-category">Derecho Civil</div>
-          </div>
-          <div class="card-content">
-            <h4 itemprop="headline">
-              <a href="{{ '/blog/herencias-covid-nuevos-procedimientos/' | relative_url }}" itemprop="url">
-                Herencias Post-COVID: Nuevos Procedimientos y Consideraciones
-              </a>
-            </h4>
-            <div class="card-meta">
-              <time datetime="2024-11-28" itemprop="datePublished">28 Nov 2024</time>
-              <span class="reading-time">6 min</span>
-            </div>
-            <p class="card-excerpt" itemprop="description">
-              Cómo han cambiado los procedimientos de herencias tras la pandemia y qué 
-              nuevas consideraciones legales debes tener en cuenta.
-            </p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Recent Articles List -->
+<!-- Listado de artículos reales (generado desde _posts) -->
 <section class="recent-articles">
   <div class="container">
     <header class="section-header fade-in">
-      <h2 class="section-title">Últimos Artículos</h2>
+      <h2 class="section-title">Artículos</h2>
       <p class="section-subtitle">
-        Mantente al día con los análisis jurídicos más recientes de nuestros especialistas
+        Análisis jurídicos de nuestros especialistas en A Coruña.
       </p>
     </header>
-    
+
     <div class="articles-list">
-      <!-- Lista de artículos para SEO -->
+      {% for post in site.posts %}
       <article class="article-item fade-in" itemscope itemtype="https://schema.org/BlogPosting">
         <div class="article-date">
-          <time datetime="2024-12-12" itemprop="datePublished">
-            <span class="date-day">12</span>
-            <span class="date-month">Dic</span>
+          <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+            <span class="date-day">{{ post.date | date: '%d' }}</span>
+            <span class="date-month">{{ post.date | date: '%m/%y' }}</span>
           </time>
         </div>
         <div class="article-info">
-          <div class="article-category-tag">Derecho Penal</div>
+          {% if post.categories.first %}<div class="article-category-tag">{{ post.categories.first }}</div>{% endif %}
           <h3 itemprop="headline">
-            <a href="{{ '/blog/reforma-codigo-penal-ciberdelitos/' | relative_url }}" itemprop="url">
-              Reforma del Código Penal: Nuevos Tipos Penales para Ciberdelitos
-            </a>
+            <a href="{{ post.url | relative_url }}" itemprop="url">{{ post.title }}</a>
           </h3>
           <p class="article-summary" itemprop="description">
-            Análisis de las modificaciones introducidas en el Código Penal para abordar los nuevos 
-            tipos de delitos informáticos. Implicaciones para víctimas y acusados.
+            {{ post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 220 }}
           </p>
           <div class="article-footer">
-            <span class="reading-time">4 min lectura</span>
-            <div class="article-tags">
-              <span class="tag">Código Penal</span>
-              <span class="tag">Ciberdelitos</span>
-            </div>
+            <a href="{{ post.url | relative_url }}" class="read-more">Leer artículo &rarr;</a>
           </div>
         </div>
       </article>
-      
-      <article class="article-item fade-in stagger-delay-1" itemscope itemtype="https://schema.org/BlogPosting">
-        <div class="article-date">
-          <time datetime="2024-12-08" itemprop="datePublished">
-            <span class="date-day">08</span>
-            <span class="date-month">Dic</span>
-          </time>
-        </div>
-        <div class="article-info">
-          <div class="article-category-tag">Derecho Civil</div>
-          <h3 itemprop="headline">
-            <a href="{{ '/blog/contratos-digitales-validez-legal/' | relative_url }}" itemprop="url">
-              Contratos Digitales: Validez Legal y Mejores Prácticas
-            </a>
-          </h3>
-          <p class="article-summary" itemprop="description">
-            Todo lo que necesitas saber sobre la validez legal de los contratos firmados digitalmente 
-            y las mejores prácticas para empresas y particulares.
-          </p>
-          <div class="article-footer">
-            <span class="reading-time">5 min lectura</span>
-            <div class="article-tags">
-              <span class="tag">Contratos</span>
-              <span class="tag">Firma Digital</span>
-            </div>
-          </div>
-        </div>
-      </article>
-      
-      <article class="article-item fade-in stagger-delay-2" itemscope itemtype="https://schema.org/BlogPosting">
-        <div class="article-date">
-          <time datetime="2024-12-03" itemprop="datePublished">
-            <span class="date-day">03</span>
-            <span class="date-month">Dic</span>
-          </time>
-        </div>
-        <div class="article-info">
-          <div class="article-category-tag">Recuperación Deudas</div>
-          <h3 itemprop="headline">
-            <a href="{{ '/blog/embargos-cuentas-bancarias-procedimiento/' | relative_url }}" itemprop="url">
-              Embargos de Cuentas Bancarias: Procedimiento y Derechos del Deudor
-            </a>
-          </h3>
-          <p class="article-summary" itemprop="description">
-            Guía completa sobre cómo funcionan los embargos de cuentas bancarias, qué derechos 
-            tienes como deudor y cómo proteger tus bienes esenciales.
-          </p>
-          <div class="article-footer">
-            <span class="reading-time">6 min lectura</span>
-            <div class="article-tags">
-              <span class="tag">Embargos</span>
-              <span class="tag">Derechos</span>
-            </div>
-          </div>
-        </div>
-      </article>
-      
-      <!-- Botón Ver Más para SEO -->
-      <div class="load-more-container fade-in">
-        <button class="load-more-btn" type="button">
-          Ver Más Artículos
-          <span class="load-more-icon">↓</span>
-        </button>
-      </div>
+      {% endfor %}
+
+      {% if site.posts.size == 0 %}
+      <p style="text-align:center;color:var(--text-secondary);padding:3rem 0;">
+        Estamos preparando nuevos análisis. Vuelve pronto.
+      </p>
+      {% endif %}
     </div>
   </div>
 </section>
@@ -426,18 +188,12 @@ schema_type: "Blog"
     }
   },
   "blogPost": [
-    {
+    {% for post in site.posts %}{
       "@type": "BlogPosting",
-      "headline": "El Aumento Exponencial de Delitos Informáticos en 2024",
-      "datePublished": "2024-12-15",
-      "dateModified": "2024-12-15",
-      "author": {
-        "@type": "Organization",
-        "name": "Perseus & RC Abogados"
-      },
-      "description": "Análisis del crecimiento de delitos informáticos y cómo protegerse",
-      "url": "{{ '/blog/delitos-informaticos-aumento-2024/' | absolute_url }}"
-    }
+      "headline": {{ post.title | jsonify }},
+      "datePublished": "{{ post.date | date_to_xmlschema }}",
+      "url": "{{ post.url | absolute_url }}"
+    }{% unless forloop.last %},{% endunless %}{% endfor %}
   ],
   "mainEntityOfPage": {
     "@type": "WebPage",

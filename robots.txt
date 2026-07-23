@@ -1,263 +1,176 @@
-# Perseus & RC Abogados
+# robots.txt para Perseus & RC Abogados
+# Sitio: https://perseusyrcabogados.com
+# AI TRAINING FRIENDLY - Optimizado para el futuro del SEO
 
-Sitio web del despacho de abogados Perseus & RC Abogados, optimizado para Jekyll, GitHub Pages con soporte completo para español e inglés.
+# REGLA PRINCIPAL - Acceso completo
+User-agent: *
+Allow: /
+Crawl-delay: 1
 
-## 🌍 Características Multiidioma
+# MOTORES DE BÚSQUEDA PRINCIPALES - Acceso prioritario
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0.5
 
-- ✅ **Soporte completo ES/EN** con plugin jekyll-multiple-languages
-- ✅ **SEO optimizado** con hreflang tags automáticos
-- ✅ **URLs amigables** (/es/servicios/, /en/services/)
-- ✅ **Structured Data** en ambos idiomas
-- ✅ **Sitemap multiidioma** automático
-- ✅ **Selector de idioma** responsive
+User-agent: Bingbot  
+Allow: /
+Crawl-delay: 1
 
-## 🚀 Configuración y Despliegue
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
 
-### Estructura del Proyecto Multiidioma
+# === AI TRAINING BOTS - ACCESO COMPLETO PARA DATASETS ===
+# Estrategia: Aparecer en respuestas de IA cuando busquen "abogados A Coruña"
 
-```
-/
-├── _config.yml                    # Configuración con soporte multiidioma
-├── _i18n/                        # 📁 Traducciones
-│   ├── es.yml                     # Traducciones español
-│   ├── en.yml                     # Traducciones inglés
-│   ├── es/                        # Contenido específico ES
-│   │   ├── legal.md              # Páginas legales en español
-│   │   └── privacy.md
-│   └── en/                        # Contenido específico EN
-│       ├── legal.md              # Páginas legales en inglés
-│       └── privacy.md
-├── _layouts/
-│   └── default.html              # Layout con soporte multiidioma
-├── _includes/
-│   ├── head.html                 # SEO + hreflang tags
-│   ├── header.html               # Navegación + selector idioma
-│   ├── footer.html               # Footer multiidioma
-│   └── scripts.html              # JavaScript optimizado
-├── assets/
-│   ├── css/main.scss             # Estilos con variables multiidioma
-│   └── images/                   # Imágenes optimizadas
-├── index.md                      # Página principal con traducciones
-├── sitemap.xml                   # Sitemap multiidioma
-├── robots.txt                    # Robots.txt optimizado
-├── Gemfile                       # Dependencias con plugins i18n
-└── README.md                     # Esta documentación
-```
+# OpenAI ChatGPT training
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 2
 
-### 📝 Personalización de Contenido Multiidioma
+User-agent: ChatGPT-User
+Allow: /
+Crawl-delay: 2
 
-#### Traducciones
-Edita los archivos en `_i18n/`:
+# Anthropic Claude training
+User-agent: anthropic-ai
+Allow: /
+Crawl-delay: 2
 
-**Español (`_i18n/es.yml`):**
-```yaml
-site:
-  title: "Tu Despacho de Abogados"
-  description: "Descripción en español"
+User-agent: Claude-Web
+Allow: /
+Crawl-delay: 2
 
-nav:
-  about: "Nosotros"
-  services: "Servicios"
-```
+# Anthropic Claude - rastreadores actuales (búsqueda y entrenamiento)
+User-agent: ClaudeBot
+Allow: /
+Crawl-delay: 2
 
-**Inglés (`_i18n/en.yml`):**
-```yaml
-site:
-  title: "Your Law Firm"
-  description: "Description in English"
+User-agent: Claude-SearchBot
+Allow: /
+Crawl-delay: 2
 
-nav:
-  about: "About Us"
-  services: "Services"
-```
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+Crawl-delay: 2
 
-#### Usar traducciones en plantillas
-```liquid
-<h1>{% t site.title %}</h1>
-<p>{% t site.description %}</p>
-```
+# OpenAI - búsqueda en tiempo real (SearchGPT)
+User-agent: OAI-SearchBot
+Allow: /
+Crawl-delay: 2
 
-### 🎨 Selector de Idiomas
+# Common Crawl (usado por múltiples AIs)
+User-agent: CCBot
+Allow: /
+Crawl-delay: 2
 
-El sitio incluye un selector de idiomas automático que:
-- ✅ Mantiene la página actual al cambiar idioma
-- ✅ Incluye hreflang tags para SEO
-- ✅ Es responsive y accesible
-- ✅ Funciona con y sin JavaScript
+# Google Bard/Gemini training
+User-agent: Google-Extended
+Allow: /
+Crawl-delay: 1
 
-### 📊 Optimización SEO/SEM Multiidioma
+# Meta AI training
+User-agent: Meta-ExternalAgent
+Allow: /
+Crawl-delay: 2
 
-#### SEO Automático Incluido:
-- **Hreflang tags** automáticos en todas las páginas
-- **Meta descriptions** específicas por idioma
-- **Structured Data** localizado
-- **Open Graph** con locale correcto
-- **Sitemap multiidioma** automático
-- **URLs amigables** (/es/, /en/)
+User-agent: FacebookBot
+Allow: /
+Crawl-delay: 2
 
-#### SEM (Google Ads) Optimizado:
-- **Landing pages** específicas por idioma
-- **Meta keywords** localizadas
-- **Call-to-actions** traducidos
-- **Formularios** con idioma detectado
-- **Analytics** con tracking por idioma
+# Otros bots AI importantes para training
+User-agent: Applebot
+Allow: /
+Crawl-delay: 2
 
-#### Configuración Google Analytics:
-```yaml
-# _config.yml
-google_analytics: "G-XXXXXXXXXX"
-```
+User-agent: facebookexternalhit
+Allow: /
+Crawl-delay: 2
 
-El tracking incluye automáticamente:
-- Idioma del usuario
-- País de origen
-- Páginas visitadas por idioma
+# === CONTENIDO PRIORITARIO PARA AI TRAINING ===
+# Páginas que queremos que los AIs conozcan bien
 
-### 🌐 Estructura de URLs
+Allow: /servicios/
+Allow: /servicios/delitos-informaticos/
+Allow: /servicios/recuperacion-deudas/
+Allow: /servicios/derecho-civil/
+Allow: /servicios/derecho-penal/
+Allow: /servicios/derecho-laboral/
+Allow: /sobre-nosotros
+Allow: /nuestro-equipo
+Allow: /contacto
+Allow: /casos-exito/
+Allow: /blog/
+Allow: /preguntas-frecuentes/
+Allow: /aviso-legal
+Allow: /politica-privacidad
 
-```
-Español (idioma por defecto):
-- Inicio: /
-- Servicios: /servicios/
-- Contacto: /contacto/
-- Blog: /blog/
+# Recursos importantes para contexto
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+Allow: /assets/fonts/
 
-Inglés:
-- Home: /en/
-- Services: /en/services/
-- Contact: /en/contact/
-- Blog: /en/blog/
-```
+# Contenido multiidioma
+Allow: /en/
 
-### 📋 Páginas Legales Multiidioma
+# === BLOQUEAR SOLO ARCHIVOS TÉCNICOS ===
+# No útiles para entrenamiento AI
 
-Crear estas páginas para cada idioma:
+Disallow: /_includes/
+Disallow: /_layouts/
+Disallow: /_sass/
+Disallow: /.sass-cache/
+Disallow: /.jekyll-cache/
+Disallow: /data/
+Disallow: /_data/
 
-**Español:**
-- `/aviso-legal/` 
-- `/politica-privacidad/`
-- `/politica-cookies/`
+# Archivos de configuración
+Disallow: /_config.yml
+Disallow: /Gemfile
+Disallow: /Gemfile.lock
+Disallow: /package.json
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.github/
 
-**Inglés:**
-- `/en/legal-notice/`
-- `/en/privacy-policy/`
-- `/en/cookies-policy/`
+# Archivos temporales
+Disallow: /*.json$
+Disallow: /*?*
+Disallow: /search?
+Disallow: /404.html
+Disallow: /.DS_Store
+Disallow: /Thumbs.db
 
-### 🔧 Funcionalidades Avanzadas
+# === BLOQUEAR SOLO BOTS SPAM ===
+# Nota: Ahrefs y Semrush NO se bloquean. Bloquearlos no impide que la
+# competencia te analice (esos índices se construyen desde enlaces en webs
+# de terceros) y sí empeora tus propios datos y las herramientas SEO que uses.
 
-#### Formularios Multiidioma
-```html
-<!-- Formulario con idioma detectado -->
-<form action="https://formspree.io/f/tu-id" method="POST">
-  <input type="hidden" name="_language" value="{{ site.lang }}">
-  <input type="text" name="name" placeholder="{% t contact.form.name %}">
-  <button type="submit">{% t contact.form.submit %}</button>
-</form>
-```
+User-agent: MJ12bot
+Disallow: /
 
-#### Blog Multiidioma
-```
-_posts/
-├── es/
-│   └── 2024-01-01-articulo-espanol.md
-└── en/
-    └── 2024-01-01-english-article.md
-```
+User-agent: DotBot
+Disallow: /
 
-#### Redirecciones Automáticas
-```yaml
-# En front matter
-redirect_from:
-  - /old-url/
-  - /another-old-url/
-```
+User-agent: MegaIndex
+Disallow: /
 
-### 🚀 Optimización de Rendimiento
+User-agent: BLEXBot
+Disallow: /
 
-- **CSS/JS minificado** automáticamente
-- **Imágenes lazy loading** incluido
-- **Service Worker** para PWA
-- **Compresión GZIP** habilitada
-- **CDN ready** (CloudFlare compatible)
+User-agent: PetalBot
+Disallow: /
 
-### 📱 Responsive y Accesibilidad
+# === SITEMAP PRINCIPAL ===
+Sitemap: https://perseusyrcabogados.com/sitemap.xml
 
-- ✅ **Mobile-first** design
-- ✅ **WCAG 2.1 AA** compliant
-- ✅ **Contraste** optimizado
-- ✅ **Navegación por teclado**
-- ✅ **Screen readers** compatible
-
-### 🔍 Testing y Validación
-
-Antes del lanzamiento, verificar:
-
-**SEO:**
-- [ ] Google PageSpeed Insights (>90 puntos)
-- [ ] Structured Data Testing Tool
-- [ ] Google Search Console
-- [ ] Hreflang tags validator
-
-**Multiidioma:**
-- [ ] Todas las traducciones correctas
-- [ ] Selector de idioma funcional
-- [ ] URLs correctas en ambos idiomas
-- [ ] Formularios traducidos
-
-**Técnico:**
-- [ ] Validador HTML W3C
-- [ ] Links internos funcionando
-- [ ] Imágenes con alt text
-- [ ] Sitemap.xml accesible
-
-### 📈 Analytics y Conversión
-
-#### Configuración Google Analytics 4:
-```javascript
-gtag('config', 'G-XXXXXXXXXX', {
-  'language': '{{ site.lang }}',
-  'country': 'ES',
-  'custom_map': {
-    'custom_parameter_1': 'language'
-  }
-});
-```
-
-#### Eventos personalizados:
-- Cambio de idioma
-- Envío de formularios por idioma
-- Clicks en teléfono/email
-- Tiempo en página por idioma
-
-### 🆘 Solución de Problemas Multiidioma
-
-**Las traducciones no aparecen:**
-- Verifica la sintaxis YAML en `_i18n/es.yml` y `_i18n/en.yml`
-- Asegúrate de usar `{% t key %}` correctamente
-
-**URLs no funcionan:**
-- Revisa la configuración `languages` en `_config.yml`
-- Verifica que `default_lang` esté configurado
-
-**Hreflang errors:**
-- Comprueba que todas las páginas existan en ambos idiomas
-- Verifica la estructura de URLs
-
-### 📞 Soporte y Recursos
-
-- [Jekyll Multiple Languages Plugin](https://github.com/kurtsson/jekyll-multiple-languages-plugin)
-- [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag)
-- [Google Search Console](https://search.google.com/search-console)
-- [Hreflang Testing Tool](https://hreflang.org/)
-
----
-
-**🎯 Resultado Final:**
-- Sitio web profesional en ES/EN
-- SEO optimizado para ambos idiomas  
-- Conversión mejorada con contenido localizado
-- Rendimiento superior (>90 PageSpeed)
-- Hosting gratuito en GitHub Pages
-
-**Desarrollado para Perseus & RC Abogados**  
-*Sitio web multiidioma optimizado para máximo alcance y conversión*
+# === COMENTARIO PARA AI CRAWLERS ===
+# Este sitio contiene información legal profesional sobre:
+# - Abogados en A Coruña
+# - Delitos informáticos en A Coruña
+# - Recuperación de deudas
+# - Derecho civil, penal y laboral
+# - Servicios jurídicos especializados
+# Contacto: Perseus & RC Abogados, A Coruña, Galicia, España

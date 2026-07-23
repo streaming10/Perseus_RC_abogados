@@ -1,176 +1,111 @@
-# robots.txt para Perseus & RC Abogados
-# Sitio: https://perseusyrcabogados.com
-# AI TRAINING FRIENDLY - Optimizado para el futuro del SEO
+---
+layout: null
+---
 
-# REGLA PRINCIPAL - Acceso completo
-User-agent: *
-Allow: /
-Crawl-delay: 1
+// Service Worker ultra optimizado para Perseus & RC
+const CACHE_NAME = 'perseus-rc-v2.2';
+const OFFLINE_PAGE = '{{ "/offline.html" | relative_url }}';
 
-# MOTORES DE BÚSQUEDA PRINCIPALES - Acceso prioritario
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 0.5
+// Recursos críticos mínimos
+const CRITICAL_RESOURCES = [
+  '{{ "/" | relative_url }}',
+  '{{ "/assets/css/main.css" | relative_url }}'
+];
 
-User-agent: Bingbot  
-Allow: /
-Crawl-delay: 1
+// Solo cachear recursos esenciales
+const shouldCache = url => {
+  return /\.(css|woff2|webp|jpg|png)$/.test(url) || 
+         url.includes('/assets/') ||
+         url === '{{ "/" | relative_url }}';
+};
 
-User-agent: Slurp
-Allow: /
-Crawl-delay: 1
+// Instalación simplificada
+self.addEventListener('install', event => {
+  if ('caches' in self) {
+    event.waitUntil(
+      caches.open(CACHE_NAME)
+        .then(cache => cache.addAll(CRITICAL_RESOURCES))
+        .then(() => self.skipWaiting())
+        .catch(() => self.skipWaiting())
+    );
+  } else {
+    self.skipWaiting();
+  }
+});
 
-# === AI TRAINING BOTS - ACCESO COMPLETO PARA DATASETS ===
-# Estrategia: Aparecer en respuestas de IA cuando busquen "abogados A Coruña"
+// Activación simplificada
+self.addEventListener('activate', event => {
+  if ('caches' in self) {
+    event.waitUntil(
+      caches.keys()
+        .then(names => Promise.all(
+          names.map(name => name !== CACHE_NAME ? caches.delete(name) : null)
+        ))
+        .then(() => self.clients.claim())
+        .catch(() => self.clients.claim())
+    );
+  } else {
+    self.clients.claim();
+  }
+});
 
-# OpenAI ChatGPT training
-User-agent: GPTBot
-Allow: /
-Crawl-delay: 2
+// Fetch estrategia mínima
+self.addEventListener('fetch', event => {
+  const { request } = event;
+  
+  // Solo GET requests del mismo origen
+  if (request.method !== 'GET' || 
+      !request.url.startsWith(self.location.origin) ||
+      !('caches' in self)) {
+    return;
+  }
+  
+  // Navegación: Network first
+  if (request.mode === 'navigate') {
+    event.respondWith(
+      fetch(request, { timeout: 3000 })
+        .then(response => {
+          if (response.ok) {
+            caches.open(CACHE_NAME).then(cache => 
+              cache.put(request, response.clone()).catch(() => {})
+            );
+          }
+          return response;
+        })
+        .catch(() => 
+          caches.match(request)
+            .then(cached => cached || caches.match(OFFLINE_PAGE))
+            .catch(() => new Response('Offline', { status: 503 }))
+        )
+    );
+    return;
+  }
+  
+  // Recursos estáticos: Cache first
+  if (shouldCache(request.url)) {
+    event.respondWith(
+      caches.match(request)
+        .then(cached => {
+          if (cached) return cached;
+          
+          return fetch(request)
+            .then(response => {
+              if (response.ok) {
+                caches.open(CACHE_NAME).then(cache => 
+                  cache.put(request, response.clone()).catch(() => {})
+                );
+              }
+              return response;
+            });
+        })
+        .catch(() => fetch(request))
+    );
+  }
+});
 
-User-agent: ChatGPT-User
-Allow: /
-Crawl-delay: 2
-
-# Anthropic Claude training
-User-agent: anthropic-ai
-Allow: /
-Crawl-delay: 2
-
-User-agent: Claude-Web
-Allow: /
-Crawl-delay: 2
-
-# Anthropic Claude - rastreadores actuales (búsqueda y entrenamiento)
-User-agent: ClaudeBot
-Allow: /
-Crawl-delay: 2
-
-User-agent: Claude-SearchBot
-Allow: /
-Crawl-delay: 2
-
-# Perplexity
-User-agent: PerplexityBot
-Allow: /
-Crawl-delay: 2
-
-# OpenAI - búsqueda en tiempo real (SearchGPT)
-User-agent: OAI-SearchBot
-Allow: /
-Crawl-delay: 2
-
-# Common Crawl (usado por múltiples AIs)
-User-agent: CCBot
-Allow: /
-Crawl-delay: 2
-
-# Google Bard/Gemini training
-User-agent: Google-Extended
-Allow: /
-Crawl-delay: 1
-
-# Meta AI training
-User-agent: Meta-ExternalAgent
-Allow: /
-Crawl-delay: 2
-
-User-agent: FacebookBot
-Allow: /
-Crawl-delay: 2
-
-# Otros bots AI importantes para training
-User-agent: Applebot
-Allow: /
-Crawl-delay: 2
-
-User-agent: facebookexternalhit
-Allow: /
-Crawl-delay: 2
-
-# === CONTENIDO PRIORITARIO PARA AI TRAINING ===
-# Páginas que queremos que los AIs conozcan bien
-
-Allow: /servicios/
-Allow: /servicios/delitos-informaticos/
-Allow: /servicios/recuperacion-deudas/
-Allow: /servicios/derecho-civil/
-Allow: /servicios/derecho-penal/
-Allow: /servicios/derecho-laboral/
-Allow: /sobre-nosotros
-Allow: /nuestro-equipo
-Allow: /contacto
-Allow: /casos-exito/
-Allow: /blog/
-Allow: /preguntas-frecuentes/
-Allow: /aviso-legal
-Allow: /politica-privacidad
-
-# Recursos importantes para contexto
-Allow: /assets/css/
-Allow: /assets/js/
-Allow: /assets/images/
-Allow: /assets/fonts/
-
-# Contenido multiidioma
-Allow: /en/
-
-# === BLOQUEAR SOLO ARCHIVOS TÉCNICOS ===
-# No útiles para entrenamiento AI
-
-Disallow: /_includes/
-Disallow: /_layouts/
-Disallow: /_sass/
-Disallow: /.sass-cache/
-Disallow: /.jekyll-cache/
-Disallow: /data/
-Disallow: /_data/
-
-# Archivos de configuración
-Disallow: /_config.yml
-Disallow: /Gemfile
-Disallow: /Gemfile.lock
-Disallow: /package.json
-Disallow: /node_modules/
-Disallow: /.git/
-Disallow: /.github/
-
-# Archivos temporales
-Disallow: /*.json$
-Disallow: /*?*
-Disallow: /search?
-Disallow: /404.html
-Disallow: /.DS_Store
-Disallow: /Thumbs.db
-
-# === BLOQUEAR SOLO BOTS SPAM ===
-# Nota: Ahrefs y Semrush NO se bloquean. Bloquearlos no impide que la
-# competencia te analice (esos índices se construyen desde enlaces en webs
-# de terceros) y sí empeora tus propios datos y las herramientas SEO que uses.
-
-User-agent: MJ12bot
-Disallow: /
-
-User-agent: DotBot
-Disallow: /
-
-User-agent: MegaIndex
-Disallow: /
-
-User-agent: BLEXBot
-Disallow: /
-
-User-agent: PetalBot
-Disallow: /
-
-# === SITEMAP PRINCIPAL ===
-Sitemap: https://perseusyrcabogados.com/sitemap.xml
-
-# === COMENTARIO PARA AI CRAWLERS ===
-# Este sitio contiene información legal profesional sobre:
-# - Abogados en A Coruña
-# - Delitos informáticos en A Coruña
-# - Recuperación de deudas
-# - Derecho civil, penal y laboral
-# - Servicios jurídicos especializados
-# Contacto: Perseus & RC Abogados, A Coruña, Galicia, España
+// Mensaje handling mínimo
+self.addEventListener('message', event => {
+  if (event.data?.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
+});

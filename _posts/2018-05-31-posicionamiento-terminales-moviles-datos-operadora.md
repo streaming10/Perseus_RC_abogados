@@ -1,6 +1,14 @@
-# Nuevos avances en la investigación judicial
-
-## El posicionamiento de terminales móviles. Cómo obtener los datos que posee la operadora.
+---
+layout: post
+title: "El posicionamiento de terminales móviles: cómo obtener los datos que posee la operadora"
+description: "Guía jurídico-técnica para solicitar por mandamiento judicial los datos de posicionamiento (servicios LCS, elementos GMLC y SMLC) que almacena la operadora, y su encaje en el art. 588 septies b LECrim y en el RGPD."
+date: 2018-05-31
+author: "Luis Jurado Cano"
+categories: ["Derecho penal", "Delitos informáticos"]
+tags: [posicionamiento, prueba electrónica, LECrim, RGPD, investigación judicial, geolocalización]
+keywords: "posicionamiento terminal móvil, datos de la operadora mandamiento judicial, 588 septies b LECrim, LCS GMLC SMLC, geolocalización investigación penal, A Coruña"
+permalink: /blog/posicionamiento-terminales-moviles-datos-operadora/
+---
 
 Uno de los grandes problemas desde el punto de vista jurídico es la inseguridad a la hora de solicitar información a las operadoras acerca de los datos que posee un determinado terminal móvil, en concreto en el presente artículo nos referiremos exclusivamente a los concernientes al posicionamiento.
 
@@ -120,3 +128,4 @@ Agradecer especialmente el asesoramiento técnico a David Pérez y José Picó d
 
 Este artículo de mi autoría fue publicado en Legaltoday de Aranzadi-Thomson Reuters el día 31 de mayo de 2018.
 [Nuevos avances en la investigación judicial: El posicionamiento de terminales moviles](http://www.legaltoday.com/practica-juridica/publico/proteccion_de_datos/nuevos-avances-en-la-investigacion-judicial-el-posicionamiento-de-terminales-moviles-como-obtener-los-datos-que-posee-la-operadora)
+

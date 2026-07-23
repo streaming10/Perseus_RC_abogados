@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="{% if page.lang %}{{ page.lang }}{% else %}es{% endif %}">
+  {% include head.html %}
+  <body class="page-layout post-layout">
+    {% include header.html %}
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <div class="container">
+        <ol class="breadcrumb-list">
+          <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
+          <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+          <li aria-current="page">{{ page.title }}</li>
+        </ol>
+      </div>
+    </nav>
+
+    <main class="page-content">
+      <article class="container post" itemscope itemtype="https://schema.org/Article">
+        <header class="post-header">
+          <h1 itemprop="headline">{{ page.title }}</h1>
+          <div class="post-meta">
+            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%d/%m/%Y' }}</time>
+            <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+              · <span itemprop="name">{{ page.author | default: site.author }}</span>
+            </span>
+          </div>
+          {% if page.description %}<p class="post-lead">{{ page.description }}</p>{% endif %}
+        </header>
+
+        <div class="post-body" itemprop="articleBody">
+          {{ content }}
+        </div>
+
+        <footer class="post-footer">
+          <div class="post-author-box">
+            <p class="post-author-name"><strong>{{ page.author | default: site.author }}</strong>{% if site.author_jobtitle %} — {{ site.author_jobtitle }}{% endif %}</p>
+            {% if site.colegiado %}<p class="post-author-cred">{{ site.colegiado }}</p>{% endif %}
+          </div>
+          <p>¿Tiene un caso relacionado? <a href="{{ '/contacto/' | relative_url }}">Consulte con el despacho</a> o llame al <a href="tel:{{ site.phone }}">{{ site.phone }}</a>.</p>
+        </footer>
+      </article>
+    </main>
+
+    {% include footer.html %}
+    {% include scripts.html %}
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": {{ page.title | jsonify }},
+      "description": {{ page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 | jsonify }},
+      "url": "{{ page.url | absolute_url }}",
+      "datePublished": "{{ page.date | date_to_xmlschema }}",
+      "dateModified": "{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}",
+      "author": {
+        "@type": "Person",
+        "name": {{ page.author | default: site.author | jsonify }}{% if site.author_jobtitle %},
+        "jobTitle": {{ site.author_jobtitle | jsonify }}{% endif %}{% if site.colegiado %},
+        "description": {{ site.colegiado | jsonify }}{% endif %}
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": {{ site.title | jsonify }},
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ site.url }}{{ site.logo }}"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ page.url | absolute_url }}"
+      },
+      "inLanguage": "es"
+    }
+    </script>
+  </body>
+</html>
