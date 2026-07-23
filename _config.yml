@@ -27,8 +27,8 @@ twitter: "@perseusrcabogados"
 linkedin: "https://linkedin.com/company/perseus-rc-abogados"
 
 # Google Analytics y Search Console
-# google_analytics: "G-XXXXXXXXXX"
-# google_site_verification: "your-verification-code"
+google_analytics: "G-CSLZQMDJDJ"
+# google_site_verification: "pega-aqui-el-codigo-de-search-console"
 
 # Configuración Jekyll optimizada para rendimiento
 markdown: kramdown
