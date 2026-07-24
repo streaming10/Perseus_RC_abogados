@@ -57,7 +57,11 @@ schema_type: "Blog"
   }
 </style>
 
-<nav class="breadcrumbs blog-breadcrumbs" aria-label="Breadcrumb">
+<!-- ponytail: SIN la clase genérica 'breadcrumbs'. Esa clase vive en el
+     main.css DIFERIDO con margin-top:80px; al llegar tarde empujaba todo el
+     body ~80px -> CLS 0.108. El offset del header ya lo da .blog-breadcrumbs
+     (padding-top) en el <style> inline, que se aplica en el primer paint. -->
+<nav class="blog-breadcrumbs" aria-label="Breadcrumb">
   <div class="blog-wrap">
     <ol class="breadcrumb-list">
       <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
