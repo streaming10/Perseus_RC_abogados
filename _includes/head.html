@@ -5,12 +5,28 @@
 
   <!-- Google Analytics (GA4) -->
   {% if site.google_analytics %}
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
   <script>
+    // ponytail: gtag (~159KB) se carga en la PRIMERA interacción, o a los 6s si
+    // no hay ninguna. Así no penaliza LCP/FCP. Las llamadas gtag() se encolan en
+    // dataLayer y se procesan en cuanto llega la librería.
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', '{{ site.google_analytics }}');
+    (function(){
+      var loaded = false;
+      function loadGA(){
+        if (loaded) return; loaded = true;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}';
+        document.head.appendChild(s);
+      }
+      ['scroll','pointerdown','keydown','touchstart'].forEach(function(evt){
+        window.addEventListener(evt, loadGA, { once: true, passive: true });
+      });
+      setTimeout(loadGA, 6000);
+    })();
   </script>
   {% endif %}
 
