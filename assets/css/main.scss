@@ -17,6 +17,7 @@
   --text-primary: #1a2332;
   --text-secondary: #4a5568;
   --text-muted: #718096;
+  --gold-ink: #8a6a2f;      /* dorado accesible para texto sobre fondo claro (AA) */
   --border-light: #e2e8f0;
   --border-subtle: #cbd5e0;
   --shadow-light: 0 4px 20px rgba(26, 35, 50, 0.08);
@@ -124,7 +125,7 @@ body.menu-open {
 
 .about-intro {
   font-size: 0.9rem;
-  color: var(--accent-gold);
+  color: var(--gold-ink);
   letter-spacing: 4px;
   text-transform: uppercase;
   margin-bottom: 2.5rem;
@@ -157,7 +158,7 @@ body.menu-open {
   display: inline-flex;
   align-items: center;
   gap: 0.8rem;
-  color: var(--accent-gold);
+  color: var(--gold-ink);
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 300;
@@ -239,7 +240,7 @@ body.menu-open {
 
 .services-intro {
   font-size: 0.9rem;
-  color: var(--accent-gold);
+  color: var(--gold-ink);
   letter-spacing: 4px;
   text-transform: uppercase;
   margin-bottom: 2.5rem;
@@ -329,7 +330,7 @@ body.menu-open {
 
 .service-number {
   font-size: 0.8rem;
-  color: var(--accent-gold);
+  color: var(--gold-ink);
   letter-spacing: 3px;
   margin-bottom: 2rem;
   font-weight: 300;
@@ -583,7 +584,7 @@ body.menu-open {
 
 .contact-label {
   font-size: 0.8rem;
-  color: var(--accent-gold);
+  color: var(--gold-ink);
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-bottom: 0.8rem;
@@ -788,7 +789,7 @@ body.menu-open {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--accent-gold);
+  color: var(--gold-ink);
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 400;
