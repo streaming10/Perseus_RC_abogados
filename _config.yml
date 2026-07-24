@@ -89,6 +89,7 @@ defaults:
       layout: "post"
       author: "Perseus & RC Abogados"
       image: "/assets/images/perseus-rc-default.jpg"
+      og_type: "article"
   - scope:
       path: ""
       type: "services"

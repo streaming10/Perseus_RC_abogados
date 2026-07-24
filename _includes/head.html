@@ -232,6 +232,9 @@
       z-index: 2;
     }
     
+    /* ponytail: texto del hero pinta al instante (es el LCP en móvil).
+       Antes arrancaba en opacity:0 con animación retardada e inflaba el LCP.
+       Para recuperar la entrada sin coste: animar solo transform con opacity:1. */
     .hero-subtitle {
       font-size: 0.9rem;
       color: var(--accent-light-gold);
@@ -239,8 +242,6 @@
       text-transform: uppercase;
       margin-bottom: 2.5rem;
       font-weight: 300;
-      opacity: 0;
-      animation: fadeInUp 0.8s ease-out 0.3s forwards;
     }
     
     .hero h1 {
@@ -253,8 +254,6 @@
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
-      opacity: 0;
-      animation: fadeInUp 0.8s ease-out 0.6s forwards;
     }
     
     .hero-description {
@@ -266,8 +265,6 @@
       max-width: 700px;
       margin-left: auto;
       margin-right: auto;
-      opacity: 0;
-      animation: fadeInUp 0.8s ease-out 0.9s forwards;
     }
     
     @keyframes fadeInUp {
@@ -544,17 +541,20 @@
   </style>
   
   <!-- Open Graph -->
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="{{ page.og_type | default: 'website' }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:locale" content="es_ES">
-  
+  <meta property="og:image" content="{{ site.image | absolute_url }}">
+
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:image" content="{{ site.image | absolute_url }}">
+  <meta name="twitter:site" content="{{ site.title }}">
   
   <!-- Canonical URL -->
   <link rel="canonical" href="{{ page.url | absolute_url }}">
