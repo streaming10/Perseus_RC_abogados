@@ -6,7 +6,7 @@ keywords: "servicios jurídicos A Coruña, áreas de práctica, abogados delitos
 permalink: /servicios/
 ---
 
-<nav class="breadcrumbs svcidx-breadcrumbs" aria-label="Breadcrumb">
+<nav class="svcidx-breadcrumbs" aria-label="Breadcrumb">
   <div class="svcidx-wrap">
     <ol class="breadcrumb-list">
       <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
@@ -61,8 +61,8 @@ permalink: /servicios/
 <style>
   .svcidx-wrap { max-width: 1040px; margin: 0 auto; padding-left: 1.5rem; padding-right: 1.5rem; }
   .svcidx-breadcrumbs { padding-top: 110px; }
-  .svcidx-breadcrumbs .breadcrumb-list { list-style: none; display: flex; gap: .5rem; padding: 0; margin: 0; font-size: .85rem; color: var(--text-muted, #718096); }
-  .svcidx-breadcrumbs a { color: var(--accent-gold, #c9a96a); text-decoration: none; }
+  .svcidx-breadcrumbs .breadcrumb-list { list-style: none; display: flex; gap: .5rem; padding: 0; margin: 0; font-size: .85rem; color: #4a5568; }
+  .svcidx-breadcrumbs a { color: #8a6a2f; text-decoration: none; }
   .svcidx-breadcrumbs li:not(:last-child)::after { content: '/'; margin-left: .5rem; color: var(--border-subtle, #cbd5e0); }
   .svcidx-hero { padding: 2rem 0 1.5rem; }
   .svcidx-intro { font-size: .8rem; letter-spacing: 2px; text-transform: uppercase; color: var(--accent-gold, #c9a96a); font-weight: 500; }

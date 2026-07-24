@@ -4,8 +4,19 @@
   <body class="page-layout">
     {% include header.html %}
     
+    <style>
+      /* ponytail: offset y estilo del breadcrumb INLINE (se aplica en el primer
+         paint). Antes lo daba .breadcrumbs del main.css DIFERIDO (margin-top:80px),
+         que al llegar tarde empujaba todo el body -> CLS. */
+      .pages-breadcrumbs { padding-top: 110px; }
+      .pages-breadcrumbs .breadcrumb-list { list-style: none; display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; padding: 0; margin: 0; font-size: .85rem; color: #4a5568; }
+      .pages-breadcrumbs a { color: #8a6a2f; text-decoration: none; }
+      .pages-breadcrumbs li:not(:last-child)::after { content: '/'; margin-left: .5rem; color: #cbd5e0; }
+      @media (max-width: 768px) { .pages-breadcrumbs { padding-top: 90px; } }
+    </style>
+
     <!-- Breadcrumbs -->
-    <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <nav class="pages-breadcrumbs" aria-label="Breadcrumb">
       <div class="container">
         <ol class="breadcrumb-list">
           <li><a href="{{ '/' | relative_url }}">Inicio</a></li>

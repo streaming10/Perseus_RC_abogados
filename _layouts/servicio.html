@@ -4,7 +4,7 @@
   <body class="page-layout servicio-layout">
     {% include header.html %}
 
-    <nav class="breadcrumbs svc-breadcrumbs" aria-label="Breadcrumb">
+    <nav class="svc-breadcrumbs" aria-label="Breadcrumb">
       <div class="svc-wrap">
         <ol class="breadcrumb-list">
           <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
@@ -61,8 +61,8 @@
     <style>
       .svc-wrap { max-width: 920px; margin: 0 auto; padding-left: 1.5rem; padding-right: 1.5rem; }
       .svc-breadcrumbs { padding-top: 110px; }
-      .svc-breadcrumbs .breadcrumb-list { list-style: none; display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; margin: 0; font-size: .85rem; color: var(--text-muted, #718096); }
-      .svc-breadcrumbs a { color: var(--accent-gold, #c9a96a); text-decoration: none; }
+      .svc-breadcrumbs .breadcrumb-list { list-style: none; display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; margin: 0; font-size: .85rem; color: #4a5568; }
+      .svc-breadcrumbs a { color: #8a6a2f; text-decoration: none; }
       .svc-breadcrumbs li:not(:last-child)::after { content: '/'; margin-left: .5rem; color: var(--border-subtle, #cbd5e0); }
 
       .svc-hero { padding: 2rem 0 2.5rem; border-bottom: 1px solid var(--border-light, #e2e8f0); }

@@ -133,6 +133,7 @@ include:
   - sw.js
   - offline.html
   - robots.txt
+  - llms.txt
 
 # Configuración de construcción optimizada
 keep_files:

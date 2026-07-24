@@ -13,7 +13,7 @@
       {% assign t_job = 'Lawyer' %}{% assign t_cred = 'Member of the A Coruña Bar Association (ICACOR), no. 6317' %}
     {% endif %}
 
-    <nav class="breadcrumbs post-breadcrumbs" aria-label="Breadcrumb">
+    <nav class="post-breadcrumbs" aria-label="Breadcrumb">
       <div class="post-wrap">
         <ol class="breadcrumb-list">
           <li><a href="{% if page.lang == 'en' %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">{{ t_home }}</a></li>
@@ -54,8 +54,8 @@
     <style>
       .post-wrap { max-width: 900px; margin: 0 auto; padding-left: 1.5rem; padding-right: 1.5rem; }
       .post-breadcrumbs { padding-top: 110px; }
-      .post-breadcrumbs .breadcrumb-list { list-style: none; display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; margin: 0; font-size: .85rem; color: var(--text-muted, #718096); }
-      .post-breadcrumbs a { color: var(--accent-gold, #c9a96a); text-decoration: none; }
+      .post-breadcrumbs .breadcrumb-list { list-style: none; display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; margin: 0; font-size: .85rem; color: #4a5568; }
+      .post-breadcrumbs a { color: #8a6a2f; text-decoration: none; }
       .post-breadcrumbs li:not(:last-child)::after { content: '/'; margin-left: .5rem; color: var(--border-subtle, #cbd5e0); }
       .post-main { padding: 1.5rem 0 4rem; }
       .post-header h1 { font-size: 2.2rem; line-height: 1.25; color: var(--navy-blue, #1a2332); font-weight: 600; margin: .5rem 0 1rem; }
